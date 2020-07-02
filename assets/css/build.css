@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400;1,600&display=swap");
 @font-face {
   font-family: "Segoe UI";
   src: url("../../../font/SegoeUI-Bold.eot");
@@ -15,6 +15,64 @@
   font-style: normal;
   font-display: swap;
 }
+h2 {
+  color: #000;
+  font-size: 1.25em;
+  letter-spacing: 0.06875em;
+  line-height: 0.9;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+@media only screen and (max-width: 767px) {
+  h2 {
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+
+h2 {
+  color: #000;
+  font-size: 1.125em;
+  letter-spacing: 0.06875em;
+  line-height: 1;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+@media only screen and (max-width: 767px) {
+  h2 {
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
+
+h3 {
+  color: #000;
+  font-size: 1em;
+  letter-spacing: 0.06875em;
+  line-height: 1;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+}
+@media only screen and (max-width: 767px) {
+  h3 {
+    font-size: 13px;
+  }
+}
+
+p {
+  color: #000;
+  font-size: 1em;
+  letter-spacing: 0.06875em;
+  line-height: 1.0625;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+}
+@media only screen and (max-width: 767px) {
+  p {
+    font-size: 11px;
+  }
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
