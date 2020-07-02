@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('../../../font/SegoeUI-Bold.eot');
+    src: url('../../../font/SegoeUI-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../../../font/SegoeUI-Bold.woff2') format('woff2'),
+        url('../../../font/SegoeUI-Bold.woff') format('woff'),
+        url('../../../font/SegoeUI-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('../../../font/SegoeUI.eot');
+    src: url('../../../font/SegoeUI.eot?#iefix') format('embedded-opentype'),
+        url('../../../font/SegoeUI.woff2') format('woff2'),
+        url('../../../font/SegoeUI.woff') format('woff'),
+        url('../../../font/SegoeUI.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+$segoe : "Segoe Ui";
+$montserrat : 'Montserrat', sans-serif;
