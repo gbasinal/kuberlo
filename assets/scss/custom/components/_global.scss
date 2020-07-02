@@ -1,9 +1,17 @@
-body {}
-
-b, strong {
-    font-weight:bold;
+* {
+    margin: 0;
+    box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-* {
-    outline: none !important;
+body {
+
+    font-size: 1.111vw;
+    @media only screen and (max-width: 1024px){
+        font-size: 16px;
+    }
+    @media only screen and (max-width: 767px){
+        font-size: 12px;
+    }
 }

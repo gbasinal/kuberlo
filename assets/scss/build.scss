@@ -4,6 +4,6 @@ $local : true;
 $root : if($local,'../','../');
 
 // *** Core ***
-@import "core/all";
+// @import "core/all";
 // *** Custom codes ***
 @import "custom/all";
