@@ -1,0 +1,21 @@
+.pink-banner-container {
+    width: 100%;
+    height: em(75);
+    background-color: $pink;
+    .pink-banner-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        padding: 0 em(15);
+        text-align: center;
+        h3 {
+            color: white;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        p {
+            color: white;
+        }
+    }
+}
