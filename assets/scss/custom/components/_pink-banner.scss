@@ -2,8 +2,10 @@
     width: 100%;
     height: em(75);
     background-color: $pink;
+    margin-top: em(50);
     @media only screen and (min-width: 768px){
         height: em(100);
+        margin-top: em(70);
     }
     .pink-banner-wrapper {
         display: flex;

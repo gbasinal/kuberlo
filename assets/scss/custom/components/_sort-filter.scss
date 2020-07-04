@@ -1,6 +1,6 @@
 .sort-filter-container {
     width : 100%;
-    height: em(65);
+    height: em(55);
     border-bottom: 1px solid $grey;
     position: fixed;
     bottom: 0;
@@ -48,6 +48,14 @@
                 right: -.5em;
 
             }
+        }
+    }
+    .divider {
+        height: em(25);
+        width: 1px;
+        background-color: $grey;
+        @media only screen and (min-width: 768px){
+            height: em(35);
         }
     }
 }
