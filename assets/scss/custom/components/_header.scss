@@ -1,6 +1,9 @@
 .header-container {
     width: 100%;
     height: em(50);
+    position: fixed;
+    top: 0;
+    background-color: white;
     @media only screen and (min-width : 768px){
         height : em(70);
     }

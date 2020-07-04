@@ -94,6 +94,9 @@ a {
 .header-container {
   width: 100%;
   height: 3.125em;
+  position: fixed;
+  top: 0;
+  background-color: white;
 }
 @media only screen and (min-width: 768px) {
   .header-container {
@@ -397,10 +400,12 @@ a {
   width: 100%;
   height: 4.6875em;
   background-color: #ff99c8;
+  margin-top: 3.125em;
 }
 @media only screen and (min-width: 768px) {
   .pink-banner-container {
     height: 6.25em;
+    margin-top: 4.375em;
   }
 }
 .pink-banner-container .pink-banner-wrapper {
