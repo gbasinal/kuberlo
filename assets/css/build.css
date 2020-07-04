@@ -484,7 +484,7 @@ a {
   }
 }
 .product-items-container .product-wrapper .item-wrapper .product-content-wrapper {
-  height: 5em;
+  height: 4.0625em;
   width: 100%;
   padding: 0 10px;
   display: flex;
