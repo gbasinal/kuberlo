@@ -23,9 +23,15 @@
                     .product-content-wrapper {
                         border-right : 1px solid $grey;
                     }
+                    .product-image-bgStyle{
+                        border-right : 1px solid $grey;
+                    }
                 }
                 &:nth-child(4n){
                     .product-content-wrapper {
+                        border-right : 0;
+                    }
+                    .product-image-bgStyle{
                         border-right : 0;
                     }
                 }
@@ -35,6 +41,7 @@
                 height: 187px;
                 width: 100%;
                 cursor: pointer;
+                border-right: 1px solid $grey;
                 @media only screen and (min-width: 768px){
                     height: em(360);
                 }
