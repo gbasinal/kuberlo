@@ -40,7 +40,7 @@ h2 {
     @include textStyle($black ,24 , 0 , 24 , bold );
     font-family: $montserrat;
     @media only screen and (max-width: 767px){
-        font-size: 16px;
+        font-size: em(16);
         font-weight: 700;
     }
 }
@@ -49,7 +49,7 @@ h3 {
     @include textStyle($black ,22 , 0, 22 , bold );
     font-family: $montserrat;
     @media only screen and (max-width: 767px){
-        font-size: 14px;
+        font-size: em(14);
         font-weight: 600;
     }
 }
@@ -58,7 +58,7 @@ h4 {
     @include textStyle($black ,20, 0, 20 , 400 );
     font-family: $montserrat;
     @media only screen and (max-width: 767px){
-        font-size: 13px;
+        font-size: em(13);
     }
 }
 
@@ -66,7 +66,7 @@ h5 {
     @include textStyle($whiteWash ,16, 0 , 16 , 400 );
     font-family: $montserrat;
     @media only screen and (max-width: 767px){
-        font-size: 8px;
+        font-size: em(9);
     }
 }
 
@@ -76,7 +76,7 @@ p, a {
     @include textStyle($black ,16, 1.1 , 17 , 400 );
     font-family: $montserrat;
     @media only screen and (max-width: 767px){
-        font-size: 11px;
+        font-size: em(11);
     }
 }
 
