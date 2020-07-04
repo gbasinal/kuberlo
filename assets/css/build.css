@@ -397,7 +397,7 @@ a {
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  padding: 0 0.9375em;
+  padding: 0 2.1875em;
   text-align: center;
 }
 @media only screen and (min-width: 768px) {
@@ -583,7 +583,10 @@ a {
 }
 .product-items-container.variant-2 .product-wrapper .item-wrapper .product-content-wrapper .product-title-wrapper .product-icon-wrapper {
   position: absolute;
-  right: 1em;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1.5625em;
+  width: 100%;
 }
 .product-items-container.variant-2 .product-wrapper .item-wrapper .product-content-wrapper .product-title-wrapper .product-icon-wrapper a:first-child {
   margin-right: 0.5sem;
