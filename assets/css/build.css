@@ -168,7 +168,6 @@ body {
 .owl-carousel .owl-dot {
   cursor: pointer;
   -webkit-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
@@ -202,7 +201,6 @@ body {
 .owl-carousel.owl-drag .owl-item {
   touch-action: pan-y;
   -webkit-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
