@@ -8,6 +8,9 @@
         .item-wrapper {
             width: 50%;
             border-bottom: 1px solid $grey;
+            @media only screen and (min-width: 1025px){
+                width: 25%;
+            }
             &:nth-child(2n){
                 .product-content-wrapper {
                     border-right: 0;
@@ -18,6 +21,9 @@
                 height: 187px;
                 width: 100%;
                 cursor: pointer;
+                @media only screen and (min-width: 1025px){
+                    height: em(360);
+                }
             }
             .product-content-wrapper {
                 height: 67px;
