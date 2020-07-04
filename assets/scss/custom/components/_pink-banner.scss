@@ -2,6 +2,9 @@
     width: 100%;
     height: em(75);
     background-color: $pink;
+    @media only screen and (min-width: 768px){
+        height: em(100);
+    }
     .pink-banner-wrapper {
         display: flex;
         justify-content: space-between;
@@ -9,6 +12,9 @@
         height: 100%;
         padding: 0 em(15);
         text-align: center;
+        @media only screen and (min-width: 768px){
+            padding: 0 em(20);
+        }
         h3 {
             color: white;
             font-weight: 600;

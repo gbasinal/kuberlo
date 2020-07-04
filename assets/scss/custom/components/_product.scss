@@ -1,6 +1,9 @@
 .product-items-container {
     width: 100%;
     margin-bottom: em(65);
+    @media only screen and (min-width: 768px){
+        margin-bottom: em(80);
+    }
     .product-wrapper {
         display: flex;
         width: 100%;
@@ -9,12 +12,22 @@
         .item-wrapper {
             width: 50%;
             border-bottom: 1px solid $grey;
-            @media only screen and (min-width: 1025px){
-                width: 25%;
-            }
             &:nth-child(2n){
                 .product-content-wrapper {
                     border-right: 0;
+                }
+            }
+            @media only screen and (min-width: 1025px){
+                width: 25%;
+                &:nth-child(2n){
+                    .product-content-wrapper {
+                        border-right : 2px solid $grey;
+                    }
+                }
+                &:nth-child(4n){
+                    .product-content-wrapper {
+                        border-right : 0;
+                    }
                 }
             }
             .product-image-bgStyle {
@@ -22,7 +35,7 @@
                 height: 187px;
                 width: 100%;
                 cursor: pointer;
-                @media only screen and (min-width: 1025px){
+                @media only screen and (min-width: 768px){
                     height: em(360);
                 }
             }
@@ -34,12 +47,18 @@
                 flex-direction: column;
                 justify-content: center;
                 border-right : 2px solid $grey;
-                
+                @media only screen and (min-width: 768px){
+                    height: em(120);
+                    padding: em(20);
+                }
                 .product-title-wrapper {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
                     margin-bottom: em(5);
+                    @media only screen and (min-width: 768px){
+                        margin-bottom: em(10);
+                    }
                     h4 {
                         font-weight: 600;
                         letter-spacing: -1.1px;
@@ -47,11 +66,21 @@
                         
                     }
                     .product-icon-wrapper {
-
+                        img {
+                            width:1.182em;
+                            height:1.182em;
+                            @media only screen and (min-width: 768px){
+                                width: 1.364em;
+                                height: 1.364em;
+                            }
+                        }
                     }
                 }
                 .product-description-wrapper{
                     margin-bottom: em(5);
+                    @media only screen and (min-width: 768px){
+                        margin-bottom: em(10);
+                    }
                     h5 {
 
                     }   
@@ -67,6 +96,10 @@
                             margin-right : 4px;
                             font-size: em(12);
                             letter-spacing: -.5px;
+                            @media only screen and (min-width: 768px){
+                                font-size: em(18);
+                                margin-right: em(10);
+                            }
                             &.discount {
                                 color: $grey;
                                 font-weight: 400;
@@ -79,6 +112,10 @@
                         font-size: em(10);
                         color: $green;
                         letter-spacing: 0;
+                        @media only screen and (min-width: 768px){
+                            font-size: em(18);
+                            margin-right: em(10);
+                        }
                     }
                 }
             }
