@@ -1,6 +1,6 @@
 .product-items-container {
     width: 100%;
-    margin-bottom: em(65);
+    margin-bottom: em(55);
     @media only screen and (min-width: 768px){
         margin-bottom: em(80);
     }
@@ -23,9 +23,15 @@
                     .product-content-wrapper {
                         border-right : 1px solid $grey;
                     }
+                    .product-image-bgStyle{
+                        border-right : 1px solid $grey;
+                    }
                 }
                 &:nth-child(4n){
                     .product-content-wrapper {
+                        border-right : 0;
+                    }
+                    .product-image-bgStyle{
                         border-right : 0;
                     }
                 }
@@ -35,12 +41,13 @@
                 height: 187px;
                 width: 100%;
                 cursor: pointer;
+                border-right: 1px solid $grey;
                 @media only screen and (min-width: 768px){
                     height: em(360);
                 }
             }
             .product-content-wrapper {
-                height: em(80);
+                height: em(60);
                 width: 100%;
                 padding: 0 10px;
                 display: flex;
@@ -55,7 +62,7 @@
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    margin-bottom: em(5);
+                    
                     @media only screen and (min-width: 768px){
                         margin-bottom: em(10);
                     }
@@ -63,6 +70,7 @@
                         font-weight: 600;
                         letter-spacing: -1.1px;
                         line-height: 12px;
+                        color: grey;
                         
                     }
                     .product-icon-wrapper {
@@ -77,7 +85,7 @@
                     }
                 }
                 .product-description-wrapper{
-                    margin-bottom: em(5);
+                    margin-bottom: em(3);
                     @media only screen and (min-width: 768px){
                         margin-bottom: em(10);
                     }
@@ -92,7 +100,7 @@
                     .price-wrapper{
                         display: flex;
                         h3 {
-                            font-family: $segoe;
+                            font-family: $hind;
                             margin-right : 4px;
                             font-size: em(12);
                             letter-spacing: -.5px;
@@ -108,7 +116,7 @@
                         }
                     }
                     .discount-detail {
-                        font-family: $segoe;
+                        font-family: $hind;
                         font-size: em(10);
                         color: $green;
                         letter-spacing: 0;

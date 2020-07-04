@@ -1,31 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400;1,600&display=swap");
-@font-face {
-  font-family: "Segoe UI";
-  src: url("../font/SegoeUI-Bold.eot");
-  src: url("../font/SegoeUI-Bold.eot?#iefix") format("embedded-opentype"), url("../font/SegoeUI-Bold.woff2") format("woff2"), url("../font/SegoeUI-Bold.woff") format("woff"), url("../font/SegoeUI-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Segoe UI";
-  src: url("../font/SegoeUI.eot");
-  src: url("../font/SegoeUI.eot?#iefix") format("embedded-opentype"), url("../font/SegoeUI.woff2") format("woff2"), url("../font/SegoeUI.woff") format("woff"), url("../font/SegoeUI.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap");
 h2 {
   color: #000;
   font-size: 1.5em;
   letter-spacing: 0em;
   line-height: 1;
   font-weight: bold;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Hind", sans-serif;
 }
 @media only screen and (max-width: 767px) {
   h2 {
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 700;
   }
 }
@@ -36,11 +20,11 @@ h3 {
   letter-spacing: 0em;
   line-height: 1;
   font-weight: bold;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Hind", sans-serif;
 }
 @media only screen and (max-width: 767px) {
   h3 {
-    font-size: 14px;
+    font-size: 1em;
     font-weight: 600;
   }
 }
@@ -51,11 +35,11 @@ h4 {
   letter-spacing: 0em;
   line-height: 1;
   font-weight: 400;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Hind", sans-serif;
 }
 @media only screen and (max-width: 767px) {
   h4 {
-    font-size: 13px;
+    font-size: 0.8125em;
   }
 }
 
@@ -65,11 +49,11 @@ h5 {
   letter-spacing: 0em;
   line-height: 1;
   font-weight: 400;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Hind", sans-serif;
 }
 @media only screen and (max-width: 767px) {
   h5 {
-    font-size: 8px;
+    font-size: 0.625em;
   }
 }
 
@@ -79,11 +63,11 @@ p, a {
   letter-spacing: 0.06875em;
   line-height: 1.0625;
   font-weight: 400;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Hind", sans-serif;
 }
 @media only screen and (max-width: 767px) {
   p, a {
-    font-size: 11px;
+    font-size: 0.6875em;
   }
 }
 
@@ -94,6 +78,9 @@ a {
 .header-container {
   width: 100%;
   height: 3.125em;
+  position: fixed;
+  top: 0;
+  background-color: white;
 }
 @media only screen and (min-width: 768px) {
   .header-container {
@@ -397,10 +384,12 @@ a {
   width: 100%;
   height: 4.6875em;
   background-color: #ff99c8;
+  margin-top: 3.125em;
 }
 @media only screen and (min-width: 768px) {
   .pink-banner-container {
     height: 6.25em;
+    margin-top: 4.375em;
   }
 }
 .pink-banner-container .pink-banner-wrapper {
@@ -427,7 +416,7 @@ a {
 
 .product-items-container {
   width: 100%;
-  margin-bottom: 4.0625em;
+  margin-bottom: 3.4375em;
 }
 @media only screen and (min-width: 768px) {
   .product-items-container {
@@ -454,7 +443,13 @@ a {
   .product-items-container .product-wrapper .item-wrapper:nth-child(2n) .product-content-wrapper {
     border-right: 1px solid #c2c2c2;
   }
+  .product-items-container .product-wrapper .item-wrapper:nth-child(2n) .product-image-bgStyle {
+    border-right: 1px solid #c2c2c2;
+  }
   .product-items-container .product-wrapper .item-wrapper:nth-child(4n) .product-content-wrapper {
+    border-right: 0;
+  }
+  .product-items-container .product-wrapper .item-wrapper:nth-child(4n) .product-image-bgStyle {
     border-right: 0;
   }
 }
@@ -465,6 +460,7 @@ a {
   height: 187px;
   width: 100%;
   cursor: pointer;
+  border-right: 1px solid #c2c2c2;
 }
 @media only screen and (min-width: 768px) {
   .product-items-container .product-wrapper .item-wrapper .product-image-bgStyle {
@@ -472,7 +468,7 @@ a {
   }
 }
 .product-items-container .product-wrapper .item-wrapper .product-content-wrapper {
-  height: 5em;
+  height: 3.75em;
   width: 100%;
   padding: 0 10px;
   display: flex;
@@ -490,7 +486,6 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 0.3125em;
 }
 @media only screen and (min-width: 768px) {
   .product-items-container .product-wrapper .item-wrapper .product-content-wrapper .product-title-wrapper {
@@ -501,6 +496,7 @@ a {
   font-weight: 600;
   letter-spacing: -1.1px;
   line-height: 12px;
+  color: grey;
 }
 .product-items-container .product-wrapper .item-wrapper .product-content-wrapper .product-title-wrapper .product-icon-wrapper img {
   width: 1.182em;
@@ -513,7 +509,7 @@ a {
   }
 }
 .product-items-container .product-wrapper .item-wrapper .product-content-wrapper .product-description-wrapper {
-  margin-bottom: 0.3125em;
+  margin-bottom: 0.1875em;
 }
 @media only screen and (min-width: 768px) {
   .product-items-container .product-wrapper .item-wrapper .product-content-wrapper .product-description-wrapper {
@@ -528,7 +524,7 @@ a {
   display: flex;
 }
 .product-items-container .product-wrapper .item-wrapper .product-content-wrapper .product-price-wrapper .price-wrapper h3 {
-  font-family: "Segoe Ui";
+  font-family: "Hind", sans-serif;
   margin-right: 4px;
   font-size: 0.75em;
   letter-spacing: -0.5px;
@@ -545,7 +541,7 @@ a {
   text-decoration: line-through;
 }
 .product-items-container .product-wrapper .item-wrapper .product-content-wrapper .product-price-wrapper .discount-detail {
-  font-family: "Segoe Ui";
+  font-family: "Hind", sans-serif;
   font-size: 0.625em;
   color: #03a685;
   letter-spacing: 0;
@@ -558,7 +554,7 @@ a {
 }
 .sort-filter-container {
   width: 100%;
-  height: 4.0625em;
+  height: 3.4375em;
   border-bottom: 1px solid #c2c2c2;
   position: fixed;
   bottom: 0;
@@ -610,6 +606,16 @@ a {
   position: absolute;
   top: -0.2em;
   right: -0.5em;
+}
+.sort-filter-container .divider {
+  height: 1.5625em;
+  width: 1px;
+  background-color: #c2c2c2;
+}
+@media only screen and (min-width: 768px) {
+  .sort-filter-container .divider {
+    height: 2.1875em;
+  }
 }
 
 * {

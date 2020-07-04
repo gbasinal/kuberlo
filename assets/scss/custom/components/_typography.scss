@@ -1,32 +1,8 @@
-@font-face {
-    font-family: 'Segoe UI';
-    src: url('../font/SegoeUI-Bold.eot');
-    src: url('../font/SegoeUI-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../font/SegoeUI-Bold.woff2') format('woff2'),
-        url('../font/SegoeUI-Bold.woff') format('woff'),
-        url('../font/SegoeUI-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
 
-@font-face {
-    font-family: 'Segoe UI';
-    src: url('../font/SegoeUI.eot');
-    src: url('../font/SegoeUI.eot?#iefix') format('embedded-opentype'),
-        url('../font/SegoeUI.woff2') format('woff2'),
-        url('../font/SegoeUI.woff') format('woff'),
-        url('../font/SegoeUI.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
 
-$segoe : "Segoe Ui";
-$montserrat : 'Montserrat', sans-serif;
-
+$hind : 'Hind', sans-serif;
 
 // Fonts 
 
@@ -38,35 +14,35 @@ h1 {
 
 h2 {
     @include textStyle($black ,24 , 0 , 24 , bold );
-    font-family: $montserrat;
+    font-family: $hind;
     @media only screen and (max-width: 767px){
-        font-size: 16px;
+        font-size: em(16);
         font-weight: 700;
     }
 }
 
 h3 {
     @include textStyle($black ,22 , 0, 22 , bold );
-    font-family: $montserrat;
+    font-family: $hind;
     @media only screen and (max-width: 767px){
-        font-size: 14px;
+        font-size: em(16);
         font-weight: 600;
     }
 }
 
 h4 {
     @include textStyle($black ,20, 0, 20 , 400 );
-    font-family: $montserrat;
+    font-family: $hind;
     @media only screen and (max-width: 767px){
-        font-size: 13px;
+        font-size: em(13);
     }
 }
 
 h5 {
     @include textStyle($whiteWash ,16, 0 , 16 , 400 );
-    font-family: $montserrat;
+    font-family: $hind;
     @media only screen and (max-width: 767px){
-        font-size: 8px;
+        font-size: em(10);
     }
 }
 
@@ -74,9 +50,9 @@ h5 {
 
 p, a {
     @include textStyle($black ,16, 1.1 , 17 , 400 );
-    font-family: $montserrat;
+    font-family: $hind;
     @media only screen and (max-width: 767px){
-        font-size: 11px;
+        font-size: em(11);
     }
 }
 
