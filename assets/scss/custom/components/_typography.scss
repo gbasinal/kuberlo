@@ -72,10 +72,14 @@ h5 {
 
 
 
-p {
+p, a {
     @include textStyle($black ,16, 1.1 , 17 , 400 );
     font-family: $montserrat;
     @media only screen and (max-width: 767px){
         font-size: 11px;
     }
+}
+
+a{
+    text-decoration: none;
 }
