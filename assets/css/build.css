@@ -468,7 +468,7 @@ a {
   }
 }
 .product-items-container .product-wrapper .item-wrapper .product-content-wrapper {
-  height: 4.0625em;
+  height: 3.75em;
   width: 100%;
   padding: 0 10px;
   display: flex;
@@ -486,7 +486,6 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 0.1875em;
 }
 @media only screen and (min-width: 768px) {
   .product-items-container .product-wrapper .item-wrapper .product-content-wrapper .product-title-wrapper {
