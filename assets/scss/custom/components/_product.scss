@@ -8,10 +8,16 @@
         .item-wrapper {
             width: 50%;
             border-bottom: 1px solid $grey;
+            &:nth-child(2n){
+                .product-content-wrapper {
+                    border-right: 0;
+                }
+            }
             .product-image-bgStyle {
                 @include bgSettings(cover, no-repeat, center);
                 height: em(185);
                 width: 100%;
+                cursor: pointer;
             }
             .product-content-wrapper {
                 height: em(67);
@@ -20,11 +26,13 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                border-left : 2px solid $grey;
+                border-right : 2px solid $grey;
+                
                 .product-title-wrapper {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
+                    margin-bottom: 3px;
                     h4 {
                         font-weight: 600;
                         letter-spacing: 0;
@@ -35,7 +43,7 @@
                     }
                 }
                 .product-description-wrapper{
-                    margin-bottom: 5px;
+                    margin-bottom: 3px;
                   h5 {
 
                  }   
