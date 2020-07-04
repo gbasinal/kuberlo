@@ -1,2 +1,30 @@
-header{}
-
+.header-container {
+    width: 100%;
+    height : em(42);
+    .header-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        padding: 0 em(15);
+        .header-left-wrapper {
+            display: flex; 
+            align-items: center;
+            height: 100%;
+            .btn-arrow-back {
+                margin-right: em(15);
+            }
+        }
+        .header-right-wrapper {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            a {
+                margin-right : em(15);
+                &:last-child {
+                    margin-right : 0;
+                }
+            }
+        }
+    }
+}
