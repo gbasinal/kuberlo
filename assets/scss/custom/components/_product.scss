@@ -26,7 +26,7 @@
                 }
             }
             .product-content-wrapper {
-                height: 67px;
+                height: em(80);
                 width: 100%;
                 padding: 0 10px;
                 display: flex;
@@ -38,21 +38,22 @@
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    margin-bottom: 3px;
+                    margin-bottom: em(5);
                     h4 {
                         font-weight: 600;
-                        letter-spacing: 0;
-                        line-height: 13px;
+                        letter-spacing: -1.1px;
+                        line-height: 12px;
+                        
                     }
                     .product-icon-wrapper {
 
                     }
                 }
                 .product-description-wrapper{
-                    margin-bottom: 3px;
-                  h5 {
+                    margin-bottom: em(5);
+                    h5 {
 
-                 }   
+                    }   
                 }
                 .product-price-wrapper {
                     display: flex;
@@ -63,6 +64,8 @@
                         h3 {
                             font-family: $segoe;
                             margin-right : 4px;
+                            font-size: em(12);
+                            letter-spacing: -.5px;
                             &.discount {
                                 color: $grey;
                                 font-weight: 400;
@@ -72,7 +75,7 @@
                     }
                     .discount-detail {
                         font-family: $segoe;
-                        font-size: 10px;
+                        font-size: em(10);
                         color: $green;
                         letter-spacing: 0;
                     }
