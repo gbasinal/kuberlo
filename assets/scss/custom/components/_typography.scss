@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'Segoe UI';
-    src: url('../../../font/SegoeUI-Bold.eot');
-    src: url('../../../font/SegoeUI-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../../../font/SegoeUI-Bold.woff2') format('woff2'),
-        url('../../../font/SegoeUI-Bold.woff') format('woff'),
-        url('../../../font/SegoeUI-Bold.ttf') format('truetype');
+    src: url('../font/SegoeUI-Bold.eot');
+    src: url('../font/SegoeUI-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../font/SegoeUI-Bold.woff2') format('woff2'),
+        url('../font/SegoeUI-Bold.woff') format('woff'),
+        url('../font/SegoeUI-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -12,11 +12,11 @@
 
 @font-face {
     font-family: 'Segoe UI';
-    src: url('../../../font/SegoeUI.eot');
-    src: url('../../../font/SegoeUI.eot?#iefix') format('embedded-opentype'),
-        url('../../../font/SegoeUI.woff2') format('woff2'),
-        url('../../../font/SegoeUI.woff') format('woff'),
-        url('../../../font/SegoeUI.ttf') format('truetype');
+    src: url('../font/SegoeUI.eot');
+    src: url('../font/SegoeUI.eot?#iefix') format('embedded-opentype'),
+        url('../font/SegoeUI.woff2') format('woff2'),
+        url('../font/SegoeUI.woff') format('woff'),
+        url('../font/SegoeUI.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -46,7 +46,7 @@ h2 {
 }
 
 h3 {
-    @include textStyle($black ,18 , 1.1 , 18 , bold );
+    @include textStyle($black ,18 , 0, 18 , bold );
     font-family: $montserrat;
     @media only screen and (max-width: 767px){
         font-size: 14px;
@@ -55,10 +55,18 @@ h3 {
 }
 
 h4 {
-    @include textStyle($black ,16, 1.1 , 16 , 400 );
+    @include textStyle($black ,16, 0, 16 , 400 );
     font-family: $montserrat;
     @media only screen and (max-width: 767px){
         font-size: 13px;
+    }
+}
+
+h5 {
+    @include textStyle($whiteWash ,10, 0 , 10 , 400 );
+    font-family: $montserrat;
+    @media only screen and (max-width: 767px){
+        font-size: 8px;
     }
 }
 
