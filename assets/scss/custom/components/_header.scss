@@ -11,8 +11,30 @@
             display: flex; 
             align-items: center;
             height: 100%;
+            width: 80%;
             .btn-arrow-back {
                 margin-right: em(15);
+            }
+            .page-title {
+                display: none; 
+                &.is-active {
+                    display: block;
+                }
+            }
+            .input-field-for-search-wrapper {
+                width: 100%;
+                display: none;
+                &.is-active {
+                    display: block;
+                }
+                input {
+                    border: none;
+                    outline: none;
+                    width: 100%;
+                    &:focus {
+                        outline: none;
+                    }
+                }
             }
         }
         .header-right-wrapper {

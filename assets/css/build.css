@@ -103,9 +103,31 @@ body {
   display: flex;
   align-items: center;
   height: 100%;
+  width: 80%;
 }
 .header-container .header-wrapper .header-left-wrapper .btn-arrow-back {
   margin-right: 0.9375em;
+}
+.header-container .header-wrapper .header-left-wrapper .page-title {
+  display: none;
+}
+.header-container .header-wrapper .header-left-wrapper .page-title.is-active {
+  display: block;
+}
+.header-container .header-wrapper .header-left-wrapper .input-field-for-search-wrapper {
+  width: 100%;
+  display: none;
+}
+.header-container .header-wrapper .header-left-wrapper .input-field-for-search-wrapper.is-active {
+  display: block;
+}
+.header-container .header-wrapper .header-left-wrapper .input-field-for-search-wrapper input {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+.header-container .header-wrapper .header-left-wrapper .input-field-for-search-wrapper input:focus {
+  outline: none;
 }
 .header-container .header-wrapper .header-right-wrapper {
   display: flex;
