@@ -1,16 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400;1,600&display=swap");
 @font-face {
   font-family: "Segoe UI";
-  src: url("../../../font/SegoeUI-Bold.eot");
-  src: url("../../../font/SegoeUI-Bold.eot?#iefix") format("embedded-opentype"), url("../../../font/SegoeUI-Bold.woff2") format("woff2"), url("../../../font/SegoeUI-Bold.woff") format("woff"), url("../../../font/SegoeUI-Bold.ttf") format("truetype");
+  src: url("../font/SegoeUI-Bold.eot");
+  src: url("../font/SegoeUI-Bold.eot?#iefix") format("embedded-opentype"), url("../font/SegoeUI-Bold.woff2") format("woff2"), url("../font/SegoeUI-Bold.woff") format("woff"), url("../font/SegoeUI-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Segoe UI";
-  src: url("../../../font/SegoeUI.eot");
-  src: url("../../../font/SegoeUI.eot?#iefix") format("embedded-opentype"), url("../../../font/SegoeUI.woff2") format("woff2"), url("../../../font/SegoeUI.woff") format("woff"), url("../../../font/SegoeUI.ttf") format("truetype");
+  src: url("../font/SegoeUI.eot");
+  src: url("../font/SegoeUI.eot?#iefix") format("embedded-opentype"), url("../font/SegoeUI.woff2") format("woff2"), url("../font/SegoeUI.woff") format("woff"), url("../font/SegoeUI.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -33,7 +33,7 @@ h2 {
 h3 {
   color: #000;
   font-size: 1.125em;
-  letter-spacing: 0.06875em;
+  letter-spacing: 0em;
   line-height: 1;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
@@ -48,7 +48,7 @@ h3 {
 h4 {
   color: #000;
   font-size: 1em;
-  letter-spacing: 0.06875em;
+  letter-spacing: 0em;
   line-height: 1;
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
@@ -56,6 +56,20 @@ h4 {
 @media only screen and (max-width: 767px) {
   h4 {
     font-size: 13px;
+  }
+}
+
+h5 {
+  color: #8d8d8d;
+  font-size: 0.625em;
+  letter-spacing: 0em;
+  line-height: 1;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+}
+@media only screen and (max-width: 767px) {
+  h5 {
+    font-size: 8px;
   }
 }
 
@@ -384,6 +398,75 @@ p {
   color: white;
 }
 
+.product-items-container {
+  width: 100%;
+}
+.product-items-container .product-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+.product-items-container .product-wrapper .item-wrapper {
+  width: 50%;
+  border-bottom: 1px solid #c2c2c2;
+}
+.product-items-container .product-wrapper .item-wrapper:nth-child(2n) .product-content-wrapper {
+  border-right: 0;
+}
+.product-items-container .product-wrapper .item-wrapper .product-image-bgStyle {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 11.5625em;
+  width: 100%;
+  cursor: pointer;
+}
+.product-items-container .product-wrapper .item-wrapper .product-content-wrapper {
+  height: 4.1875em;
+  width: 100%;
+  padding: 0 0.625em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-right: 2px solid #c2c2c2;
+}
+.product-items-container .product-wrapper .item-wrapper .product-content-wrapper .product-title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3px;
+}
+.product-items-container .product-wrapper .item-wrapper .product-content-wrapper .product-title-wrapper h4 {
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 13px;
+}
+.product-items-container .product-wrapper .item-wrapper .product-content-wrapper .product-description-wrapper {
+  margin-bottom: 3px;
+}
+.product-items-container .product-wrapper .item-wrapper .product-content-wrapper .product-price-wrapper {
+  display: flex;
+  align-items: center;
+}
+.product-items-container .product-wrapper .item-wrapper .product-content-wrapper .product-price-wrapper .price-wrapper {
+  display: flex;
+}
+.product-items-container .product-wrapper .item-wrapper .product-content-wrapper .product-price-wrapper .price-wrapper h3 {
+  font-family: "Segoe Ui";
+  margin-right: 4px;
+}
+.product-items-container .product-wrapper .item-wrapper .product-content-wrapper .product-price-wrapper .price-wrapper h3.discount {
+  color: #c2c2c2;
+  font-weight: 400;
+  text-decoration: line-through;
+}
+.product-items-container .product-wrapper .item-wrapper .product-content-wrapper .product-price-wrapper .discount-detail {
+  font-family: "Segoe Ui";
+  font-size: 10px;
+  color: #03a685;
+  letter-spacing: 0;
+}
 * {
   margin: 0;
   box-sizing: border-box;
