@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('../font/SegoeUI-Bold.eot');
+    src: url('../font/SegoeUI-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../font/SegoeUI-Bold.woff2') format('woff2'),
+        url('../font/SegoeUI-Bold.woff') format('woff'),
+        url('../font/SegoeUI-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('../font/SegoeUI.eot');
+    src: url('../font/SegoeUI.eot?#iefix') format('embedded-opentype'),
+        url('../font/SegoeUI.woff2') format('woff2'),
+        url('../font/SegoeUI.woff') format('woff'),
+        url('../font/SegoeUI.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+$segoe : "Segoe Ui";
+$montserrat : 'Montserrat', sans-serif;
+
+
+// Fonts 
+
+h1 {
+    @media only screen and (max-width: 767px){
+
+    }
+}
+
+h2 {
+    @include textStyle($black ,20 , 0 , 18 , bold );
+    font-family: $montserrat;
+    @media only screen and (max-width: 767px){
+        font-size: 16px;
+        font-weight: 700;
+    }
+}
+
+h3 {
+    @include textStyle($black ,18 , 0, 18 , bold );
+    font-family: $montserrat;
+    @media only screen and (max-width: 767px){
+        font-size: 14px;
+        font-weight: 600;
+    }
+}
+
+h4 {
+    @include textStyle($black ,16, 0, 16 , 400 );
+    font-family: $montserrat;
+    @media only screen and (max-width: 767px){
+        font-size: 13px;
+    }
+}
+
+h5 {
+    @include textStyle($whiteWash ,10, 0 , 10 , 400 );
+    font-family: $montserrat;
+    @media only screen and (max-width: 767px){
+        font-size: 8px;
+    }
+}
+
+
+
+p, a {
+    @include textStyle($black ,16, 1.1 , 17 , 400 );
+    font-family: $montserrat;
+    @media only screen and (max-width: 767px){
+        font-size: 11px;
+    }
+}
+
+a{
+    text-decoration: none;
+}

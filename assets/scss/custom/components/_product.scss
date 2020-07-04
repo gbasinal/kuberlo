@@ -1,0 +1,81 @@
+.product-items-container {
+    width: 100%;
+    .product-wrapper {
+        display: flex;
+        width: 100%;
+        justify-content: start;
+        flex-wrap: wrap;
+        .item-wrapper {
+            width: 50%;
+            border-bottom: 1px solid $grey;
+            &:nth-child(2n){
+                .product-content-wrapper {
+                    border-right: 0;
+                }
+            }
+            .product-image-bgStyle {
+                @include bgSettings(cover, no-repeat, center);
+                height: em(185);
+                width: 100%;
+                cursor: pointer;
+            }
+            .product-content-wrapper {
+                height: em(67);
+                width: 100%;
+                padding: 0 em(10);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                border-right : 2px solid $grey;
+                
+                .product-title-wrapper {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 3px;
+                    h4 {
+                        font-weight: 600;
+                        letter-spacing: 0;
+                        line-height: 13px;
+                    }
+                    .product-icon-wrapper {
+
+                    }
+                }
+                .product-description-wrapper{
+                    margin-bottom: 3px;
+                  h5 {
+
+                 }   
+                }
+                .product-price-wrapper {
+                    display: flex;
+                    align-items: center;
+                    
+                    .price-wrapper{
+                        display: flex;
+                        h3 {
+                            font-family: $segoe;
+                            margin-right : 4px;
+                            &.discount {
+                                color: $grey;
+                                font-weight: 400;
+                                text-decoration: line-through;
+                            }
+                        }
+                    }
+                    .discount-detail {
+                        font-family: $segoe;
+                        font-size: 10px;
+                        color: $green;
+                        letter-spacing: 0;
+                    }
+                }
+            }
+
+        }
+    }
+    &.variant-1 {
+
+    }
+}

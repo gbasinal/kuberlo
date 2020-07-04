@@ -1,348 +1,149 @@
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-html {
-  color: #222;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400;1,600&display=swap");
+@font-face {
+  font-family: "Segoe UI";
+  src: url("../font/SegoeUI-Bold.eot");
+  src: url("../font/SegoeUI-Bold.eot?#iefix") format("embedded-opentype"), url("../font/SegoeUI-Bold.woff2") format("woff2"), url("../font/SegoeUI-Bold.woff") format("woff"), url("../font/SegoeUI-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Segoe UI";
+  src: url("../font/SegoeUI.eot");
+  src: url("../font/SegoeUI.eot?#iefix") format("embedded-opentype"), url("../font/SegoeUI.woff2") format("woff2"), url("../font/SegoeUI.woff") format("woff"), url("../font/SegoeUI.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+h2 {
+  color: #000;
+  font-size: 1.25em;
+  letter-spacing: 0em;
+  line-height: 0.9;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+@media only screen and (max-width: 767px) {
+  h2 {
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+
+h3 {
+  color: #000;
+  font-size: 1.125em;
+  letter-spacing: 0em;
+  line-height: 1;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+@media only screen and (max-width: 767px) {
+  h3 {
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
+
+h4 {
+  color: #000;
   font-size: 1em;
-  line-height: 1.4; }
+  letter-spacing: 0em;
+  line-height: 1;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+}
+@media only screen and (max-width: 767px) {
+  h4 {
+    font-size: 13px;
+  }
+}
 
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none; }
+h5 {
+  color: #8d8d8d;
+  font-size: 0.625em;
+  letter-spacing: 0em;
+  line-height: 1;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+}
+@media only screen and (max-width: 767px) {
+  h5 {
+    font-size: 8px;
+  }
+}
 
-::selection {
-  background: #b3d4fc;
-  text-shadow: none; }
+p, a {
+  color: #000;
+  font-size: 1em;
+  letter-spacing: 0.06875em;
+  line-height: 1.0625;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+}
+@media only screen and (max-width: 767px) {
+  p, a {
+    font-size: 11px;
+  }
+}
 
-/*
- * A better looking default horizontal rule
- */
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0; }
+a {
+  text-decoration: none;
+}
 
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle; }
-
-/*
- * Remove default fieldset styles.
- */
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0; }
-
-/*
- * Allow only vertical resizing of textareas.
- */
-textarea {
-  resize: vertical; }
-
-/*********************
-BREAKPOINTS
-*********************/
-/*********************
- BOOTSTRAP BREAKPOINTS
- *********************/
-/*********************
- BREAKPOINTS: Usage
- *********************/
-/*
- @include breakpoint(breakpointname) {
-     ==== STYLES ====    
- }
- */
-.table {
-  display: table; }
-  .table-full {
-    width: 100%;
-    height: 100%;
-    min-height: inherit;
-    position: relative; }
-    .table-full:after {
-      content: "";
-      display: table; }
-
-.table-row {
-  display: table-row; }
-
-.table-cell {
-  display: table-cell;
-  vertical-align: middle; }
-
-.align-center {
-  text-align: center; }
-
-.align-left {
-  text-align: left; }
-
-.align-right {
-  text-align: right; }
-
-.v-align-top {
-  vertical-align: top; }
-
-.v-align-middle {
-  vertical-align: middle; }
-
-.v-align-bottom {
-  vertical-align: bottom; }
-
-.clearfix {
-  overflow: auto; }
-
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table; }
-
-.float-left {
-  float: left; }
-
-.float-right {
-  float: right; }
-
-.inline {
-  display: inline; }
-
-.inline-block {
-  display: inline-block; }
-
-.block {
-  display: block; }
-
-ul.inline-block-group {
-  list-style: none;
-  padding-left: initial; }
-  ul.inline-block-group li {
-    display: inline-block;
-    vertical-align: middle; }
-
-.case-upper {
-  text-transform: uppercase; }
-
-.case-lower {
-  text-transform: lowercase; }
-
-.case-proper {
-  text-transform: capitalize; }
-
-.m-auto {
-  margin: auto; }
-
-.img-responsive {
+.header-container {
   width: 100%;
-  height: auto; }
-
-.center-block {
+  height: 2.625em;
+}
+.header-container .header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 0 0.9375em;
+}
+.header-container .header-wrapper .header-left-wrapper {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 80%;
+}
+.header-container .header-wrapper .header-left-wrapper .btn-arrow-back {
+  margin-right: 0.9375em;
+}
+.header-container .header-wrapper .header-left-wrapper .page-title {
+  display: none;
+  font-weight: 600;
+}
+.header-container .header-wrapper .header-left-wrapper .page-title.is-active {
   display: block;
-  margin: 0 auto; }
-
-.bp-rel {
-  position: relative; }
-
-.o-hidden {
-  overflow: hidden; }
-
-.w100 {
-  width: 100%; }
-
-.h100 {
-  height: 100%; }
-
-.relative {
-  position: relative; }
-
-.absolute {
-  position: absolute; }
-
-.mobile-only {
-  display: block; }
-
-.tablet-up {
-  display: none; }
-
-.overflow-hidden {
-  overflow: hidden;
-  position: relative;
-  height: 100%; }
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-/*
- * Hide visually and from screen readers
- */
-.hidden {
-  display: none !important; }
-
-/*
-* Hide only visually, but have it available for screen readers:
-* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
-*
-* 1. For long content, line feeds are not interpreted as spaces and small width
-*    causes content to wrap 1 word per line:
-*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
-*/
-.visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-  white-space: nowrap;
-  /* 1 */ }
-
-/*
-* Extends the .visuallyhidden class to allow the element
-* to be focusable when navigated to via the keyboard:
-* https://www.drupal.org/node/897638
-*/
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto;
-  white-space: inherit; }
-
-/*
-* Hide visually and from screen readers, but maintain layout
-*/
-.invisible {
-  visibility: hidden; }
-
-/*
-* Clearfix: contain floats
-*
-* For modern browsers
-* 1. The space content is one way to avoid an Opera bug when the
-*    `contenteditable` attribute is included anywhere else in the document.
-*    Otherwise it causes space to appear at the top and bottom of elements
-*    that receive the `clearfix` class.
-* 2. The use of `table` rather than `block` is only necessary if using
-*    `:before` to contain the top-margins of child elements.
-*/
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */ }
-
-.clearfix:after {
-  clear: both; }
-
-/* ==========================================================================
- EXAMPLE Media Queries for Responsive Design.
- These examples override the primary ('mobile first') styles.
- Modify as content requires.
- ========================================================================== */
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */ }
-
-@media print, (-webkit-min-device-pixel-ratio: 1.25), (-o-min-device-pixel-ratio: 5/4), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */ }
-
-/* ==========================================================================
- Print styles.
- Inlined to avoid the additional HTTP request:
- https://www.phpied.com/delay-loading-your-print-css/
- ========================================================================== */
-@media print {
-  *,
-  *:before,
-  *:after {
-    background: transparent !important;
-    color: #000 !important;
-    /* Black prints faster */
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-    text-shadow: none !important; }
-  a,
-  a:visited {
-    text-decoration: underline; }
-  a[href]:after {
-    content: " (" attr(href) ")"; }
-  abbr[title]:after {
-    content: " (" attr(title) ")"; }
-  /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
-  a[href^="#"]:after,
-  a[href^="javascript:"]:after {
-    content: ""; }
-  pre {
-    white-space: pre-wrap !important; }
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid; }
-  /*
-   * Printing Tables:
-   * http://css-discuss.incutio.com/wiki/Printing_Tables
-   */
-  thead {
-    display: table-header-group; }
-  tr,
-  img {
-    page-break-inside: avoid; }
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3; }
-  h2,
-  h3 {
-    page-break-after: avoid; } }
-
-b, strong {
-  font-weight: bold; }
-
-* {
-  outline: none !important; }
-
-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+}
+.header-container .header-wrapper .header-left-wrapper .input-field-for-search-wrapper {
   width: 100%;
-  z-index: 15; }
+  display: none;
+}
+.header-container .header-wrapper .header-left-wrapper .input-field-for-search-wrapper.is-active {
+  display: block;
+}
+.header-container .header-wrapper .header-left-wrapper .input-field-for-search-wrapper input {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+.header-container .header-wrapper .header-left-wrapper .input-field-for-search-wrapper input:focus {
+  outline: none;
+}
+.header-container .header-wrapper .header-right-wrapper {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.header-container .header-wrapper .header-right-wrapper a {
+  margin-right: 0.9375em;
+}
+.header-container .header-wrapper .header-right-wrapper a:last-child {
+  margin-right: 0;
+}
 
 /**
  * Owl Carousel v2.3.4
@@ -358,14 +159,15 @@ header {
   -webkit-tap-highlight-color: transparent;
   /* position relative and z-index fix webkit rendering fonts issue */
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+}
 
 .owl-carousel .owl-stage {
   position: relative;
-  -ms-touch-action: pan-Y;
   touch-action: manipulation;
   -moz-backface-visibility: hidden;
-  /* fix firefox animation glitch */ }
+  /* fix firefox animation glitch */
+}
 
 .owl-carousel .owl-stage:after {
   content: ".";
@@ -373,13 +175,15 @@ header {
   clear: both;
   visibility: hidden;
   line-height: 0;
-  height: 0; }
+  height: 0;
+}
 
 .owl-carousel .owl-stage-outer {
   position: relative;
   overflow: hidden;
   /* fix for flashing background */
-  -webkit-transform: translate3d(0px, 0px, 0px); }
+  -webkit-transform: translate3d(0px, 0px, 0px);
+}
 
 .owl-carousel .owl-wrapper,
 .owl-carousel .owl-item {
@@ -388,7 +192,8 @@ header {
   -ms-backface-visibility: hidden;
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0); }
+  -ms-transform: translate3d(0, 0, 0);
+}
 
 .owl-carousel .owl-item {
   position: relative;
@@ -396,25 +201,26 @@ header {
   float: left;
   -webkit-backface-visibility: hidden;
   -webkit-tap-highlight-color: transparent;
-  -webkit-touch-callout: none; }
+  -webkit-touch-callout: none;
+}
 
 .owl-carousel .owl-item img {
   display: block;
-  width: 100%; }
+  width: 100%;
+}
 
 .owl-carousel .owl-nav.disabled,
 .owl-carousel .owl-dots.disabled {
-  display: none; }
+  display: none;
+}
 
 .owl-carousel .owl-nav .owl-prev,
 .owl-carousel .owl-nav .owl-next,
 .owl-carousel .owl-dot {
   cursor: pointer;
   -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
+  user-select: none;
+}
 
 .owl-carousel .owl-nav button.owl-prev,
 .owl-carousel .owl-nav button.owl-next,
@@ -423,112 +229,116 @@ header {
   color: inherit;
   border: none;
   padding: 0 !important;
-  font: inherit; }
+  font: inherit;
+}
 
 .owl-carousel.owl-loaded {
-  display: block; }
+  display: block;
+}
 
 .owl-carousel.owl-loading {
   opacity: 0;
-  display: block; }
+  display: block;
+}
 
 .owl-carousel.owl-hidden {
-  opacity: 0; }
+  opacity: 0;
+}
 
 .owl-carousel.owl-refresh .owl-item {
-  visibility: hidden; }
+  visibility: hidden;
+}
 
 .owl-carousel.owl-drag .owl-item {
-  -ms-touch-action: pan-y;
   touch-action: pan-y;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
+  user-select: none;
+}
 
 .owl-carousel.owl-grab {
   cursor: move;
-  cursor: -webkit-grab;
-  cursor: grab; }
+  cursor: grab;
+}
 
 .owl-carousel.owl-rtl {
-  direction: rtl; }
+  direction: rtl;
+}
 
 .owl-carousel.owl-rtl .owl-item {
-  float: right; }
+  float: right;
+}
 
 /* No Js */
 .no-js .owl-carousel {
-  display: block; }
+  display: block;
+}
 
 /*
-   *  Owl Carousel - Animate Plugin
-   */
+ *  Owl Carousel - Animate Plugin
+ */
 .owl-carousel .animated {
-  -webkit-animation-duration: 1000ms;
   animation-duration: 1000ms;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both; }
+  animation-fill-mode: both;
+}
 
 .owl-carousel .owl-animated-in {
-  z-index: 0; }
+  z-index: 0;
+}
 
 .owl-carousel .owl-animated-out {
-  z-index: 1; }
+  z-index: 1;
+}
 
 .owl-carousel .fadeOut {
-  -webkit-animation-name: fadeOut;
-  animation-name: fadeOut; }
-
-@-webkit-keyframes fadeOut {
-  0% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
+  animation-name: fadeOut;
+}
 
 @keyframes fadeOut {
   0% {
-    opacity: 1; }
+    opacity: 1;
+  }
   100% {
-    opacity: 0; } }
-
+    opacity: 0;
+  }
+}
 /*
-   * 	Owl Carousel - Auto Height Plugin
-   */
+ * 	Owl Carousel - Auto Height Plugin
+ */
 .owl-height {
-  -webkit-transition: height 500ms ease-in-out;
-  -o-transition: height 500ms ease-in-out;
-  transition: height 500ms ease-in-out; }
+  transition: height 500ms ease-in-out;
+}
 
 /*
-   * 	Owl Carousel - Lazy Load Plugin
-   */
+ * 	Owl Carousel - Lazy Load Plugin
+ */
 .owl-carousel .owl-item {
   /**
-              This is introduced due to a bug in IE11 where lazy loading combined with autoheight plugin causes a wrong
-              calculation of the height of the owl-item that breaks page layouts
-           */ }
+            This is introduced due to a bug in IE11 where lazy loading combined with autoheight plugin causes a wrong
+            calculation of the height of the owl-item that breaks page layouts
+         */
+}
 
 .owl-carousel .owl-item .owl-lazy {
   opacity: 0;
-  -webkit-transition: opacity 400ms ease;
-  -o-transition: opacity 400ms ease;
-  transition: opacity 400ms ease; }
+  transition: opacity 400ms ease;
+}
 
 .owl-carousel .owl-item .owl-lazy[src^=""], .owl-carousel .owl-item .owl-lazy:not([src]) {
-  max-height: 0; }
+  max-height: 0;
+}
 
 .owl-carousel .owl-item img.owl-lazy {
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d; }
+  transform-style: preserve-3d;
+}
 
 /*
-   * 	Owl Carousel - Video Plugin
-   */
+ * 	Owl Carousel - Video Plugin
+ */
 .owl-carousel .owl-video-wrapper {
   position: relative;
   height: 100%;
-  background: #000; }
+  background: #000;
+}
 
 .owl-carousel .owl-video-play-icon {
   position: absolute;
@@ -542,20 +352,17 @@ header {
   cursor: pointer;
   z-index: 1;
   -webkit-backface-visibility: hidden;
-  -webkit-transition: -webkit-transform 100ms ease;
-  transition: -webkit-transform 100ms ease;
-  -o-transition: transform 100ms ease;
   transition: transform 100ms ease;
-  transition: transform 100ms ease, -webkit-transform 100ms ease; }
+}
 
 .owl-carousel .owl-video-play-icon:hover {
-  -ms-transform: scale(1.3, 1.3);
-  -webkit-transform: scale(1.3, 1.3);
-  transform: scale(1.3, 1.3); }
+  transform: scale(1.3, 1.3);
+}
 
 .owl-carousel .owl-video-playing .owl-video-tn,
 .owl-carousel .owl-video-playing .owl-video-play-icon {
-  display: none; }
+  display: none;
+}
 
 .owl-carousel .owl-video-tn {
   opacity: 0;
@@ -563,12 +370,158 @@ header {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
-  -webkit-transition: opacity 400ms ease;
-  -o-transition: opacity 400ms ease;
-  transition: opacity 400ms ease; }
+  transition: opacity 400ms ease;
+}
 
 .owl-carousel .owl-video-frame {
   position: relative;
   z-index: 1;
   height: 100%;
-  width: 100%; }
+  width: 100%;
+}
+
+.pink-banner-container {
+  width: 100%;
+  height: 4.6875em;
+  background-color: #ff99c8;
+}
+.pink-banner-container .pink-banner-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 0.9375em;
+  text-align: center;
+}
+.pink-banner-container .pink-banner-wrapper h3 {
+  color: white;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.pink-banner-container .pink-banner-wrapper p {
+  color: white;
+}
+
+.product-items-container {
+  width: 100%;
+}
+.product-items-container .product-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+.product-items-container .product-wrapper .item-wrapper {
+  width: 50%;
+  border-bottom: 1px solid #c2c2c2;
+}
+.product-items-container .product-wrapper .item-wrapper:nth-child(2n) .product-content-wrapper {
+  border-right: 0;
+}
+.product-items-container .product-wrapper .item-wrapper .product-image-bgStyle {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 11.5625em;
+  width: 100%;
+  cursor: pointer;
+}
+.product-items-container .product-wrapper .item-wrapper .product-content-wrapper {
+  height: 4.1875em;
+  width: 100%;
+  padding: 0 0.625em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-right: 2px solid #c2c2c2;
+}
+.product-items-container .product-wrapper .item-wrapper .product-content-wrapper .product-title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3px;
+}
+.product-items-container .product-wrapper .item-wrapper .product-content-wrapper .product-title-wrapper h4 {
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 13px;
+}
+.product-items-container .product-wrapper .item-wrapper .product-content-wrapper .product-description-wrapper {
+  margin-bottom: 3px;
+}
+.product-items-container .product-wrapper .item-wrapper .product-content-wrapper .product-price-wrapper {
+  display: flex;
+  align-items: center;
+}
+.product-items-container .product-wrapper .item-wrapper .product-content-wrapper .product-price-wrapper .price-wrapper {
+  display: flex;
+}
+.product-items-container .product-wrapper .item-wrapper .product-content-wrapper .product-price-wrapper .price-wrapper h3 {
+  font-family: "Segoe Ui";
+  margin-right: 4px;
+}
+.product-items-container .product-wrapper .item-wrapper .product-content-wrapper .product-price-wrapper .price-wrapper h3.discount {
+  color: #c2c2c2;
+  font-weight: 400;
+  text-decoration: line-through;
+}
+.product-items-container .product-wrapper .item-wrapper .product-content-wrapper .product-price-wrapper .discount-detail {
+  font-family: "Segoe Ui";
+  font-size: 10px;
+  color: #03a685;
+  letter-spacing: 0;
+}
+.sort-filter-container {
+  width: 100%;
+  height: 4.0625em;
+  border-bottom: 1px solid #c2c2c2;
+}
+.sort-filter-container .sort-filter-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sort-filter-container .sort-filter-wrapper .wrapper {
+  text-align: center;
+  width: 50%;
+}
+.sort-filter-container .sort-filter-wrapper .wrapper a {
+  font-size: 0.75em;
+  letter-spacing: 2px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sort-filter-container .sort-filter-wrapper .wrapper a img {
+  margin-right: 1.25em;
+}
+.sort-filter-container .sort-filter-wrapper .wrapper .round {
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background-color: #f1137a;
+  position: absolute;
+  top: 0;
+  right: 4.167em;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-size: 1.111vw;
+}
+@media only screen and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+}
+/*# sourceMappingURL=build.css.map */
