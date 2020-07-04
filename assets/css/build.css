@@ -1,27 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400;1,600&display=swap");
-@font-face {
-  font-family: "Segoe UI";
-  src: url("../font/SegoeUI-Bold.eot");
-  src: url("../font/SegoeUI-Bold.eot?#iefix") format("embedded-opentype"), url("../font/SegoeUI-Bold.woff2") format("woff2"), url("../font/SegoeUI-Bold.woff") format("woff"), url("../font/SegoeUI-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Segoe UI";
-  src: url("../font/SegoeUI.eot");
-  src: url("../font/SegoeUI.eot?#iefix") format("embedded-opentype"), url("../font/SegoeUI.woff2") format("woff2"), url("../font/SegoeUI.woff") format("woff"), url("../font/SegoeUI.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap");
 h2 {
   color: #000;
   font-size: 1.5em;
   letter-spacing: 0em;
   line-height: 1;
   font-weight: bold;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Hind", sans-serif;
 }
 @media only screen and (max-width: 767px) {
   h2 {
@@ -36,11 +20,11 @@ h3 {
   letter-spacing: 0em;
   line-height: 1;
   font-weight: bold;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Hind", sans-serif;
 }
 @media only screen and (max-width: 767px) {
   h3 {
-    font-size: 0.875em;
+    font-size: 1em;
     font-weight: 600;
   }
 }
@@ -51,7 +35,7 @@ h4 {
   letter-spacing: 0em;
   line-height: 1;
   font-weight: 400;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Hind", sans-serif;
 }
 @media only screen and (max-width: 767px) {
   h4 {
@@ -65,11 +49,11 @@ h5 {
   letter-spacing: 0em;
   line-height: 1;
   font-weight: 400;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Hind", sans-serif;
 }
 @media only screen and (max-width: 767px) {
   h5 {
-    font-size: 0.5625em;
+    font-size: 0.625em;
   }
 }
 
@@ -79,7 +63,7 @@ p, a {
   letter-spacing: 0.06875em;
   line-height: 1.0625;
   font-weight: 400;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Hind", sans-serif;
 }
 @media only screen and (max-width: 767px) {
   p, a {
@@ -502,7 +486,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 0.3125em;
+  margin-bottom: 0.1875em;
 }
 @media only screen and (min-width: 768px) {
   .product-items-container .product-wrapper .item-wrapper .product-content-wrapper .product-title-wrapper {
@@ -513,6 +497,7 @@ a {
   font-weight: 600;
   letter-spacing: -1.1px;
   line-height: 12px;
+  color: grey;
 }
 .product-items-container .product-wrapper .item-wrapper .product-content-wrapper .product-title-wrapper .product-icon-wrapper img {
   width: 1.182em;
@@ -525,7 +510,7 @@ a {
   }
 }
 .product-items-container .product-wrapper .item-wrapper .product-content-wrapper .product-description-wrapper {
-  margin-bottom: 0.3125em;
+  margin-bottom: 0.1875em;
 }
 @media only screen and (min-width: 768px) {
   .product-items-container .product-wrapper .item-wrapper .product-content-wrapper .product-description-wrapper {
@@ -540,7 +525,7 @@ a {
   display: flex;
 }
 .product-items-container .product-wrapper .item-wrapper .product-content-wrapper .product-price-wrapper .price-wrapper h3 {
-  font-family: "Segoe Ui";
+  font-family: "Hind", sans-serif;
   margin-right: 4px;
   font-size: 0.75em;
   letter-spacing: -0.5px;
@@ -557,7 +542,7 @@ a {
   text-decoration: line-through;
 }
 .product-items-container .product-wrapper .item-wrapper .product-content-wrapper .product-price-wrapper .discount-detail {
-  font-family: "Segoe Ui";
+  font-family: "Hind", sans-serif;
   font-size: 0.625em;
   color: #03a685;
   letter-spacing: 0;
