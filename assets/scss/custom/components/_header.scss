@@ -1,7 +1,7 @@
 .header-container {
     width: 100%;
     height: em(50);
-    @media only screen and (min-width : 1025px){
+    @media only screen and (min-width : 768px){
         height : em(70);
     }
     .header-wrapper {
@@ -17,6 +17,10 @@
             width: 80%;
             .btn-arrow-back {
                 margin-right: em(15);
+                img {
+                    width: 1.364em;
+                    height: 1.364em;
+                }
             }
             .page-title {
                 display: none; 
