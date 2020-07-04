@@ -37,7 +37,7 @@ h1 {
 }
 
 h2 {
-    @include textStyle($black ,20 , 1.1 , 18 , bold );
+    @include textStyle($black ,20 , 0 , 18 , bold );
     font-family: $montserrat;
     @media only screen and (max-width: 767px){
         font-size: 16px;
@@ -45,7 +45,7 @@ h2 {
     }
 }
 
-h2 {
+h3 {
     @include textStyle($black ,18 , 1.1 , 18 , bold );
     font-family: $montserrat;
     @media only screen and (max-width: 767px){
@@ -54,7 +54,7 @@ h2 {
     }
 }
 
-h3 {
+h4 {
     @include textStyle($black ,16, 1.1 , 16 , 400 );
     font-family: $montserrat;
     @media only screen and (max-width: 767px){

@@ -18,7 +18,7 @@
 h2 {
   color: #000;
   font-size: 1.25em;
-  letter-spacing: 0.06875em;
+  letter-spacing: 0em;
   line-height: 0.9;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
@@ -30,7 +30,7 @@ h2 {
   }
 }
 
-h2 {
+h3 {
   color: #000;
   font-size: 1.125em;
   letter-spacing: 0.06875em;
@@ -39,13 +39,13 @@ h2 {
   font-family: "Montserrat", sans-serif;
 }
 @media only screen and (max-width: 767px) {
-  h2 {
+  h3 {
     font-size: 14px;
     font-weight: 600;
   }
 }
 
-h3 {
+h4 {
   color: #000;
   font-size: 1em;
   letter-spacing: 0.06875em;
@@ -54,7 +54,7 @@ h3 {
   font-family: "Montserrat", sans-serif;
 }
 @media only screen and (max-width: 767px) {
-  h3 {
+  h4 {
     font-size: 13px;
   }
 }
@@ -73,21 +73,6 @@ p {
   }
 }
 
-* {
-  margin: 0;
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-body {
-  font-size: 1.111vw;
-}
-@media only screen and (max-width: 1024px) {
-  body {
-    font-size: 16px;
-  }
-}
 .header-container {
   width: 100%;
   height: 2.625em;
@@ -110,6 +95,7 @@ body {
 }
 .header-container .header-wrapper .header-left-wrapper .page-title {
   display: none;
+  font-weight: 600;
 }
 .header-container .header-wrapper .header-left-wrapper .page-title.is-active {
   display: block;
@@ -374,5 +360,43 @@ body {
   z-index: 1;
   height: 100%;
   width: 100%;
+}
+
+.pink-banner-container {
+  width: 100%;
+  height: 4.6875em;
+  background-color: #ff99c8;
+}
+.pink-banner-container .pink-banner-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 0.9375em;
+  text-align: center;
+}
+.pink-banner-container .pink-banner-wrapper h3 {
+  color: white;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.pink-banner-container .pink-banner-wrapper p {
+  color: white;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-size: 1.111vw;
+}
+@media only screen and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
 }
 /*# sourceMappingURL=build.css.map */
