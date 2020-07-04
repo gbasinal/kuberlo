@@ -156,7 +156,10 @@
                         }
                         .product-icon-wrapper {
                             position: absolute;
-                            right: 1em;
+                            display: flex;
+                            justify-content: space-between;
+                            padding: 0 em(25);
+                            width: 100%;
                             a {
                                 &:first-child {
                                     margin-right: em(8s);
