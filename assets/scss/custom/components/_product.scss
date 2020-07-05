@@ -160,6 +160,7 @@
                             justify-content: space-between;
                             padding: 0 em(25);
                             width: 100%;
+                            top: 50%;
                             a {
                                 &:first-child {
                                     margin-right: em(8s);
@@ -167,6 +168,10 @@
                                 img {
                                     width:1.7em;
                                     height:2em;
+                                    @media only screen and (min-width : 768px){
+                                        width: 1.5em;
+                                        height: 1.5em;
+                                    }
                                 }
                             }
                         }
