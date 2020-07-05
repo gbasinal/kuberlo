@@ -591,6 +591,10 @@ a {
 .product-items-container.variant-2 .product-wrapper .item-wrapper .product-content-wrapper .product-title-wrapper .product-icon-wrapper a:first-child {
   margin-right: 0.5sem;
 }
+.product-items-container.variant-2 .product-wrapper .item-wrapper .product-content-wrapper .product-title-wrapper .product-icon-wrapper a img {
+  width: 1.7em;
+  height: 2em;
+}
 .product-items-container.variant-2 .product-wrapper .item-wrapper .product-content-wrapper .product-description-wrapper {
   margin-bottom: 0.3125em;
 }
