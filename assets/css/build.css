@@ -750,7 +750,6 @@ a {
 }
 .slider-component-container .slider-component-wrapper .slider-carousel .item .item-imageStyle {
   object-fit: cover;
-  min-height: 24.3125em;
   height: auto;
   width: 100%;
 }
