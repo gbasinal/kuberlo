@@ -9,12 +9,16 @@ $(window).on('load', function() {
     var totalHt = catSliderHeight + headerHeight + 10;
 
     if($("main").length > 0){
-        // This will add automatically a top margin for the main element
-        $("main").css("padding-top", (totalHt));
+        if($(window).outerWidth() > 767){
+            // This will add automatically a top margin for the main element
+            $("main").css("padding-top", (totalHt+ headerHeight));
+        }else {
+            $("main").css("padding-top", (totalHt));
+        }
+
         
 
         // This will add automatically a top margin for slider category component
-
 		$(".categories-slider-container").css("margin-top", (headerHeight));
     }
     window.app.load();

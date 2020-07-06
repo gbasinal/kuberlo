@@ -705,6 +705,11 @@ a {
     padding-bottom: 0.9375em;
   }
 }
+@media only screen and (min-width: 768px) {
+  .categories-slider-container .categories-slider-wrapper {
+    padding-bottom: 0.9375em;
+  }
+}
 .categories-slider-container .categories-slider-wrapper .categories-carousel .item a {
   text-transform: uppercase;
 }
@@ -752,6 +757,11 @@ a {
   object-fit: cover;
   height: auto;
   width: 100%;
+}
+@media only screen and (min-width: 1025px) {
+  .slider-component-container .slider-component-wrapper .slider-carousel .item .item-imageStyle {
+    max-height: 43.75em;
+  }
 }
 .slider-component-container .slider-component-wrapper .slider-carousel .owl-dots {
   text-align: center;
