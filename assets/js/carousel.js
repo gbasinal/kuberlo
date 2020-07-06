@@ -23,6 +23,7 @@
 			items: 4,
 			stagePadding: 30,
 			dots: false,
+			slideTransition:"linear",
 			responsive : {
 				768:{
 					items:5,
@@ -95,6 +96,7 @@
 				nav:false,
 				dots: true,
 				items: 1,
+				slideTransition:"linear",
 				autoplay: true
 			})
 		}
@@ -109,7 +111,8 @@
 				nav:false,
 				dots: false,
 				items: 1,
-				stagePadding : 90,
+				stagePadding: 90,
+				slideTransition:"linear",
 			})	
 		}
 	
