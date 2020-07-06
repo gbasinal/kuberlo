@@ -19,4 +19,7 @@ body {
 main {
     background-color: $lightGrey;
     height: 100%;
+    .section {
+        margin: em(20) 0;
+    }
 }

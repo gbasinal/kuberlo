@@ -1,0 +1,21 @@
+.image-box-component-container {
+    .image-box-component-wrapper {
+        .image-box {
+            .box-title-wrapper {
+                h4 {
+                    text-transform: uppercase;
+                    background-color: white;
+                    padding: em(15);
+                }
+            }
+            .boxStyle {
+                a {
+                    img {
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+}
