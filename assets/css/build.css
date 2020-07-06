@@ -702,10 +702,6 @@ a {
 @media only screen and (max-width: 767px) {
   .categories-slider-container .categories-slider-wrapper {
     padding-top: 0.3125em;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .categories-slider-container .categories-slider-wrapper {
     padding-bottom: 0.9375em;
   }
 }
@@ -741,7 +737,7 @@ a {
 .slider-component-container {
   width: 100%;
   background-color: white;
-  margin-top: 1.25em;
+  margin: 1.25em 0;
 }
 .slider-component-container .slider-component-wrapper {
   padding: 0.9375em 0;
@@ -753,16 +749,16 @@ a {
   text-transform: uppercase;
 }
 .slider-component-container .slider-component-wrapper .slider-carousel .item .item-imageStyle {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 27.273em;
+  object-fit: cover;
+  min-height: 24.3125em;
+  height: auto;
   width: 100%;
 }
 .slider-component-container .slider-component-wrapper .slider-carousel .owl-dots {
   text-align: center;
   padding: 0.3125em 0;
   margin-bottom: -0.9375em;
+  display: none;
 }
 .slider-component-container .slider-component-wrapper .slider-carousel .owl-dots .owl-dot {
   width: 0.4375em;
@@ -776,6 +772,12 @@ a {
 }
 .slider-component-container .slider-component-wrapper .slider-carousel .owl-dots .owl-dot.active {
   background-color: #f1137a;
+}
+.slider-component-container .slider-component-wrapper .slider-carousel.dots-active .owl-dots {
+  display: block;
+}
+.slider-component-container .slider-component-wrapper .slider-carousel.double-slide-active .owl-stage {
+  padding-left: 0.9375em !important;
 }
 
 * {

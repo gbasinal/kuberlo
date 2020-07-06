@@ -1,7 +1,7 @@
 .slider-component-container {
     width: 100%;
     background-color: white;
-    margin-top: em(20);
+    margin: em(20) 0;
     .slider-component-wrapper {
         padding: em(15) 0 ;
         .slider-title-wrapper {
@@ -13,8 +13,9 @@
         .slider-carousel {
             .item {
                 .item-imageStyle {
-                    @include bgSettings(cover, no-repeat, center);
-                    height: 27.273em;
+                    object-fit: cover;
+                    min-height: 24.3125em;
+                    height: auto;
                     width: 100%;
                 }
             }
@@ -22,6 +23,7 @@
                 text-align: center;
                 padding: em(5) 0;
                 margin-bottom: em(-15);
+                display: none;
                 .owl-dot {
                     width: em(7);
                     height: em(7);
@@ -34,6 +36,16 @@
                     &.active {
                         background-color: $purple;
                     }
+                }
+            }
+            &.dots-active {
+                .owl-dots {
+                    display: block;
+                }
+            }
+            &.double-slide-active {
+                .owl-stage {
+                    padding-left: em(15) !important;
                 }
             }
         }

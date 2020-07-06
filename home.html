@@ -72,17 +72,55 @@
 
     <!-- Main Slider Component -->
 
+    <!-- You can import this section for the slider component. Keep in mind the instructions below on how you can enable different slider options -->
     <section class="section slider-component-container">
       <div class="slider-component-wrapper">
         <div class="slider-title-wrapper">
           <h4>Top Trending Picks</h4>
         </div>
-        <div class="slider-carousel owl-carousel owl-theme">
+        <!-- Since we have different formats for slider, namely : with dots, 1 slider and 2 sliders , we will control the options by using class. adding dots-active will enable dots , single-slide-active for single-slider and double-slide-active for double sliders -->
+        <div class="slider-carousel owl-carousel owl-theme dots-active single-slide-active">
           <div class="item item-slider">
-            <a href="#"><div class="item-imageStyle" style="background-image: url('assets/img/product/product.png')">&nbsp;</div></a>
+            <a href="#">
+              <img src="assets/img/product/product.png" alt="" class="item-imageStyle">
+            </a>
           </div>
           <div class="item item-slider">
-            <a href="#"><div class="item-imageStyle" style="background-image: url('assets/img/product/product.png')">&nbsp;</div></a>
+            <a href="#">
+              <img src="assets/img/product/product.png" alt="" class="item-imageStyle">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <!-- You can import this section for the slider component. Keep in mind the instructions below on how you can enable different slider options -->
+    <section class="section slider-component-container">
+      <div class="slider-component-wrapper">
+        <div class="slider-title-wrapper">
+          <h4>Top Trending Picks</h4>
+        </div>
+        <!-- Since we have different formats for slider, namely : with dots, 1 slider and 2 sliders , we will control the options by using class. adding dots-active will enable dots , single-slide-active for single-slider and double-slide-active for double sliders -->
+        <div class="slider-carousel owl-carousel owl-theme double-slide-active">
+          <div class="item item-slider">
+            <a href="#">
+              <img src="assets/img/product/placeholder.png" alt="" class="item-imageStyle">
+            </a>
+          </div>
+          <div class="item item-slider">
+            <a href="#">
+              <img src="assets/img/product/product.png" alt="" class="item-imageStyle">
+            </a>
+          </div>
+          <div class="item item-slider">
+            <a href="#">
+              <img src="assets/img/product/placeholder.png" alt="" class="item-imageStyle">
+            </a>
+          </div>
+          <div class="item item-slider">
+            <a href="#">
+              <img src="assets/img/product/placeholder.png" alt="" class="item-imageStyle">
+            </a>
           </div>
         </div>
       </div>
