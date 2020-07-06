@@ -1,0 +1,22 @@
+.quote-component-container {
+    .quote-component-wrapper {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: em(25);
+        p {
+            font-size: em(14);
+            &.quote-content {
+           
+                margin-bottom: em(10);
+            }
+            &.author {
+                font-style: italic;
+                opacity: .7;
+            }
+        }
+
+    }
+}

@@ -6,12 +6,21 @@
 }
 
 body {
-
+    
     font-size: 1.111vw;
     @media only screen and (max-width: 1024px){
         font-size: 16px;
     }
     @media only screen and (max-width: 767px){
         // font-size: 12px;
+    }
+}
+
+main {
+    background-color: $lightGrey;
+    height: 100%;
+    padding-bottom: em(15);
+    .section {
+        margin: em(20) 0;
     }
 }
