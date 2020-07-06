@@ -17,12 +17,20 @@
 
 <body>
   <!-- Default header/menu component -->
-
+  <!-- Default header/menu for Homepage -->
   <header class="header-container">
     <div class="header-wrapper">
       <div class="header-left-wrapper">
-        <a href="#" class="btn-arrow-back"><img src="assets/img/icons/back-arrow.png" alt=""></a>
-        <h3 class="page-title is-active">Jewelry</h3>
+        <div class="hamburger-wrapper">
+          <button class="hamburger hamburger--collapse" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
+        <div class="logo-container">
+          <img src="assets/img/logo.png" alt="">
+        </div>
         <div class="input-field-for-search-wrapper ">
           <input type="text" placeholder="Search for brands & products" class="search-field">
         </div>
@@ -37,8 +45,8 @@
 
   <!-- Categories Slider Component -->
 
-  <div class="categories-slider-container">
-    <div class="categories-slider-wrapper">
+  <div class="categories-slider-container animated">
+    <div class="categories-slider-wrapper animated-child">
       <div class="categories-carousel owl-carousel owl-theme">
         <div class="item item-categories">
           <a href="#" class="item-label"><img src="assets/img/product/product.png" alt=""><span>Men</span></a>
@@ -75,12 +83,12 @@
     <!-- You can import this section for the slider component. Keep in mind the instructions below on how you can enable different slider options -->
     <!-- The sample below is for the single slider option -->
     <section class="section slider-component-container">
-      <div class="slider-component-wrapper">
-        <div class="slider-title-wrapper">
+      <div class="slider-component-wrapper animated">
+        <div class="slider-title-wrapper animated-child">
           <h4>Single Slider Option</h4>
         </div>
         <!-- Since we have different formats for slider, namely : with dots, 1 slider and 2 sliders , we will control the options by using class. adding dots-active will enable dots , single-slide-active for single-slider and double-slide-active for double sliders -->
-        <div class="slider-carousel owl-carousel owl-theme dots-active single-slide-active">
+        <div class="slider-carousel owl-carousel owl-theme dots-active single-slide-active animated-child">
           <div class="item item-slider">
             <a href="#">
               <img src="assets/img/product/product.png" alt="" class="item-imageStyle">
@@ -98,12 +106,12 @@
     <!-- You can import this section for the slider component. Keep in mind the instructions below on how you can enable different slider options -->
     <!-- The sample below is for the double slider option -->
     <section class="section slider-component-container">
-      <div class="slider-component-wrapper">
-        <div class="slider-title-wrapper">
+      <div class="slider-component-wrapper animated">
+        <div class="slider-title-wrapper animated-child">
           <h4>Double Slider Option</h4>
         </div>
         <!-- Since we have different formats for slider, namely : with dots, 1 slider and 2 sliders , we will control the options by using class. adding dots-active will enable dots , single-slide-active for single-slider and double-slide-active for double sliders -->
-        <div class="slider-carousel owl-carousel owl-theme double-slide-active">
+        <div class="slider-carousel owl-carousel owl-theme double-slide-active animated-child">
           <div class="item item-slider">
             <a href="#">
               <img src="assets/img/product/placeholder.png" alt="" class="item-imageStyle">
@@ -133,12 +141,12 @@
     <!-- This is for a single image in an image box component. Make sure you will add the class "image-box-single" in the image-wrapper element.  -->
     <!-- For the user to have an option to disable the title , just remove the whole "box-title-wrapper" div-->
     <section class="section image-box-component-container">
-      <div class="image-box-component-wrapper">
+      <div class="image-box-component-wrapper animated">
         <div class="image-box ">
-          <div class="box-title-wrapper">
+          <div class="box-title-wrapper animated-child">
             <h4>Singe Image Box Component</h4>
           </div>
-          <div class="image-container image-box-single">
+          <div class="image-container image-box-single animated-child">
             <div class="image-wrapper ">
               <a href="#"><img src="assets/img/product/product.png" alt=""></a>
             </div>
@@ -148,16 +156,16 @@
     </section>
 
     <!-- You can import this section for the image box component. Keep in mind the instructions below on how you can enable different imabe box options-->
-    <!-- This is for a 4 image in an image box component. Make sure you will add the class "image-box-four" in the image-wrapper element.  -->
+    <!-- This is for a two grid image in an image box component. Make sure you will add the class "image-box-two-grid" in the image-wrapper element.  -->
     <!-- For the user to have an option to disable the title , just remove the whole "box-title-wrapper" div-->
     <section class="section image-box-component-container">
-      <div class="image-box-component-wrapper">
+      <div class="image-box-component-wrapper animated">
         <div class="image-box">
-          <div class="box-title-wrapper">
-            <h4>Four Image Box Component</h4>
+          <div class="box-title-wrapper animated-child">
+            <h4>Two Grid Image Box Component with Label</h4>
           </div> 
 
-          <div class="image-container image-box-four">
+          <div class="image-container image-box-two-grid animated-child">
             <div class="image-wrapper">
               <div class="image-item">
                 <a href="#">
@@ -203,16 +211,16 @@
     
 
     <!-- You can import this section for the image box component. Keep in mind the instructions below on how you can enable different imabe box options-->
-    <!-- This is for a 6 image in an image box component. Make sure you will add the class "image-box-six" in the image-wrapper element.  -->
+    <!-- This is for a three grid image in an image box component. Make sure you will add the class "image-box-three-grid" in the image-wrapper element.  -->
     <!-- For the user to have an option to disable the title , just remove the whole "box-title-wrapper" div-->    
     <section class="section image-box-component-container">
-      <div class="image-box-component-wrapper">
+      <div class="image-box-component-wrapper animated">
         <div class="image-box">
-          <div class="box-title-wrapper">
-            <h4>Six Image Box Component</h4>
+          <div class="box-title-wrapper animated-child">
+            <h4>Three Grid Image Box Component</h4>
           </div> 
 
-          <div class="image-container image-box-six">
+          <div class="image-container image-box-three-grid animated-child">
             <div class="image-wrapper">
               <div class="image-item">
                 <a href="#">
@@ -252,13 +260,13 @@
 
     <!-- You can import this section for the categories box component.-->
     <section class="section categories-box-component-container">
-      <div class="categories-box-component-wrapper">
+      <div class="categories-box-component-wrapper animated">
         <div class="categories-box">
-          <div class="box-title-wrapper">
+          <div class="box-title-wrapper animated-child">
             <h4>Categories Box Component</h4>
           </div> 
 
-          <div class="categories-container">
+          <div class="categories-container animated-child">
             <div class="categories-wrapper">
               <div class="categories-item">
                 <a href="#">
@@ -305,8 +313,8 @@
 
     <!-- You can import this section for the discount slider component.-->
     <section class="section discount-component-container">
-      <div class="discount-component-wrapper">
-        <div class="discount-carousel owl-carousel owl-theme">
+      <div class="discount-component-wrapper animated">
+        <div class="discount-carousel owl-carousel owl-theme animated-child">
           <div class="item item-slider">
             <a href="#">
               <img src="assets/img/product/placeholder-xsm.png" alt="" class="item-imageStyle">
@@ -331,33 +339,48 @@
       </div>
     </section>
 
-        <!-- You can import this section for the slider component. Keep in mind the instructions below on how you can enable different slider options -->
-    <!-- The sample below is for the single slider option -->
-    <section class="section slider-component-container">
-      <div class="slider-component-wrapper">
-        <div class="slider-title-wrapper">
-          <h4>Single Slider Option</h4>
+    <!-- You can import this section for the image box component. Keep in mind the instructions below on how you can enable different imabe box options-->
+    <!-- This is for a 2 grid image without label in an image box component. Make sure you will add the class "image-box-two-grid" and "image-box-no-label" in the image-wrapper element.  -->
+    <!-- For the user to have an option to disable the title , just remove the whole "box-title-wrapper" div-->
+    <section class="section image-box-component-container">
+      <div class="image-box-component-wrapper animated">
+        <div class="image-box">
+          <div class="box-title-wrapper animated-child">
+            <h4>Two Grid Image Box Component w/out Label</h4>
+          </div> 
+
+          <div class="image-container image-box-two-grid image-box-no-label animated-child">
+            <div class="image-wrapper">
+              <div class="image-item">
+                <a href="#">
+                  <img src="assets/img/product/product.png" alt="">
+                </a>
+              </div>
+              <div class="image-item">
+                <a href="#">
+                  <img src="assets/img/product/product.png" alt="">
+                </a>
+              </div>
+              <div class="image-item">
+                <a href="#">
+                  <img src="assets/img/product/product.png" alt="">
+                </a>
+              </div>
+              <div class="image-item">
+                <a href="#">
+                  <img src="assets/img/product/product.png" alt="">
+                </a>
+              </div>
+            </div>
         </div>
-        <!-- Since we have different formats for slider, namely : with dots, 1 slider and 2 sliders , we will control the options by using class. adding dots-active will enable dots , single-slide-active for single-slider and double-slide-active for double sliders -->
-        <div class="slider-carousel owl-carousel owl-theme dots-active single-slide-active">
-          <div class="item item-slider">
-            <a href="#">
-              <img src="assets/img/product/placeholder-lg.png" alt="" class="item-imageStyle">
-            </a>
-          </div>
-          <div class="item item-slider">
-            <a href="#">
-              <img src="assets/img/product/placeholder-lg.png" alt="" class="item-imageStyle">
-            </a>
-          </div>
         </div>
       </div>
-    </section>
+    </section>  
 
 
     <!-- You can import this section for the quote component -->
-    <section class="section quote-component-container">
-      <div class="quote-component-wrapper">
+    <section class="section quote-component-container animated">
+      <div class="quote-component-wrapper animated-child">
         <p class="quote-content">" Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, alias! "</p>
         <p class="author">Author</p>
       </div>
@@ -376,6 +399,7 @@
   <script src="assets/js/vendor/TimelineMax.min.js"></script>
   <script src="assets/js/vendor/jquery.gsap.min.js"></script>
   <script src="assets/js/vendor/owl.carousel.min.js"></script>
+  <script src="assets/js/vendor/jquery.inview.min.js"></script>
 
 
   <!-- Default init of scripts -->
@@ -383,6 +407,8 @@
   <script src="assets/js/script.js"></script>
 
   <!-- Custom Scripts -->
+  <script src="assets/js/menu.js"></script>
+  <script src="assets/js/animation.js"></script>
   <script src="assets/js/carousel.js"></script>
 
 </body>

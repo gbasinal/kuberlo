@@ -17,7 +17,7 @@
                         }
                     }
                 }
-                &.image-box-four {
+                &.image-box-two-grid {
                     background-color: white;
                     padding: em(0) em(15) em(15);
                     
@@ -47,7 +47,7 @@
                         }
                     }
                 }
-                &.image-box-six {
+                &.image-box-three-grid {
                     background-color: white;
                     padding: em(0) em(15) em(15);
                     
@@ -72,6 +72,14 @@
                             }
                         }
                     }
+                }
+                &.image-box-no-label {
+                    .image-wrapper{ 
+                        .image-item {
+                            width: calc(50% - .3em);
+                        }
+                    }
+
                 }                
             }
 
