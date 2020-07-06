@@ -9,7 +9,7 @@
 	
 		var _self = this;
 		_self.sliderCategoriesSettings();
-		
+		_self.mainSliderSettings();
 	};
 
 	Carousel.prototype.sliderCategoriesSettings = function(){
@@ -21,6 +21,7 @@
 			nav:false,
 			items: 4,
 			stagePadding: 30,
+			dots: false,
 			responsive : {
 				768:{
 					items:5,
@@ -79,9 +80,38 @@
 		});	
 		
 		
-		// This will add automatically a top margin for slider category component
-		$(".categories-slider-container").css("margin-top", (headerHeight + 5));
 
+
+	}
+
+	Carousel.prototype.mainSliderSettings = function(){
+		
+		// This is the carousel/slider configuration for single slider option. 
+		if($(".single-slide-active").length > 0) {
+			$(".single-slide-active.slider-carousel").owlCarousel({
+				loop:true,
+				margin:15,
+				nav:false,
+				dots: true,
+				items: 1,
+				autoplay: true
+			})
+		}
+
+
+		// This is the carousel/slider configuration for double slider option. 
+
+		if($(".double-slide-active").length > 0){
+			$(".double-slide-active.slider-carousel").owlCarousel({
+				loop:false,
+				margin:10,
+				nav:false,
+				dots: false,
+				items: 1,
+				stagePadding : 90,
+			})	
+		}
+	
 	}
 
 	app.Carousel = Carousel;

@@ -693,13 +693,16 @@ a {
   margin-top: 3.125em;
   text-align: center;
   z-index: 8;
+  top: 0;
 }
 .categories-slider-container .categories-slider-wrapper {
   box-shadow: 0 2px 3px -2px rgba(0, 0, 0, 0.55);
+  background: white;
 }
 @media only screen and (max-width: 767px) {
   .categories-slider-container .categories-slider-wrapper {
     padding-top: 0.3125em;
+    padding-bottom: 0.9375em;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -736,6 +739,56 @@ a {
   padding-left: 0.9375em !important;
 }
 
+.slider-component-container {
+  width: 100%;
+  background-color: white;
+  margin: 1.25em 0;
+}
+.slider-component-container .slider-component-wrapper {
+  padding: 0.9375em 0;
+}
+.slider-component-container .slider-component-wrapper .slider-title-wrapper {
+  padding: 0em 0.9375em 0.9375em 0.9375em;
+}
+.slider-component-container .slider-component-wrapper .slider-title-wrapper h4 {
+  text-transform: uppercase;
+}
+.slider-component-container .slider-component-wrapper .slider-carousel .item .item-imageStyle {
+  object-fit: cover;
+  height: auto;
+  width: 100%;
+}
+@media only screen and (min-width: 1025px) {
+  .slider-component-container .slider-component-wrapper .slider-carousel .item .item-imageStyle {
+    max-height: 43.75em;
+  }
+}
+.slider-component-container .slider-component-wrapper .slider-carousel .owl-dots {
+  text-align: center;
+  padding: 0.3125em 0;
+  margin-bottom: -0.9375em;
+  display: none;
+}
+.slider-component-container .slider-component-wrapper .slider-carousel .owl-dots .owl-dot {
+  width: 0.4375em;
+  height: 0.4375em;
+  border-radius: 50%;
+  background-color: #c2c2c2;
+  margin-right: 0.625em;
+}
+.slider-component-container .slider-component-wrapper .slider-carousel .owl-dots .owl-dot:last-child {
+  margin-right: 0;
+}
+.slider-component-container .slider-component-wrapper .slider-carousel .owl-dots .owl-dot.active {
+  background-color: #f1137a;
+}
+.slider-component-container .slider-component-wrapper .slider-carousel.dots-active .owl-dots {
+  display: block;
+}
+.slider-component-container .slider-component-wrapper .slider-carousel.double-slide-active .owl-stage {
+  padding-left: 0.9375em !important;
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -751,5 +804,9 @@ body {
   body {
     font-size: 16px;
   }
+}
+main {
+  background-color: rgba(194, 194, 194, 0.15);
+  height: 100%;
 }
 /*# sourceMappingURL=build.css.map */
