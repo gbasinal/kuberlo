@@ -10,6 +10,7 @@
 		var _self = this;
 		_self.sliderCategoriesSettings();
 		_self.mainSliderSettings();
+		_self.discountSliderSettings();
 	};
 
 	Carousel.prototype.sliderCategoriesSettings = function(){
@@ -109,6 +110,23 @@
 				dots: false,
 				items: 1,
 				stagePadding : 90,
+			})	
+		}
+	
+	}
+
+	Carousel.prototype.discountSliderSettings = function(){
+		
+		// This is the carousel/slider configuration for discount slider option. 
+
+		if($(".discount-carousel").length > 0){
+			$(".discount-carousel").owlCarousel({
+				loop:false,
+				margin:10,
+				nav:false,
+				dots: false,
+				items: 1,
+				stagePadding : 50,
 			})	
 		}
 	
