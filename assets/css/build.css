@@ -886,6 +886,24 @@ a {
   border-radius: 50%;
 }
 
+.discount-component-container {
+  width: 100%;
+  background-color: #f6f6f6;
+}
+.discount-component-container .discount-component-wrapper .discount-carousel .item-slider .item-imageStyle {
+  object-fit: cover;
+  height: auto;
+  width: 100%;
+}
+@media only screen and (min-width: 1025px) {
+  .discount-component-container .discount-component-wrapper .discount-carousel .item-slider .item-imageStyle {
+    max-height: 43.75em;
+  }
+}
+.discount-component-container .discount-component-wrapper .discount-carousel .owl-stage {
+  padding-left: 0.9375em !important;
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -904,6 +922,7 @@ body {
 main {
   background-color: rgba(194, 194, 194, 0.15);
   height: 100%;
+  padding-bottom: 0.9375em;
 }
 main .section {
   margin: 1.25em 0;
