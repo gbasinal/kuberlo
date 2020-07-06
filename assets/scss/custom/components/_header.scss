@@ -28,7 +28,7 @@
             }
             .logo-container {
                 width: em(100);
-                margin: auto;
+                // margin: auto;
                 img {
                     width: 100%;
                     object-fit: cover;
@@ -64,8 +64,8 @@
             a {
                 margin-right : 1.364em;
                 img {
-                    // width: 1.364em;
-                    // height: 1.364em;
+                    width: 2.727em;
+                    // height: 2.727em;
                 }
                 &:last-child {
                     margin-right : 0;
