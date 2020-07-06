@@ -919,11 +919,11 @@ a {
   width: 100%;
   object-fit: cover;
 }
-.image-box-component-container .image-box-component-wrapper .image-box .image-container.image-box-four {
+.image-box-component-container .image-box-component-wrapper .image-box .image-container.image-box-two-grid {
   background-color: white;
   padding: 0em 0.9375em 0.9375em;
 }
-.image-box-component-container .image-box-component-wrapper .image-box .image-container.image-box-four .image-wrapper {
+.image-box-component-container .image-box-component-wrapper .image-box .image-container.image-box-two-grid .image-wrapper {
   background-color: #f6f6f6;
   padding: 0.625em 0.9375em;
   display: flex;
@@ -931,28 +931,28 @@ a {
   justify-content: space-between;
   padding-bottom: 0;
 }
-.image-box-component-container .image-box-component-wrapper .image-box .image-container.image-box-four .image-wrapper .image-item {
+.image-box-component-container .image-box-component-wrapper .image-box .image-container.image-box-two-grid .image-wrapper .image-item {
   width: calc(50% - 1em);
   background-color: white;
   text-align: center;
   margin-bottom: 0.625em;
 }
-.image-box-component-container .image-box-component-wrapper .image-box .image-container.image-box-four .image-wrapper .image-item a {
+.image-box-component-container .image-box-component-wrapper .image-box .image-container.image-box-two-grid .image-wrapper .image-item a {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   height: 100%;
 }
-.image-box-component-container .image-box-component-wrapper .image-box .image-container.image-box-four .image-wrapper .image-item .image-label-wrapper {
+.image-box-component-container .image-box-component-wrapper .image-box .image-container.image-box-two-grid .image-wrapper .image-item .image-label-wrapper {
   text-align: center;
   padding: 0.625em 0.3125em;
 }
-.image-box-component-container .image-box-component-wrapper .image-box .image-container.image-box-six {
+.image-box-component-container .image-box-component-wrapper .image-box .image-container.image-box-three-grid {
   background-color: white;
   padding: 0em 0.9375em 0.9375em;
 }
-.image-box-component-container .image-box-component-wrapper .image-box .image-container.image-box-six .image-wrapper {
+.image-box-component-container .image-box-component-wrapper .image-box .image-container.image-box-three-grid .image-wrapper {
   background-color: #f6f6f6;
   padding: 0.3125em;
   display: flex;
@@ -960,18 +960,21 @@ a {
   justify-content: space-between;
   padding-bottom: 0;
 }
-.image-box-component-container .image-box-component-wrapper .image-box .image-container.image-box-six .image-wrapper .image-item {
+.image-box-component-container .image-box-component-wrapper .image-box .image-container.image-box-three-grid .image-wrapper .image-item {
   width: calc(33.33% - .3em);
   background-color: white;
   text-align: center;
   margin-bottom: 0.25em;
 }
-.image-box-component-container .image-box-component-wrapper .image-box .image-container.image-box-six .image-wrapper .image-item a {
+.image-box-component-container .image-box-component-wrapper .image-box .image-container.image-box-three-grid .image-wrapper .image-item a {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   height: 100%;
+}
+.image-box-component-container .image-box-component-wrapper .image-box .image-container.image-box-no-label .image-wrapper .image-item {
+  width: calc(50% - .3em);
 }
 
 .categories-box-component-container .categories-box-component-wrapper .box-title-wrapper h4 {
