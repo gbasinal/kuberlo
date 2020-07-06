@@ -146,10 +146,6 @@ a {
 .header-container .header-wrapper .header-right-wrapper a {
   margin-right: 1.364em;
 }
-.header-container .header-wrapper .header-right-wrapper a img {
-  width: 1.364em;
-  height: 1.364em;
-}
 .header-container .header-wrapper .header-right-wrapper a:last-child {
   margin-right: 0;
 }
