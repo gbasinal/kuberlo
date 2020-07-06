@@ -20,7 +20,21 @@
 			margin:15,
 			nav:false,
 			items: 4,
-			stagePadding: 30
+			stagePadding: 30,
+			responsive : {
+				768:{
+					items:5,
+					margin: 0
+				},
+				1024:{
+					items:6,
+				},
+				1025:{
+					items:8,
+					margin: 0,
+					loop: false
+				},
+			}
 		})
 
 
@@ -62,7 +76,12 @@
 
 		   }
 		   lastScrollTop = st;
-		});		
+		});	
+		
+		
+		// This will add automatically a top margin for slider category component
+		$(".categories-slider-container").css("margin-top", (headerHeight + 5));
+
 	}
 
 	app.Carousel = Carousel;

@@ -8,6 +8,12 @@
     z-index: 8;
     .categories-slider-wrapper {
         box-shadow: 0 2px 3px -2px rgba(0, 0, 0, 0.55);
+        @media only screen and (max-width: 767px){
+            padding-top: em(5);
+        }
+        @media only screen and (min-width: 768px){
+            padding-bottom: em(15);
+        }
         .categories-carousel {
             .item {
 
@@ -17,6 +23,17 @@
                         width: em(100);
                         height: em(100);
                         border-radius: 50%;
+                        margin: em(5) auto;
+                        @media only screen and (min-width: 768px){
+                            width: em(120);
+                            height: em(120);
+                            margin-bottom: em(10)
+                        }
+                        @media only screen and (min-width: 1025px){
+                            width: em(100);
+                            height: em(100);
+                        }
+
                     }
                     span {
                         font-size: em(18);
