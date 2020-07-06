@@ -742,7 +742,6 @@ a {
 .slider-component-container {
   width: 100%;
   background-color: white;
-  margin: 1.25em 0;
 }
 .slider-component-container .slider-component-wrapper {
   padding: 0.9375em 0;
@@ -789,6 +788,104 @@ a {
   padding-left: 0.9375em !important;
 }
 
+.image-box-component-container .image-box-component-wrapper .image-box .box-title-wrapper h4 {
+  text-transform: uppercase;
+  background-color: white;
+  padding: 0.9375em;
+}
+.image-box-component-container .image-box-component-wrapper .image-box .image-container .image-wrapper a img {
+  width: 100%;
+  object-fit: cover;
+}
+.image-box-component-container .image-box-component-wrapper .image-box .image-container.image-box-four {
+  background-color: white;
+  padding: 0em 0.9375em 0.9375em;
+}
+.image-box-component-container .image-box-component-wrapper .image-box .image-container.image-box-four .image-wrapper {
+  background-color: #f6f6f6;
+  padding: 0.625em 0.9375em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 0;
+}
+.image-box-component-container .image-box-component-wrapper .image-box .image-container.image-box-four .image-wrapper .image-item {
+  width: calc(50% - 1em);
+  background-color: white;
+  text-align: center;
+  margin-bottom: 0.625em;
+}
+.image-box-component-container .image-box-component-wrapper .image-box .image-container.image-box-four .image-wrapper .image-item a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.image-box-component-container .image-box-component-wrapper .image-box .image-container.image-box-four .image-wrapper .image-item .image-label-wrapper {
+  text-align: center;
+  padding: 0.625em 0.3125em;
+}
+.image-box-component-container .image-box-component-wrapper .image-box .image-container.image-box-six {
+  background-color: white;
+  padding: 0em 0.9375em 0.9375em;
+}
+.image-box-component-container .image-box-component-wrapper .image-box .image-container.image-box-six .image-wrapper {
+  background-color: #f6f6f6;
+  padding: 0.3125em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 0;
+}
+.image-box-component-container .image-box-component-wrapper .image-box .image-container.image-box-six .image-wrapper .image-item {
+  width: calc(33.33% - .3em);
+  background-color: white;
+  text-align: center;
+  margin-bottom: 0.25em;
+}
+.image-box-component-container .image-box-component-wrapper .image-box .image-container.image-box-six .image-wrapper .image-item a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.categories-box-component-container .categories-box-component-wrapper .box-title-wrapper h4 {
+  text-transform: uppercase;
+  background-color: white;
+  padding: 0.9375em;
+}
+.categories-box-component-container .categories-box-component-wrapper .categories-container {
+  background-color: white;
+  padding: 0em 0.9375em 0.9375em;
+}
+.categories-box-component-container .categories-box-component-wrapper .categories-container .categories-wrapper {
+  background-color: #f6f6f6;
+  padding: 0.3125em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 0;
+  text-align: center;
+}
+.categories-box-component-container .categories-box-component-wrapper .categories-container .categories-wrapper .categories-item {
+  width: calc(33.33% - .3em);
+  margin-bottom: 0.625em;
+}
+.categories-box-component-container .categories-box-component-wrapper .categories-container .categories-wrapper .categories-item a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.9375em;
+}
+.categories-box-component-container .categories-box-component-wrapper .categories-container .categories-wrapper .categories-item a img {
+  width: 8.125em;
+  height: 8.125em;
+  border-radius: 50%;
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -797,7 +894,6 @@ a {
 }
 
 body {
-  height: 200vh;
   font-size: 1.111vw;
 }
 @media only screen and (max-width: 1024px) {
@@ -808,5 +904,8 @@ body {
 main {
   background-color: rgba(194, 194, 194, 0.15);
   height: 100%;
+}
+main .section {
+  margin: 1.25em 0;
 }
 /*# sourceMappingURL=build.css.map */
