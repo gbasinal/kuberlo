@@ -23,7 +23,7 @@
 			items: 4,
 			stagePadding: 30,
 			dots: false,
-			
+			fluidSpeed: true,
 			responsive : {
 				768:{
 					items:5,
@@ -96,7 +96,7 @@
 				nav:false,
 				dots: true,
 				items: 1,
-
+				fluidSpeed: true,
 				autoplay: true
 			})
 		}
@@ -112,6 +112,8 @@
 				dots: false,
 				items: 1,
 				stagePadding: 90,
+				fluidSpeed: true,
+	
 			})	
 			
 			console.log($(".double-slide-active.slider-carousel ").outerWidth())
