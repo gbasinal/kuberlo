@@ -908,6 +908,9 @@ a {
 }
 .slider-component-container .slider-component-wrapper .slider-carousel.double-slide-active .owl-stage {
   padding-left: 0.9375em !important;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 0 !important;
 }
 
 .image-box-component-container .image-box-component-wrapper .image-box .box-title-wrapper h4 {
