@@ -1,0 +1,31 @@
+.categories-slider-container {
+    width: 100%;
+    height : em(100);
+    background-color: white;
+    position: fixed;
+    margin-top: em(50);
+    text-align: center;
+    box-shadow: 0 2px 3px -2px rgba(0, 0, 0, 0.55);
+    .categories-slider-wrapper {
+        .categories-carousel {
+            .item {
+
+                a { 
+                    text-transform: uppercase;
+                    img {
+                        width: em(100);
+                        height: em(100);
+                        border-radius: 50%;
+                    }
+                    span {
+                        font-size: em(18);
+                    }
+                }
+            }
+
+            .owl-stage {
+                padding-left: em(15) !important;
+            }
+        }
+    }
+}
