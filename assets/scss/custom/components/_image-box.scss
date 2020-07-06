@@ -8,14 +8,47 @@
                     padding: em(15);
                 }
             }
-            .boxStyle {
-                a {
-                    img {
-                        width: 100%;
-                        object-fit: cover;
+            .image-container {
+                .image-wrapper {
+                    a {
+                        img {
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+                &.image-box-four {
+                    background-color: white;
+                    padding: em(0) em(15) em(15);
+                    
+                    .image-wrapper {
+                        background-color: $darkGrey;
+                        padding: em(10) em(15);
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        padding-bottom: 0;
+                        .image-item { 
+                            width: calc(50% - 1em);
+                            background-color: white;
+                            text-align: center;
+                            margin-bottom: em(10);
+                            a {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: space-between;
+                                height: 100%;
+                            }
+                            .image-label-wrapper {
+                                text-align: center;
+                                padding: em(10) em(5);
+                            }
+                        }
                     }
                 }
             }
+
         }
     }
 }
