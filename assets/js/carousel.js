@@ -112,8 +112,10 @@
 				dots: false,
 				items: 1,
 				stagePadding: 90,
-
 			})	
+			
+			console.log($(".double-slide-active.slider-carousel ").outerWidth())
+			$(".double-slide-active.slider-carousel .owl-item").css("width", $(".double-slide-active.slider-carousel ").outerWidth() )
 		}
 	
 	}
