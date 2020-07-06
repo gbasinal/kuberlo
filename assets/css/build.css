@@ -904,6 +904,25 @@ a {
   padding-left: 0.9375em !important;
 }
 
+.quote-component-container .quote-component-wrapper {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.5625em;
+}
+.quote-component-container .quote-component-wrapper p {
+  font-size: 0.875em;
+}
+.quote-component-container .quote-component-wrapper p.quote-content {
+  margin-bottom: 0.625em;
+}
+.quote-component-container .quote-component-wrapper p.author {
+  font-style: italic;
+  opacity: 0.7;
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
