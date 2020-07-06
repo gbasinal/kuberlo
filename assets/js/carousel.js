@@ -9,7 +9,7 @@
 	
 		var _self = this;
 		_self.sliderCategoriesSettings();
-		
+		_self.mainSliderSettings();
 	};
 
 	Carousel.prototype.sliderCategoriesSettings = function(){
@@ -21,6 +21,7 @@
 			nav:false,
 			items: 4,
 			stagePadding: 30,
+			dots: false,
 			responsive : {
 				768:{
 					items:5,
@@ -79,9 +80,20 @@
 		});	
 		
 		
-		// This will add automatically a top margin for slider category component
-		$(".categories-slider-container").css("margin-top", (headerHeight + 5));
 
+
+	}
+
+	Carousel.prototype.mainSliderSettings = function(){
+		console.log("alksdj")
+		$('.slider-carousel').owlCarousel({
+			loop:true,
+			margin:15,
+			nav:false,
+			dots: true,
+			items: 1,
+			autoplay: true
+		})
 	}
 
 	app.Carousel = Carousel;

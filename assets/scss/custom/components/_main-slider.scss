@@ -1,0 +1,41 @@
+.slider-component-container {
+    width: 100%;
+    background-color: white;
+    margin-top: em(20);
+    .slider-component-wrapper {
+        padding: em(15) 0 ;
+        .slider-title-wrapper {
+            padding: em(0) em(15) em(15) em(15);
+            h4{
+                text-transform: uppercase;
+            }
+        }
+        .slider-carousel {
+            .item {
+                .item-imageStyle {
+                    @include bgSettings(cover, no-repeat, center);
+                    height: 27.273em;
+                    width: 100%;
+                }
+            }
+            .owl-dots {
+                text-align: center;
+                padding: em(5) 0;
+                margin-bottom: em(-15);
+                .owl-dot {
+                    width: em(7);
+                    height: em(7);
+                    border-radius: 50%;
+                    background-color: $grey;
+                    margin-right: em(10);
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    &.active {
+                        background-color: $purple;
+                    }
+                }
+            }
+        }
+    }
+}
