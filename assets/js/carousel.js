@@ -57,7 +57,7 @@
 		   console.log(st)
 
 		   
-		   if (st > lastScrollTop && st >= catSliderHeight){
+		   if (st > lastScrollTop && st >= (catSliderHeight - 15)){
 				  
 			// This is a flag to make sure the script below wont run again unless user scrolled up
 				if(!scrolledDownAlready){
