@@ -50,16 +50,20 @@
 		var totalHt = catSliderHeight + headerHeight + 10;
 		var scrolledUpAlready = false;
 		var scrolledDownAlready = false;
+
+
 		$(window).scroll(function(event){
 		   var st = $(this).scrollTop();
+		   console.log(st)
+
 		   
-		   if (st > lastScrollTop){
+		   if (st > lastScrollTop && st >= catSliderHeight){
 				  
 			// This is a flag to make sure the script below wont run again unless user scrolled up
 				if(!scrolledDownAlready){
 					TweenMax.to('.categories-slider-container' , .5 , {y : -totalHt, ease: "ease.easeOut", onComplete: function(){
 						$(".categories-slider-container").hide();
-					}})
+					}},)
 					scrolledDownAlready = true;
 					scrolledUpAlready = false;
 				}
