@@ -2,7 +2,10 @@
     padding: em(15) em(25);
     border-radius: 5px;
     text-transform: uppercase;
-
+    outline: none;
+    &:focus {
+        outline: none;
+    }
     &--transparent {
         border: 1px solid $grey;
         color: $grey;
@@ -10,6 +13,9 @@
         &--wishlist {
             color: $green;
             font-weight: 600;
+        }
+        &-noBorder {
+            border: 0;
         }
     }
 }

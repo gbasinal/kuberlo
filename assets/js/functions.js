@@ -6,6 +6,8 @@
 	Functions.prototype.init = function() {
         var self = this;
         self.clickToCopy();
+        self.incrementOrDecrementQuantity();
+        self.removeProductModal();
     };
     
 
@@ -42,7 +44,34 @@
             },900)
             
         })
+    }
 
+    Functions.prototype.incrementOrDecrementQuantity = function(){
+        var i = 0;
+        
+
+        $(".btn--qty").on("click", function(){
+            
+            if($(this).hasClass("inc")){
+                i++;
+                $("#qty").attr("value", i)
+                
+            }else if($(this).hasClass("dec") && i > 0){
+                i--;
+                $("#qty").attr("value", i);
+                
+            }
+            
+        })
+    }
+
+    Functions.prototype.removeProductModal = function(){
+        $(".btn-remove-modal").on("click", function(){
+            $(".remove-product-modal-container").addClass("is-active");
+        })
+        $(".remove-product-close").on("click", function() {
+            $(".remove-product-modal-container").removeClass("is-active");
+        })
     }
 
     app.Functions = Functions;
