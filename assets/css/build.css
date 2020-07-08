@@ -1457,10 +1457,11 @@ input:focus {
 .cart-product-container .cart-product-wrapper .btn-container button {
   text-transform: uppercase;
   font-weight: 600;
-  color: #c2c2c2;
+  color: black;
   font-size: 12px;
   border-radius: 0;
   padding: 0;
+  letter-spacing: -0.5px;
 }
 .cart-product-container .cart-product-wrapper .btn-container button.btn-remove {
   border-right: 1px solid #c2c2c2;
@@ -1533,11 +1534,12 @@ input:focus {
 .remove-product-modal-container .remove-product-modal-wrapper .remove-btn-container button {
   text-transform: uppercase;
   font-weight: 600;
-  color: #c2c2c2;
+  color: #000;
   font-size: 12px;
   padding-top: 0.9375em;
   padding-bottom: 0.9375em;
   border-radius: 0;
+  letter-spacing: -0.5px;
 }
 .remove-product-modal-container .remove-product-modal-wrapper .remove-btn-container button.btn-remove {
   width: 30%;
