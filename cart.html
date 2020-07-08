@@ -19,8 +19,8 @@
 
   <!-- this component can be reusable for header that has the same design/structure. some js functionality has also been connected to this.  -->
   <!-- this header has a wishlist button isntead of the normal cart, search and bookmark icons -->
-  <header class="header-container">
-    <div class="header-wrapper">
+  <header class="header-container animated">
+    <div class="header-wrapper animated-child">
       <div class="header-left-wrapper">
         <a href="#" class="btn-arrow-back"><img src="https://img.icons8.com/windows/64/000000/left.png"/></a>
         <h3 class="page-title is-active">Shopping Bag</h3>
@@ -38,8 +38,8 @@
 
 
     <!-- Insert this component if you will need a breadcrumb for specific page. Also, to apply styling and animation for the active page, please make sure to add "is-active" class in the item-breadcrumbs element -->
-    <section class="breadcrumbs-container">
-      <div class="breadcrumbs-wrapper">
+    <section class="breadcrumbs-container animated">
+      <div class="breadcrumbs-wrapper animated-child">
         <div class="item-breadcrumbs is-active">
           <div class="line-wrapper">
             <span class="line-animate"></span>
@@ -75,8 +75,8 @@
 
 
     <!-- Insert this compoonent for the available offers component. -->
-    <section class="section available-offers-container">
-      <div class="available-offers-wrapper">
+    <section class="section available-offers-container animated">
+      <div class="available-offers-wrapper animated-child">
         <div class="header-offer-wrapper">
           <h3 class="total-amount">You Pay Only : <span class="amount">$14,300</span></h3>
           <h3 class="total-savings">Save: $600</h3>
@@ -105,16 +105,16 @@
 
 
     <!-- Insert this component if a free delivery option is available -->
-    <section class="section generic-container">
-      <div class="generic-wrapper">
+    <section class="section generic-container animated">
+      <div class="generic-wrapper animated-child">
         <img src="https://img.icons8.com/windows/32/000000/delivery.png"/>
         <p>Shop for <span class="amount">$40</span> more to get <b>Free Delivery</b>.</p>
       </div>
     </section>
 
     <!-- Insert this component if you want to display the added products. If you wish to loop the products, you can just duplicate the entire section -->
-    <section class="section cart-product-container">
-      <div class="cart-product-wrapper">
+    <section class="section cart-product-container animated">
+      <div class="cart-product-wrapper animated-child">
         <div class="product-content-wrapper">
           <div class="product-image-wrapper">
             <a href="#"><div class="imgStyle" style="background-image: url('assets/img/product/product.png')">&nbsp;</div></a>
@@ -143,7 +143,37 @@
         </div>
       </div>
     </section>
-
+    <!-- Insert this component if you want to display the added products. If you wish to loop the products, you can just duplicate the entire section -->
+    <section class="section cart-product-container animated">
+      <div class="cart-product-wrapper animated-child">
+        <div class="product-content-wrapper">
+          <div class="product-image-wrapper">
+            <a href="#"><div class="imgStyle" style="background-image: url('assets/img/product/product.png')">&nbsp;</div></a>
+          </div>
+          <div class="product-description-wrapper">
+            <a href="#">
+              <span class="product-name">Name</span>
+              <span class="product-description">Lorem ipsum dolor sit amet.</span>
+              <span class="product-seller">Sold By: Seller</span>
+            </a>
+            <div class="product-quantity-wrapper">
+              <button class="btn btn--qty dec"><img src="https://img.icons8.com/windows/64/000000/minus.png"/></button>
+              <input type="text" id="qty" value="0">
+              <button class="btn btn--qty inc"><img src="https://img.icons8.com/windows/64/000000/plus.png"/></button>
+              <p>3 left</p>
+            </div>
+            <div class="product-price-wrapper">
+              <h3>$1,234 <span class="old-amount">$3,000</span> <span class="discount">$500 Off</span></h3>
+              <p><strong>Not returnable</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="btn-container">
+          <button class="btn btn--transparent btn--transparent-noBorder btn-remove btn-remove-modal">REMOVE</button>
+          <button class="bn btn--transparent btn--transparent-noBorder btn-move-to-wishlist">MOVE TO WISHLIST</button>
+        </div>
+      </div>
+    </section>
     
 
     <!-- You can import this section for the slider component. Keep in mind the instructions below on how you can enable different slider options -->
@@ -205,14 +235,14 @@
     </section>    
 
     <!-- Insert this component for apply coupon component is available -->
-    <section class="section generic-container">
-      <div class="generic-wrapper">
+    <section class="section generic-container animated">
+      <div class="generic-wrapper animated-child">
         <img src="https://img.icons8.com/windows/32/000000/cutting-coupon.png"/>
         <p>Apply Coupon: </p>
         <div class="coupon-field-wrapper">
           <input type="text" class="coupon-code">
         </div>
-        <a href="#"><img src="https://img.icons8.com/windows/32/000000/forward.png"/></a>
+        <!-- <a href="#"><img src="https://img.icons8.com/windows/64/000000/plus-2-math.png"/></a> -->
         
       </div>
     </section>    
@@ -221,37 +251,51 @@
     <!-- Inser this component if price details is available -->
     <!-- Note: for color control, the options are red, green, grey, lightgrey and black. just add these as class names -->
     <section class="section generic-container">
-      <div class="generic-wrapper price-details">
-        <h3>Price Details <span>( 1 item )</span></h3>
-        <div class="details-list-wrapper">
+      <div class="generic-wrapper price-details animated">
+        <h3 class="animated-child">Price Details <span>( 1 item )</span></h3>
+        <div class="details-list-wrapper animated-child">
           <p>Bag Total</p>
           <p>$1,234</p>
         </div>
-        <div class="details-list-wrapper">
+        <div class="details-list-wrapper animated-child">
           <p>Bag Discount</p>
           <p class="green">$1,234</p>
         </div>
-        <div class="details-list-wrapper">
+        <div class="details-list-wrapper animated-child">
           <p>Coupon Discount</p>
           <p class="red">Can be Applied at checkout</p>
         </div>
-        <div class="details-list-wrapper">
+        <div class="details-list-wrapper animated-child">
           <p>Order Total</p>
           <p>$1,234</p>
         </div>
-        <div class="details-list-wrapper">
+        <div class="details-list-wrapper animated-child">
           <p>Delivery Charges</p>
           <p>$1,234</p>
         </div>
-        <div class="price-total-wrapper">
+        <div class="price-total-wrapper animated-child">
           <h3><strong>Total</strong></h3>
           <h3><strong>$1,234</strong></h3>
         </div>
       </div>
     </section>    
 
+ 
 
   </main>
+
+  <!-- Bottom Sticky Component should always be outside the main element -->
+  <section class="section bottom-sticky-container animated">
+    <div class="bottom-sticky-wrapper animated-child cart-page">
+      <div class="sort-wrapper wrapper">
+        <h3><strong>$1,234</strong></h3>
+        <a href="#" class="view-details">View Details</a>
+      </div>
+      <div class="filter-wrapper wrapper">
+        <a href="#" class="btn btn--purple btn--place-order">Place Order</a>
+      </div>
+    </div>
+  </section>
 
   <!-- This is for modal/pop up section. Add this component if you require a modal component for removal of product -->
   <div class="remove-product-modal-container">
@@ -277,6 +321,8 @@
   </div>
   
 
+
+  
 
 
   <!-- Default -->

@@ -8,6 +8,7 @@
         self.clickToCopy();
         self.incrementOrDecrementQuantity();
         self.removeProductModal();
+        self.viewDetailsWhenclicked();
     };
     
 
@@ -71,6 +72,13 @@
         })
         $(".remove-product-close").on("click", function() {
             $(".remove-product-modal-container").removeClass("is-active");
+        })
+    }
+
+    Functions.prototype.viewDetailsWhenclicked = function(){
+        $(".view-details").on("click", function(e){
+            e.preventDefault();
+            $('html,body').animate({scrollTop: document.body.scrollHeight},500);
         })
     }
 

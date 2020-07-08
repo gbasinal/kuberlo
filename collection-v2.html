@@ -18,8 +18,8 @@
 <body>
 
   <!-- this component can be reusable for header that has the same design/structure. some js functionality has also been connected to this.  -->
-  <header class="header-container">
-    <div class="header-wrapper">
+  <header class="header-container animated">
+    <div class="header-wrapper animated-child">
       <div class="header-left-wrapper">
         <a href="#" class="btn-arrow-back"><img src="https://img.icons8.com/windows/64/000000/left.png"/></a>
         <h3 class="page-title is-active">Jewelry</h3>
@@ -188,10 +188,11 @@
       </div>       
     </div>
   </section>
+  
+  <!-- Bottom Sticky Component should always be outside the main element -->
 
-
-  <section class="section sort-filter-container animated">
-    <div class="sort-filter-wrapper animated-child">
+  <section class="section bottom-sticky-container animated">
+    <div class="bottom-sticky-wrapper animated-child">
       <div class="sort-wrapper wrapper">
         <a href="#"><img src="https://img.icons8.com/windows/64/000000/sorting-arrows.png"/><span class="sort-span">SORT <span class="round">&nbsp;</span></span>   </a>
         
