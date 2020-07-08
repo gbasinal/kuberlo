@@ -21,11 +21,11 @@
             document.execCommand("copy");
             $temp.remove();
 
-            $(".copy-notification").addClass("active");
+            $(".copy-notification-wrapper").addClass("active");
             $(".coupon").removeClass("active")
             $(this).parent().toggleClass("active")
             setTimeout(function(){
-                $(".copy-notification").removeClass("active");
+                $(".copy-notification-wrapper").removeClass("active");
             },900)
 
         })
@@ -37,11 +37,11 @@
             document.execCommand("copy");
             $temp.remove();
 
-            $(".copy-notification").addClass("active");
+            $(".copy-notification-wrapper").addClass("active");
             $(".coupon").removeClass("active")
             $(this).siblings(".coupon").toggleClass("active")
             setTimeout(function(){
-                $(".copy-notification").removeClass("active");
+                $(".copy-notification-wrapper").removeClass("active");
             },900)
             
         })
