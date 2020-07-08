@@ -1127,6 +1127,66 @@ a {
   transition: 0.3s background-color;
 }
 
+.available-offers-container {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  padding: 0.9375em;
+}
+.available-offers-container .available-offers-wrapper {
+  width: 100%;
+  height: 100%;
+}
+.available-offers-container .available-offers-wrapper .header-offer-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 0.625em;
+}
+.available-offers-container .available-offers-wrapper .header-offer-wrapper h3 {
+  font-weight: 600;
+}
+.available-offers-container .available-offers-wrapper .header-offer-wrapper h3.total-amount {
+  color: black;
+}
+.available-offers-container .available-offers-wrapper .header-offer-wrapper h3.total-amount span {
+  color: #f1137a;
+}
+.available-offers-container .available-offers-wrapper .header-offer-wrapper h3.total-savings {
+  color: #03a685;
+}
+.available-offers-container .available-offers-wrapper .offer-details-wrapper p {
+  color: #c2c2c2;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-size: 12px;
+}
+.available-offers-container .available-offers-wrapper .coupon-code-wrapper {
+  margin-top: 0.625em;
+}
+.available-offers-container .available-offers-wrapper .coupon-code-wrapper .item-coupon {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+.available-offers-container .available-offers-wrapper .coupon-code-wrapper .item-coupon .coupon {
+  background-color: rgba(241, 19, 122, 0.2);
+  border: 1px dashed #f1137a;
+  padding: 0.625em;
+  border-radius: 3px;
+}
+.available-offers-container .available-offers-wrapper .coupon-code-wrapper .item-coupon .coupon h3 {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.available-offers-container .available-offers-wrapper .coupon-code-wrapper .item-coupon .description {
+  color: #c2c2c2;
+  padding-left: 0.625em;
+  font-size: 13px;
+  letter-spacing: 0;
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
