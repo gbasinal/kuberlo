@@ -1269,28 +1269,24 @@ input:focus {
 .available-offers-container .available-offers-wrapper .coupon-code-wrapper .item-coupon .description.active {
   display: block;
 }
-.available-offers-container .available-offers-wrapper .coupon-code-wrapper .copy-notification {
-  padding-left: 0.625em;
-  font-size: 13px;
-  letter-spacing: 0;
+.available-offers-container .available-offers-wrapper .coupon-code-wrapper .copy-notification-wrapper {
   display: none;
   opacity: 0;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-bottom: 3.125em;
   padding: 0.9375em;
   background: rgba(194, 194, 194, 0.15);
-  color: black;
   border-radius: 3px;
   transition: 0.3s opacity;
   z-index: 9;
   border: 1px solid black;
 }
-.available-offers-container .available-offers-wrapper .coupon-code-wrapper .copy-notification.active {
+.available-offers-container .available-offers-wrapper .coupon-code-wrapper .copy-notification-wrapper.active {
   display: block;
   opacity: 1;
+}
+.available-offers-container .available-offers-wrapper .coupon-code-wrapper .copy-notification-wrapper .copy-notification {
+  font-size: 13px;
+  letter-spacing: 0;
+  color: black;
 }
 
 .generic-container {
