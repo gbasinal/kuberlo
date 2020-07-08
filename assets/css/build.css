@@ -1216,6 +1216,30 @@ a {
   opacity: 1;
 }
 
+.delivery-option-container {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  padding: 0.9375em;
+}
+.delivery-option-container .delivery-option-wrapper {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.delivery-option-container .delivery-option-wrapper img {
+  width: 2em;
+  object-fit: cover;
+  margin-right: 0.5em;
+}
+.delivery-option-container .delivery-option-wrapper p {
+  font-size: 13px;
+  letter-spacing: 0;
+}
+.delivery-option-container .delivery-option-wrapper p .amount {
+  color: #f1137a;
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
