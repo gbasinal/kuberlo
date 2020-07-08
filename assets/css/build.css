@@ -1,4 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap");
+.btn {
+  padding: 0.9375em 1.5625em;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+.btn--transparent {
+  border: 1px solid #c2c2c2;
+  color: #c2c2c2;
+  background-color: transparent;
+}
+.btn--transparent--wishlist {
+  color: #f1137a;
+}
+
 h2 {
   color: #000;
   font-size: 1.5em;
@@ -82,6 +96,7 @@ a {
   top: 0;
   background-color: white;
   z-index: 9;
+  box-shadow: 0 2px 3px -2px rgba(0, 0, 0, 0.55);
 }
 @media only screen and (min-width: 768px) {
   .header-container {
@@ -105,8 +120,8 @@ a {
   margin-right: 0.9375em;
 }
 .header-container .header-wrapper .header-left-wrapper .btn-arrow-back img {
-  width: 1.364em;
-  height: 1.364em;
+  width: 2.5em;
+  height: 2.5em;
 }
 .header-container .header-wrapper .header-left-wrapper .logo-container {
   width: 6.25em;
