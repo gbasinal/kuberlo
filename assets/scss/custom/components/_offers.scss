@@ -39,12 +39,15 @@
                 width: 100%;
                 height: 100%;
                 align-items: center;
+                margin-bottom: em(10);
                 .coupon {
                     background-color: rgba(241, 19, 122, 0.2);
                     border: 1px dashed $purple;
                     padding: em(10);
                     border-radius: 3px;
-
+                    &.active {
+                        border: 1px solid $purple;
+                    }
                     h3 {
                         text-transform: uppercase;
                         font-weight: 600;
@@ -55,6 +58,31 @@
                     padding-left: em(10);
                     font-size: 13px;
                     letter-spacing: 0;
+                    display: none;
+                    &.active {
+                        display: block;
+                    }
+                }
+            }
+            .copy-notification {
+                padding-left: em(10);
+                font-size: 13px;
+                letter-spacing: 0;
+                display: none;
+                opacity: 0;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                margin-bottom: em(50);
+                padding: em(15);
+                background: rgba(194, 194, 194, 0.15);
+                color: black;
+                border-radius: 3px;
+                transition: .3s opacity;
+                &.active {
+                    display: block;
+                    opacity: 1;
                 }
             }
         }
