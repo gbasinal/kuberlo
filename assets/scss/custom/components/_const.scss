@@ -41,3 +41,25 @@ $whiteWash : #8d8d8d;
 $green : #03a685;
 $lightGrey : rgba(194, 194, 194, .15);
 $darkGrey : rgba(246, 246, 246, 1);
+
+
+.red {
+    color: $purple;
+}
+.green {
+    color: $green;
+}
+.black {
+    color: $black;
+}
+.grey {
+    color: $grey;
+}
+.lightgrey {
+    color: $lightGrey;
+}
+
+
+// Custom Variables 
+
+$botBoxShadow : 0 2px 3px -2px rgba(0, 0, 0, 0.55);

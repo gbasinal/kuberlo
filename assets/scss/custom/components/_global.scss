@@ -26,6 +26,9 @@ main {
     padding-bottom: em(15);
     .section {
         margin: em(20) 0;
+        &:last-child {
+            margin-bottom: em(40);
+        }
     }
     @media only screen and (min-width : 1025px){
         background-color: whitesmoke;
@@ -40,4 +43,8 @@ main {
         opacity: 0;
         transform: translateY(-15px);
     }
+}
+
+.flex-col {
+    flex-direction: column;
 }

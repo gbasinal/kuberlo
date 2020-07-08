@@ -52,6 +52,37 @@
                     justify-content: flex-end;
                     padding-right: 0 !important;
                 }
+
+                // code below is for the recommended slider in cart page
+
+                &.recommended-slide-active {
+                    .item-slider {
+                        border: 1px solid $grey;
+                        .product-image {
+
+                        }
+                        .product-description {
+                            padding: em(15);
+                            h3 {
+                                font-size: 13px;
+                                margin-bottom: em(5);
+                            }
+                            p{
+                                font-size: 11px;
+                                margin-bottom: em(5);
+                            }
+                        }
+                        .btn-container {
+                            text-align: center;
+                            border-top: 1px solid $grey;
+                            button {
+                                color: $purple;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+
+                }
             }
         }
     }
