@@ -1,0 +1,14 @@
+.btn {
+    padding: em(15) em(25);
+    border-radius: 5px;
+    text-transform: uppercase;
+
+    &--transparent {
+        border: 1px solid $grey;
+        color: $grey;
+        background-color: transparent;
+        &--wishlist {
+            color: $purple;
+        }
+    }
+}
