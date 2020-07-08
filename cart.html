@@ -19,8 +19,8 @@
 
   <!-- this component can be reusable for header that has the same design/structure. some js functionality has also been connected to this.  -->
   <!-- this header has a wishlist button isntead of the normal cart, search and bookmark icons -->
-  <header class="header-container">
-    <div class="header-wrapper">
+  <header class="header-container animated">
+    <div class="header-wrapper animated-child">
       <div class="header-left-wrapper">
         <a href="#" class="btn-arrow-back"><img src="https://img.icons8.com/windows/64/000000/left.png"/></a>
         <h3 class="page-title is-active">Shopping Bag</h3>
@@ -38,8 +38,8 @@
 
 
     <!-- Insert this component if you will need a breadcrumb for specific page. Also, to apply styling and animation for the active page, please make sure to add "is-active" class in the item-breadcrumbs element -->
-    <section class="breadcrumbs-container">
-      <div class="breadcrumbs-wrapper">
+    <section class="breadcrumbs-container animated">
+      <div class="breadcrumbs-wrapper animated-child">
         <div class="item-breadcrumbs is-active">
           <div class="line-wrapper">
             <span class="line-animate"></span>
@@ -75,8 +75,8 @@
 
 
     <!-- Insert this compoonent for the available offers component. -->
-    <section class="section available-offers-container">
-      <div class="available-offers-wrapper">
+    <section class="section available-offers-container animated">
+      <div class="available-offers-wrapper animated-child">
         <div class="header-offer-wrapper">
           <h3 class="total-amount">You Pay Only : <span class="amount">$14,300</span></h3>
           <h3 class="total-savings">Save: $600</h3>
@@ -105,16 +105,16 @@
 
 
     <!-- Insert this component if a free delivery option is available -->
-    <section class="section generic-container">
-      <div class="generic-wrapper">
+    <section class="section generic-container animated">
+      <div class="generic-wrapper animated-child">
         <img src="https://img.icons8.com/windows/32/000000/delivery.png"/>
         <p>Shop for <span class="amount">$40</span> more to get <b>Free Delivery</b>.</p>
       </div>
     </section>
 
     <!-- Insert this component if you want to display the added products. If you wish to loop the products, you can just duplicate the entire section -->
-    <section class="section cart-product-container">
-      <div class="cart-product-wrapper">
+    <section class="section cart-product-container animated">
+      <div class="cart-product-wrapper animated-child">
         <div class="product-content-wrapper">
           <div class="product-image-wrapper">
             <a href="#"><div class="imgStyle" style="background-image: url('assets/img/product/product.png')">&nbsp;</div></a>
@@ -144,8 +144,8 @@
       </div>
     </section>
     <!-- Insert this component if you want to display the added products. If you wish to loop the products, you can just duplicate the entire section -->
-    <section class="section cart-product-container">
-      <div class="cart-product-wrapper">
+    <section class="section cart-product-container animated">
+      <div class="cart-product-wrapper animated-child">
         <div class="product-content-wrapper">
           <div class="product-image-wrapper">
             <a href="#"><div class="imgStyle" style="background-image: url('assets/img/product/product.png')">&nbsp;</div></a>
@@ -235,8 +235,8 @@
     </section>    
 
     <!-- Insert this component for apply coupon component is available -->
-    <section class="section generic-container">
-      <div class="generic-wrapper">
+    <section class="section generic-container animated">
+      <div class="generic-wrapper animated-child">
         <img src="https://img.icons8.com/windows/32/000000/cutting-coupon.png"/>
         <p>Apply Coupon: </p>
         <div class="coupon-field-wrapper">
@@ -251,29 +251,29 @@
     <!-- Inser this component if price details is available -->
     <!-- Note: for color control, the options are red, green, grey, lightgrey and black. just add these as class names -->
     <section class="section generic-container">
-      <div class="generic-wrapper price-details">
-        <h3>Price Details <span>( 1 item )</span></h3>
-        <div class="details-list-wrapper">
+      <div class="generic-wrapper price-details animated">
+        <h3 class="animated-child">Price Details <span>( 1 item )</span></h3>
+        <div class="details-list-wrapper animated-child">
           <p>Bag Total</p>
           <p>$1,234</p>
         </div>
-        <div class="details-list-wrapper">
+        <div class="details-list-wrapper animated-child">
           <p>Bag Discount</p>
           <p class="green">$1,234</p>
         </div>
-        <div class="details-list-wrapper">
+        <div class="details-list-wrapper animated-child">
           <p>Coupon Discount</p>
           <p class="red">Can be Applied at checkout</p>
         </div>
-        <div class="details-list-wrapper">
+        <div class="details-list-wrapper animated-child">
           <p>Order Total</p>
           <p>$1,234</p>
         </div>
-        <div class="details-list-wrapper">
+        <div class="details-list-wrapper animated-child">
           <p>Delivery Charges</p>
           <p>$1,234</p>
         </div>
-        <div class="price-total-wrapper">
+        <div class="price-total-wrapper animated-child">
           <h3><strong>Total</strong></h3>
           <h3><strong>$1,234</strong></h3>
         </div>
