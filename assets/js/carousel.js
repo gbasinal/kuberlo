@@ -107,6 +107,10 @@
 
 
 		// This is the carousel/slider configuration for double slider option. 
+		var slideritem = 1;
+		if($(window).outerWidth() > 1024) {
+			slideritem = 2
+		}
 
 		if($(".double-slide-active").length > 0){
 			$(".double-slide-active.slider-carousel").owlCarousel({
@@ -114,7 +118,7 @@
 				margin:10,
 				nav:false,
 				dots: false,
-				items: 1,
+				items: slideritem,
 				stagePadding: 90,
 				fluidSpeed: true,
 	
@@ -130,13 +134,19 @@
 		
 		// This is the carousel/slider configuration for discount slider option. 
 
+		var slideritem = 1;
+		if($(window).outerWidth() > 1024) {
+			slideritem = 2
+		}
+
+
 		if($(".discount-carousel").length > 0){
 			$(".discount-carousel").owlCarousel({
 				loop:false,
 				margin:10,
 				nav:false,
 				dots: false,
-				items: 1,
+				items: slideritem,
 				stagePadding : 50,
 			})	
 		}

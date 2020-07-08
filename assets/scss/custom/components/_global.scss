@@ -8,6 +8,10 @@
 body {
     
     font-size: 1.111vw;
+    @media only screen and (min-width: 1025px){
+        font-size: 16px;
+        background-color: $lightGrey;
+    }
     @media only screen and (max-width: 1024px){
         font-size: 16px;
     }
@@ -22,6 +26,12 @@ main {
     padding-bottom: em(15);
     .section {
         margin: em(20) 0;
+    }
+    @media only screen and (min-width : 1025px){
+        background-color: whitesmoke;
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
     }
 }
 
