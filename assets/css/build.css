@@ -1305,7 +1305,7 @@ a {
 .cart-product-container .cart-product-wrapper .product-content-wrapper .product-description-wrapper .product-quantity-wrapper button img {
   width: 1.4em;
 }
-.cart-product-container .cart-product-wrapper .product-content-wrapper .product-description-wrapper .product-quantity-wrapper .qty {
+.cart-product-container .cart-product-wrapper .product-content-wrapper .product-description-wrapper .product-quantity-wrapper #qty {
   border: 0;
   color: black;
   text-align: center;

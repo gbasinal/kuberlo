@@ -6,6 +6,7 @@
 	Functions.prototype.init = function() {
         var self = this;
         self.clickToCopy();
+        self.incrementOrDecrementQuantity();
     };
     
 
@@ -42,7 +43,25 @@
             },900)
             
         })
+    }
 
+    Functions.prototype.incrementOrDecrementQuantity = function(){
+        var i = 0;
+        
+
+        $(".btn--qty").on("click", function(){
+            
+            if($(this).hasClass("inc")){
+                i++;
+                $("#qty").attr("value", i)
+                
+            }else if($(this).hasClass("dec") && i > 0){
+                i--;
+                $("#qty").attr("value", i);
+                
+            }
+            
+        })
     }
 
     app.Functions = Functions;
