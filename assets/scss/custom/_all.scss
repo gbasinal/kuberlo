@@ -14,15 +14,25 @@
 
 @import "components/hamburger";
 
+
+// Collections Component
 @import "components/pink-banner";
 @import "components/product";
 @import "components/sort-filter";
+
+
+// Homepage Components
 @import "components/categories-slider";
 @import "components/main-slider";
 @import "components/image-box";
 @import "components/categories-box";
 @import "components/discount-slider";
 @import "components/quote";
+
+
+// Shopping cart components
+@import "components/breadcrumbs";
+
 
 @import "components/global";
 

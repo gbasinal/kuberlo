@@ -1,0 +1,67 @@
+.breadcrumbs-container {
+    width: 100%;
+    height: em(40);
+    margin-top: em(70);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 0 em(15);
+    .breadcrumbs-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        .item-breadcrumbs {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+            width: calc(33.33% - .5em);
+            .line-wrapper {
+                display: flex;
+                width: 100%;
+                height: 100%;
+                align-items: center;
+                margin-right: em(5);
+                position: relative ;
+                .line {
+                    width: 100%;
+                    height: 2px;
+                    background-color: $grey;
+                }
+                .line-animate {
+                    width: 0;
+                    height: 2px;
+                }
+                .point {
+                    height: em(8);
+                    width: em(8);
+                    border-radius: 50%;
+                    background-color: $grey;
+                }
+            }
+            .current-step-wrapper {
+                h5{
+                    color: $grey;   
+                }
+            }
+            &.is-active {
+                .line-wrapper {
+                    .line-animate {
+                        background-color: $green;
+                        width: 90%;
+                        transition: .3s width;
+                        position: absolute;
+                    }
+                    .point {
+                        border: 1px solid $green;
+                        background-color: $green;
+                        transition: .3s background-color;
+                    }
+                }
+            }
+        }
+    }
+}
