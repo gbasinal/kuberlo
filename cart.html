@@ -143,7 +143,37 @@
         </div>
       </div>
     </section>
-
+    <!-- Insert this component if you want to display the added products. If you wish to loop the products, you can just duplicate the entire section -->
+    <section class="section cart-product-container">
+      <div class="cart-product-wrapper">
+        <div class="product-content-wrapper">
+          <div class="product-image-wrapper">
+            <a href="#"><div class="imgStyle" style="background-image: url('assets/img/product/product.png')">&nbsp;</div></a>
+          </div>
+          <div class="product-description-wrapper">
+            <a href="#">
+              <span class="product-name">Name</span>
+              <span class="product-description">Lorem ipsum dolor sit amet.</span>
+              <span class="product-seller">Sold By: Seller</span>
+            </a>
+            <div class="product-quantity-wrapper">
+              <button class="btn btn--qty dec"><img src="https://img.icons8.com/windows/64/000000/minus.png"/></button>
+              <input type="text" id="qty" value="0">
+              <button class="btn btn--qty inc"><img src="https://img.icons8.com/windows/64/000000/plus.png"/></button>
+              <p>3 left</p>
+            </div>
+            <div class="product-price-wrapper">
+              <h3>$1,234 <span class="old-amount">$3,000</span> <span class="discount">$500 Off</span></h3>
+              <p><strong>Not returnable</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="btn-container">
+          <button class="btn btn--transparent btn--transparent-noBorder btn-remove btn-remove-modal">REMOVE</button>
+          <button class="bn btn--transparent btn--transparent-noBorder btn-move-to-wishlist">MOVE TO WISHLIST</button>
+        </div>
+      </div>
+    </section>
     
 
     <!-- You can import this section for the slider component. Keep in mind the instructions below on how you can enable different slider options -->
@@ -212,7 +242,7 @@
         <div class="coupon-field-wrapper">
           <input type="text" class="coupon-code">
         </div>
-        <a href="#"><img src="https://img.icons8.com/windows/32/000000/forward.png"/></a>
+        <!-- <a href="#"><img src="https://img.icons8.com/windows/64/000000/plus-2-math.png"/></a> -->
         
       </div>
     </section>    
@@ -250,8 +280,22 @@
       </div>
     </section>    
 
+ 
 
   </main>
+
+  <!-- Bottom Sticky Component should always be outside the main element -->
+  <section class="section bottom-sticky-container animated">
+    <div class="bottom-sticky-wrapper animated-child cart-page">
+      <div class="sort-wrapper wrapper">
+        <h3><strong>$1,234</strong></h3>
+        <a href="#" class="view-details">View Details</a>
+      </div>
+      <div class="filter-wrapper wrapper">
+        <a href="#" class="btn btn--purple btn--place-order">Place Order</a>
+      </div>
+    </div>
+  </section>
 
   <!-- This is for modal/pop up section. Add this component if you require a modal component for removal of product -->
   <div class="remove-product-modal-container">
@@ -277,6 +321,8 @@
   </div>
   
 
+
+  
 
 
   <!-- Default -->
