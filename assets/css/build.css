@@ -1515,7 +1515,11 @@ input:focus {
 .remove-product-modal-container .remove-product-modal-wrapper .remove-product .product-image-wrapper img {
   object-fit: cover;
   width: 5em;
-  height: 100%;
+  height: auto;
+}
+.remove-product-modal-container .remove-product-modal-wrapper .remove-product .remove-message-wrapper {
+  max-width: 60%;
+  width: 100%;
 }
 .remove-product-modal-container .remove-product-modal-wrapper .remove-product .remove-message-wrapper p {
   font-size: 13px;
@@ -1533,6 +1537,7 @@ input:focus {
   font-size: 12px;
   padding-top: 0.9375em;
   padding-bottom: 0.9375em;
+  border-radius: 0;
 }
 .remove-product-modal-container .remove-product-modal-wrapper .remove-btn-container button.btn-remove {
   width: 30%;
