@@ -1,4 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap");
+.red {
+  color: #f1137a;
+}
+
+.green {
+  color: #03a685;
+}
+
+.black {
+  color: #000;
+}
+
+.grey {
+  color: #c2c2c2;
+}
+
+.lightgrey {
+  color: rgba(194, 194, 194, 0.15);
+}
+
 .btn {
   padding: 0.9375em 1.5625em;
   border-radius: 5px;
@@ -1244,6 +1264,8 @@ input:focus {
   color: black;
   border-radius: 3px;
   transition: 0.3s opacity;
+  z-index: 9;
+  border: 1px solid black;
 }
 .available-offers-container .available-offers-wrapper .coupon-code-wrapper .copy-notification.active {
   display: block;
@@ -1275,12 +1297,31 @@ input:focus {
 }
 .generic-container .generic-wrapper .coupon-field-wrapper {
   margin-left: 1.25em;
+  width: 50%;
 }
 .generic-container .generic-wrapper .coupon-field-wrapper input {
   border: 0;
   border-bottom: 1px solid black;
   font-size: 0.8125em;
   padding: 0;
+  width: 100%;
+}
+.generic-container .generic-wrapper .details-list-wrapper, .generic-container .generic-wrapper .price-total-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 0.625em;
+}
+.generic-container .generic-wrapper .price-total-wrapper {
+  border-top: 1px solid #c2c2c2;
+  padding-top: 0.625em;
+}
+.generic-container .generic-wrapper.price-details {
+  flex-direction: column;
+  align-items: start;
+}
+.generic-container .generic-wrapper.price-details h3 {
+  margin-bottom: 0.625em;
 }
 
 .cart-product-container {
@@ -1535,5 +1576,9 @@ main .section {
 .animated .animated-child {
   opacity: 0;
   transform: translateY(-15px);
+}
+
+.flex-col {
+  flex-direction: column;
 }
 /*# sourceMappingURL=build.css.map */
