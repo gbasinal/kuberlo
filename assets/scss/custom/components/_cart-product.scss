@@ -171,10 +171,12 @@
                 img {
                     object-fit: cover;
                     width: em(80);
-                    height: 100%;
+                    height: auto;
                 }
             }
             .remove-message-wrapper {
+                max-width: 60%;
+                width: 100%;
                 p{
                     font-size: 13px;
                     margin-bottom: em(10);
@@ -192,6 +194,7 @@
                 font-size: 12px;
                 padding-top: em(15);
                 padding-bottom: em(15);
+                border-radius: 0;
                 &.btn-remove {
                     
                     width: 30%;
