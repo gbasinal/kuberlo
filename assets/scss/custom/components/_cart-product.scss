@@ -128,3 +128,86 @@
         }
     }
 }
+
+.remove-product-modal-container {
+    position: fixed;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    background: rgba(0, 0, 0, 0.26);
+    z-index: 8;
+    display: none;
+    &.is-active {
+        display: block;
+    }
+    .remove-product-modal-wrapper {
+        width: 100%;
+        background-color: white;
+        position: relative;
+        padding: em(20);
+        padding-bottom: 0;
+        .close-modal-btn-wrapper{
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: em(15);
+            img {
+                width: em(25);
+            }
+        }
+        .remove-product {
+            display: flex;
+            width: 100%;
+            margin-bottom: em(20);
+            .product-image-wrapper{
+                padding: em(5);
+                border: 1px solid $grey;
+                margin-right: em(10);
+                img {
+                    object-fit: cover;
+                    width: em(80);
+                    height: 100%;
+                }
+            }
+            .remove-message-wrapper {
+                p{
+                    font-size: 13px;
+                    margin-bottom: em(10);
+                    letter-spacing: 0;
+                }
+            }
+        }
+        .remove-btn-container{
+            display: flex;
+            width: 100&;
+            button{ 
+                text-transform: uppercase;
+                font-weight: 600;
+                color: $grey;
+                font-size: 12px;
+                padding-top: em(15);
+                padding-bottom: em(15);
+                &.btn-remove {
+                    
+                    width: 30%;
+                    color: $purple;
+                }
+                &.btn-move-to-wishlist {
+                    width: 70%;
+                    text-align: center;
+                    border-right: 1px solid $grey;
+                }
+            }
+        }
+        .divider {
+            position: absolute;
+            right: 0;
+            left: 0;
+            background-color: $grey;
+            height: 1px;
+            width: 100%;
+        }
+    }
+}

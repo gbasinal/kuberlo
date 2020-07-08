@@ -1375,6 +1375,86 @@ a {
   text-align: center;
 }
 
+.remove-product-modal-container {
+  position: fixed;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  background: rgba(0, 0, 0, 0.26);
+  z-index: 8;
+  display: none;
+}
+.remove-product-modal-container.is-active {
+  display: block;
+}
+.remove-product-modal-container .remove-product-modal-wrapper {
+  width: 100%;
+  background-color: white;
+  position: relative;
+  padding: 1.25em;
+  padding-bottom: 0;
+}
+.remove-product-modal-container .remove-product-modal-wrapper .close-modal-btn-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.9375em;
+}
+.remove-product-modal-container .remove-product-modal-wrapper .close-modal-btn-wrapper img {
+  width: 1.5625em;
+}
+.remove-product-modal-container .remove-product-modal-wrapper .remove-product {
+  display: flex;
+  width: 100%;
+  margin-bottom: 1.25em;
+}
+.remove-product-modal-container .remove-product-modal-wrapper .remove-product .product-image-wrapper {
+  padding: 0.3125em;
+  border: 1px solid #c2c2c2;
+  margin-right: 0.625em;
+}
+.remove-product-modal-container .remove-product-modal-wrapper .remove-product .product-image-wrapper img {
+  object-fit: cover;
+  width: 5em;
+  height: 100%;
+}
+.remove-product-modal-container .remove-product-modal-wrapper .remove-product .remove-message-wrapper p {
+  font-size: 13px;
+  margin-bottom: 0.625em;
+  letter-spacing: 0;
+}
+.remove-product-modal-container .remove-product-modal-wrapper .remove-btn-container {
+  display: flex;
+  width: 100 .remove-product-modal-container .remove-product-modal-wrapper .remove-btn-container;
+}
+.remove-product-modal-container .remove-product-modal-wrapper .remove-btn-container button {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #c2c2c2;
+  font-size: 12px;
+  padding-top: 0.9375em;
+  padding-bottom: 0.9375em;
+}
+.remove-product-modal-container .remove-product-modal-wrapper .remove-btn-container button.btn-remove {
+  width: 30%;
+  color: #f1137a;
+}
+.remove-product-modal-container .remove-product-modal-wrapper .remove-btn-container button.btn-move-to-wishlist {
+  width: 70%;
+  text-align: center;
+  border-right: 1px solid #c2c2c2;
+}
+.remove-product-modal-container .remove-product-modal-wrapper .divider {
+  position: absolute;
+  right: 0;
+  left: 0;
+  background-color: #c2c2c2;
+  height: 1px;
+  width: 100%;
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
