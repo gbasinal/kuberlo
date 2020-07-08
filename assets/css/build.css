@@ -933,6 +933,28 @@ a {
   justify-content: flex-end;
   padding-right: 0 !important;
 }
+.slider-component-container .slider-component-wrapper .slider-carousel.double-slide-active.recommended-slide-active .item-slider {
+  border: 1px solid #c2c2c2;
+}
+.slider-component-container .slider-component-wrapper .slider-carousel.double-slide-active.recommended-slide-active .item-slider .product-description {
+  padding: 0.9375em;
+}
+.slider-component-container .slider-component-wrapper .slider-carousel.double-slide-active.recommended-slide-active .item-slider .product-description h3 {
+  font-size: 13px;
+  margin-bottom: 0.3125em;
+}
+.slider-component-container .slider-component-wrapper .slider-carousel.double-slide-active.recommended-slide-active .item-slider .product-description p {
+  font-size: 11px;
+  margin-bottom: 0.3125em;
+}
+.slider-component-container .slider-component-wrapper .slider-carousel.double-slide-active.recommended-slide-active .item-slider .btn-container {
+  text-align: center;
+  border-top: 1px solid #c2c2c2;
+}
+.slider-component-container .slider-component-wrapper .slider-carousel.double-slide-active.recommended-slide-active .item-slider .btn-container button {
+  color: #f1137a;
+  font-weight: 600;
+}
 
 .image-box-component-container .image-box-component-wrapper .image-box .box-title-wrapper h4 {
   text-transform: uppercase;
