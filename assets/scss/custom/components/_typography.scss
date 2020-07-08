@@ -59,3 +59,10 @@ p, a, input {
 a{
     text-decoration: none;
 }
+
+input {
+    &:focus {
+        outline: none;
+        border: none;
+    }
+}
