@@ -124,8 +124,10 @@
 	
 			})	
 			
-			console.log($(".double-slide-active.slider-carousel ").outerWidth())
+			
 			$(".double-slide-active.slider-carousel .owl-item").css("width", $(".double-slide-active.slider-carousel ").outerWidth() )
+			var itemW = $(".double-slide-active.slider-carousel .owl-item").outerWidth();
+			$(".double-slide-active.slider-carousel .owl-item .item-imageStyle").css("height", itemW )
 		}
 	
 	}

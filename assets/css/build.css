@@ -863,6 +863,9 @@ input:focus {
   color: #f1137a;
   letter-spacing: 1px;
 }
+.bottom-sticky-container .bottom-sticky-wrapper.cart-page .wrapper a.btn--place-order {
+  padding: 1.5625em;
+}
 .bottom-sticky-container .divider {
   height: 1.5625em;
   width: 1px;
@@ -1431,7 +1434,7 @@ input:focus {
   width: 100%;
 }
 .cart-product-container .cart-product-wrapper .product-content-wrapper .product-description-wrapper .product-price-wrapper h3 {
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 0;
   margin-bottom: 0.3125em;
 }
@@ -1447,7 +1450,6 @@ input:focus {
 }
 .cart-product-container .cart-product-wrapper .product-content-wrapper .product-description-wrapper .product-price-wrapper p {
   letter-spacing: 0;
-  font-weight: 600;
   font-size: 13px;
 }
 .cart-product-container .cart-product-wrapper .btn-container {
@@ -1456,7 +1458,6 @@ input:focus {
 }
 .cart-product-container .cart-product-wrapper .btn-container button {
   text-transform: uppercase;
-  font-weight: 600;
   color: black;
   font-size: 12px;
   border-radius: 0;
