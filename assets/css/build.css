@@ -1365,6 +1365,8 @@ a {
   font-weight: 600;
   color: #c2c2c2;
   font-size: 12px;
+  border-radius: 0;
+  padding: 0;
 }
 .cart-product-container .cart-product-wrapper .btn-container button.btn-remove {
   border-right: 1px solid #c2c2c2;
@@ -1387,7 +1389,7 @@ a {
   display: none;
 }
 .remove-product-modal-container.is-active {
-  display: block;
+  display: flex;
 }
 .remove-product-modal-container .remove-product-modal-wrapper {
   width: 100%;
@@ -1404,6 +1406,7 @@ a {
 }
 .remove-product-modal-container .remove-product-modal-wrapper .close-modal-btn-wrapper img {
   width: 1.5625em;
+  cursor: pointer;
 }
 .remove-product-modal-container .remove-product-modal-wrapper .remove-product {
   display: flex;
