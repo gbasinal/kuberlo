@@ -64,6 +64,9 @@
                         color: $purple;
                         letter-spacing: 1px;
                     }
+                    &.btn--place-order {
+                        padding: em(25);
+                    }
                 }
             }
         }
