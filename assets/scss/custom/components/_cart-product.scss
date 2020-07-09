@@ -218,3 +218,41 @@
         }
     }
 }
+
+
+.mini-cart-container {
+    position: relative;
+    height: 100%;
+    .mini-cart-wrapper {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color:$grey;
+        z-index: 9;
+        display: none;
+        opacity: 0;
+        transition: .3s opacity;
+        bottom: 0;
+        overflow-y:scroll;
+        overflow-x:hidden;
+        &.active {
+            display: block;
+        }
+        .section {
+            &.generic-container {
+                height: auto;
+                .generic-wrapper {
+                    height: auto;
+                }
+            }
+
+            .recommended-slide-active {
+                .owl-stage {
+                    justify-content: space-around !important;
+                }
+            }
+
+        }
+    }
+
+}
