@@ -92,9 +92,6 @@
             </div>
             <p class="description copy-btn-text copy active">Tap to copy</p>
           </div>
-          <div class="copy-notification-wrapper">
-            <p class="copy-notification">Copied Successfully!</p>
-          </div>
         </div>
       </div>
     </section>
@@ -208,7 +205,7 @@
         <div class="coupon-field-wrapper">
           <input type="text" class="coupon-code">
         </div>
-        <a href="#"><img src="https://img.icons8.com/windows/64/000000/chevron-right.png"/></a>
+        <a href="#" class="apply-discount"><img src="https://img.icons8.com/windows/64/000000/chevron-right.png"/></a>
         
       </div>
     </section>    
@@ -286,9 +283,21 @@
     </div>
   </div>
   
+  <!-- This is for the modal/pop up section. Add this compoponent if you require a modal component for discount application notification -->
+  <div class="copy-notification-wrapper discount-notif">
+    <p class="copy-notification">Coupon has been applied!</p>
+  </div>
+
+    <!-- This is for the modal/pop up section. Add this compoponent if you require a modal component for discount application if empty notification -->
+    <div class="copy-notification-wrapper empty-notif">
+      <p class="copy-notification">Please enter a coupon code.</p>
+    </div>
 
 
-  
+  <!-- This is for the modal/pop up section. Add this compoponent if you require a modal component for discount copy notification -->
+  <div class="copy-notification-wrapper copied-notif">
+    <p class="copy-notification">Copied Successfully!</p>
+  </div>  
 
 
   <!-- Default -->

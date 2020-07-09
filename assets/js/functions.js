@@ -9,6 +9,7 @@
         self.incrementOrDecrementQuantity();
         self.removeProductModal();
         self.viewDetailsWhenclicked();
+        self.discountAppliedNotif();
     };
     
 
@@ -21,11 +22,11 @@
             document.execCommand("copy");
             $temp.remove();
 
-            $(".copy-notification-wrapper").addClass("active");
+            $(".copy-notification-wrapper.copied-notif").addClass("active");
             $(".coupon").removeClass("active")
             $(this).parent().toggleClass("active")
             setTimeout(function(){
-                $(".copy-notification-wrapper").removeClass("active");
+                $(".copy-notification-wrapper.copied-notif").removeClass("active");
             },900)
 
         })
@@ -37,11 +38,11 @@
             document.execCommand("copy");
             $temp.remove();
 
-            $(".copy-notification-wrapper").addClass("active");
+            $(".copy-notification-wrapper.copied-notif").addClass("active");
             $(".coupon").removeClass("active")
             $(this).siblings(".coupon").toggleClass("active")
             setTimeout(function(){
-                $(".copy-notification-wrapper").removeClass("active");
+                $(".copy-notification-wrapper.copied-notif").removeClass("active");
             },900)
             
         })
@@ -79,6 +80,28 @@
         $(".view-details").on("click", function(e){
             e.preventDefault();
             $('html,body').animate({scrollTop: document.body.scrollHeight},500);
+        })
+    }
+
+    Functions.prototype.discountAppliedNotif = function(){
+        $(".apply-discount").on("click", function(e){
+            e.preventDefault();
+
+            if(!$(".coupon-field-wrapper").val()) {
+                $(".copy-notification-wrapper.empty-notif").addClass("active");
+                $(".coupon-field-wrapper input").addClass("empty");
+                setTimeout(function(){
+                    $(".copy-notification-wrapper.empty-notif").removeClass("active");
+                    $(".coupon-field-wrapper input").removeClass("empty");
+                },900)
+            }else {
+                $(".copy-notification-wrapper.discount-notif").addClass("active");
+                setTimeout(function(){
+                    $(".copy-notification-wrapper.discount-notif").removeClass("active");
+                },900)
+            }
+
+
         })
     }
 
