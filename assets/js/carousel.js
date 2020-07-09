@@ -54,7 +54,7 @@
 
 		$(window).scroll(function(event){
 		   var st = $(this).scrollTop();
-		   console.log(st)
+		   
 
 		   
 		   if (st > lastScrollTop && st >= (catSliderHeight - 15)){

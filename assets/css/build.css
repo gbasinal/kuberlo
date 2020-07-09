@@ -1273,25 +1273,6 @@ input:focus {
 .available-offers-container .available-offers-wrapper .coupon-code-wrapper .item-coupon .description.active {
   display: block;
 }
-.available-offers-container .available-offers-wrapper .coupon-code-wrapper .copy-notification-wrapper {
-  display: none;
-  opacity: 0;
-  padding: 0.9375em;
-  background: rgba(194, 194, 194, 0.15);
-  border-radius: 3px;
-  transition: 0.3s opacity;
-  z-index: 9;
-  border: 1px solid black;
-}
-.available-offers-container .available-offers-wrapper .coupon-code-wrapper .copy-notification-wrapper.active {
-  display: block;
-  opacity: 1;
-}
-.available-offers-container .available-offers-wrapper .coupon-code-wrapper .copy-notification-wrapper .copy-notification {
-  font-size: 13px;
-  letter-spacing: 0;
-  color: black;
-}
 
 .generic-container {
   width: 100%;
@@ -1327,6 +1308,9 @@ input:focus {
   padding: 0;
   width: 100%;
 }
+.generic-container .generic-wrapper .coupon-field-wrapper input.empty {
+  border-bottom: 1px solid #f1137a;
+}
 .generic-container .generic-wrapper .details-list-wrapper, .generic-container .generic-wrapper .price-total-wrapper {
   display: flex;
   justify-content: space-between;
@@ -1343,6 +1327,32 @@ input:focus {
 }
 .generic-container .generic-wrapper.price-details h3 {
   margin-bottom: 0.625em;
+}
+
+.copy-notification-wrapper {
+  display: none;
+  opacity: 0;
+  padding: 0.9375em;
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 3px;
+  transition: 0.3s opacity;
+  z-index: 9;
+  border: 1px solid black;
+  position: fixed;
+  bottom: 6.25em;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 12.5em;
+  text-align: center;
+}
+.copy-notification-wrapper.active {
+  display: block;
+  opacity: 1;
+}
+.copy-notification-wrapper .copy-notification {
+  font-size: 13px;
+  letter-spacing: 0;
+  color: white;
 }
 
 .cart-product-container {
