@@ -87,7 +87,7 @@
         $(".apply-discount").on("click", function(e){
             e.preventDefault();
 
-            if(!$(".coupon-field-wrapper").val()) {
+            if(!$(".coupon-field-wrapper input").val()) {
                 $(".copy-notification-wrapper.empty-notif").addClass("active");
                 $(".coupon-field-wrapper input").addClass("empty");
                 setTimeout(function(){
