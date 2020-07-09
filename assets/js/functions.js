@@ -119,7 +119,7 @@
                 
 				var miniCartItemW = $(".recommended-slide-active.slider-carousel .owl-item").outerWidth();
 				console.log(miniCartItemW)
-				$(".recommended-slide-active.slider-carousel .owl-item .item-imageStyle").css("height", miniCartItemW )
+				$(".recommended-slide-active.slider-carousel .owl-item .item-imageStyle").css("height", 195 )
 		
             },300)
             
