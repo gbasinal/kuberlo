@@ -864,7 +864,8 @@ input:focus {
   letter-spacing: 1px;
 }
 .bottom-sticky-container .bottom-sticky-wrapper.cart-page .wrapper a.btn--place-order {
-  padding: 1.5625em;
+  padding: 1.0625em;
+  font-size: 1em;
 }
 .bottom-sticky-container .divider {
   height: 1.5625em;
@@ -989,11 +990,11 @@ input:focus {
   padding: 0.9375em;
 }
 .slider-component-container .slider-component-wrapper .slider-carousel.double-slide-active.recommended-slide-active .item-slider .product-description h3 {
-  font-size: 13px;
+  font-size: 1.36875em;
   margin-bottom: 0.3125em;
 }
 .slider-component-container .slider-component-wrapper .slider-carousel.double-slide-active.recommended-slide-active .item-slider .product-description p {
-  font-size: 11px;
+  font-size: 1.25em;
   margin-bottom: 0.3125em;
 }
 .slider-component-container .slider-component-wrapper .slider-carousel.double-slide-active.recommended-slide-active .item-slider .btn-container {
@@ -1237,7 +1238,7 @@ input:focus {
   color: #c2c2c2;
   line-height: 1.5;
   letter-spacing: 0;
-  font-size: 12px;
+  font-size: 0.875em;
 }
 .available-offers-container .available-offers-wrapper .coupon-code-wrapper {
   margin-top: 0.625em;
@@ -1309,7 +1310,7 @@ input:focus {
   margin-right: 0.5em;
 }
 .generic-container .generic-wrapper p {
-  font-size: 13px;
+  font-size: 0.9375em;
   letter-spacing: 0;
 }
 .generic-container .generic-wrapper p .amount {
@@ -1317,7 +1318,7 @@ input:focus {
 }
 .generic-container .generic-wrapper .coupon-field-wrapper {
   margin-left: 1.25em;
-  width: 50%;
+  width: 9.6875em;
 }
 .generic-container .generic-wrapper .coupon-field-wrapper input {
   border: 0;
@@ -1378,7 +1379,7 @@ input:focus {
   margin-left: 1.25em;
 }
 .cart-product-container .cart-product-wrapper .product-content-wrapper .product-description-wrapper a {
-  font-size: 13px;
+  font-size: 0.9375em;
   letter-spacing: 0;
   margin-bottom: 1.5625em;
   display: flex;

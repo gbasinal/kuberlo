@@ -29,7 +29,7 @@
                 color : $grey;
                 line-height: 1.5;
                 letter-spacing: 0;
-                font-size: 12px;
+                font-size: em(14);
             }
         }
         .coupon-code-wrapper {
@@ -106,7 +106,7 @@
             margin-right: .5em;
         }
         p{
-            font-size: 13px;
+            font-size: em(15);
             letter-spacing: 0;
             .amount {
                 color: $purple;
@@ -114,7 +114,7 @@
         }
         .coupon-field-wrapper {
             margin-left: em(20);
-            width: 50%;
+            width: em(155);
             input {
                 border: 0;
                 border-bottom: 1px solid black;
