@@ -10,6 +10,7 @@
         self.removeProductModal();
         self.viewDetailsWhenclicked();
         self.discountAppliedNotif();
+        self.enableMiniCart();
     };
     
 
@@ -102,6 +103,35 @@
             }
 
 
+        })
+    }
+
+    Functions.prototype.enableMiniCart = function(){
+        $(".cart-open").on("click", function(e){
+            e.preventDefault();
+
+            // $(".recommended-slide-active.slider-carousel .owl-item").css("width", $(".recommended-slide-active.slider-carousel ").outerWidth() )
+
+            $(".mini-cart-container main").css("padding-top", 0);
+            $(".mini-cart-wrapper").addClass("active");
+            setTimeout(function(){
+                $(".mini-cart-wrapper").css("opacity", 1);
+                
+				var miniCartItemW = $(".recommended-slide-active.slider-carousel .owl-item").outerWidth();
+				console.log(miniCartItemW)
+				$(".recommended-slide-active.slider-carousel .owl-item .item-imageStyle").css("height", miniCartItemW )
+		
+            },300)
+            
+        })
+
+        $(".btn-mini-cart-back").on("click", function(e){
+            e.preventDefault();
+            
+            $(".mini-cart-wrapper").css("opacity", 0);
+            setTimeout(function(){
+                $(".mini-cart-wrapper").removeClass("active");
+            },300)
         })
     }
 
