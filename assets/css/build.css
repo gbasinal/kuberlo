@@ -104,7 +104,7 @@ h5 {
   }
 }
 
-p, a, input {
+p, a, input, li {
   color: #000;
   font-size: 1em;
   letter-spacing: 0.06875em;
@@ -113,7 +113,7 @@ p, a, input {
   font-family: "Hind", sans-serif;
 }
 @media only screen and (max-width: 767px) {
-  p, a, input {
+  p, a, input, li {
     font-size: 0.6875em;
   }
 }
@@ -1660,6 +1660,23 @@ input:focus {
 }
 .generic-container .generic-wrapper .generic-text-wrapper .input-pin-container input::placeholder {
   color: #f1137a;
+}
+.generic-container .generic-wrapper .generic-text-wrapper ul {
+  padding: 0;
+  margin: 0;
+}
+.generic-container .generic-wrapper .generic-text-wrapper ul li {
+  list-style-type: none;
+  padding: 0.625em 0;
+  border-top: 1px solid #c2c2c2;
+}
+.generic-container .generic-wrapper .generic-text-wrapper ul li a {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  font-size: 1.25em;
+  letter-spacing: -0.3px;
 }
 
 * {

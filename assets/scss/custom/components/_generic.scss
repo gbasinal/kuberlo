@@ -107,6 +107,24 @@
                     }
                 }
             }
+            ul {
+                padding: 0;
+                margin: 0;
+                li {
+                    list-style-type: none;
+                    padding: em(10) 0;
+                    border-top: 1px solid $grey;
+                    
+                    a{
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100%;
+                        align-items: center;
+                        font-size: em(20);
+                        letter-spacing: -.3px;
+                    }
+                }
+            }
         }
     }
 }
