@@ -1274,61 +1274,6 @@ input:focus {
   display: block;
 }
 
-.generic-container {
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  padding: 0.9375em;
-}
-.generic-container .generic-wrapper {
-  display: flex;
-  align-items: center;
-  height: 100%;
-}
-.generic-container .generic-wrapper img {
-  width: 2em;
-  object-fit: cover;
-  margin-right: 0.5em;
-}
-.generic-container .generic-wrapper p {
-  font-size: 0.9375em;
-  letter-spacing: 0;
-}
-.generic-container .generic-wrapper p .amount {
-  color: #f1137a;
-}
-.generic-container .generic-wrapper .coupon-field-wrapper {
-  margin-left: 1.25em;
-  width: 9.6875em;
-}
-.generic-container .generic-wrapper .coupon-field-wrapper input {
-  border: 0;
-  border-bottom: 1px solid black;
-  font-size: 0.8125em;
-  padding: 0;
-  width: 100%;
-}
-.generic-container .generic-wrapper .coupon-field-wrapper input.empty {
-  border-bottom: 1px solid #f1137a;
-}
-.generic-container .generic-wrapper .details-list-wrapper, .generic-container .generic-wrapper .price-total-wrapper {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin-bottom: 0.625em;
-}
-.generic-container .generic-wrapper .price-total-wrapper {
-  border-top: 1px solid #c2c2c2;
-  padding-top: 0.625em;
-}
-.generic-container .generic-wrapper.price-details {
-  flex-direction: column;
-  align-items: start;
-}
-.generic-container .generic-wrapper.price-details h3 {
-  margin-bottom: 0.625em;
-}
-
 .copy-notification-wrapper {
   display: none;
   opacity: 0;
@@ -1601,6 +1546,88 @@ input:focus {
   justify-content: space-around !important;
 }
 
+.generic-container {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  padding: 0.9375em;
+}
+.generic-container .generic-wrapper {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.generic-container .generic-wrapper img {
+  width: 2em;
+  object-fit: cover;
+  margin-right: 0.5em;
+}
+.generic-container .generic-wrapper p {
+  font-size: 0.9375em;
+  letter-spacing: 0;
+}
+.generic-container .generic-wrapper p .amount {
+  color: #f1137a;
+}
+.generic-container .generic-wrapper .coupon-field-wrapper {
+  margin-left: 1.25em;
+  width: 9.6875em;
+}
+.generic-container .generic-wrapper .coupon-field-wrapper input {
+  border: 0;
+  border-bottom: 1px solid black;
+  font-size: 0.8125em;
+  padding: 0;
+  width: 100%;
+}
+.generic-container .generic-wrapper .coupon-field-wrapper input.empty {
+  border-bottom: 1px solid #f1137a;
+}
+.generic-container .generic-wrapper .details-list-wrapper, .generic-container .generic-wrapper .price-total-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 0.625em;
+}
+.generic-container .generic-wrapper .price-total-wrapper {
+  border-top: 1px solid #c2c2c2;
+  padding-top: 0.625em;
+}
+.generic-container .generic-wrapper.price-details {
+  flex-direction: column;
+  align-items: start;
+}
+.generic-container .generic-wrapper.price-details h3 {
+  margin-bottom: 0.625em;
+}
+.generic-container .generic-wrapper .product-details-wrapper {
+  width: 100%;
+  margin-bottom: -0.9375em;
+  margin-top: 0.625em;
+}
+.generic-container .generic-wrapper .product-details-wrapper h3 {
+  font-size: 1em;
+  margin-bottom: 0.625em;
+}
+.generic-container .generic-wrapper .product-details-wrapper h3 .product-description {
+  color: #c2c2c2;
+  font-weight: 400;
+}
+.generic-container .generic-wrapper .product-details-wrapper h3 .product-discount {
+  font-weight: 400;
+  color: #c2c2c2;
+  text-decoration: line-through;
+  margin: 0 0.375em;
+}
+.generic-container .generic-wrapper .product-details-wrapper h3 .product-discount-description {
+  font-weight: 400;
+  color: #f1137a;
+}
+.generic-container .generic-wrapper .product-details-wrapper p {
+  font-weight: 600;
+  color: #03a685;
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -1627,10 +1654,10 @@ main {
   height: 100%;
   padding-bottom: 0.9375em;
 }
-main .section {
+main section {
   margin: 1.25em 0;
 }
-main .section:last-child {
+main section:last-child {
   margin-bottom: 2.5em;
 }
 @media only screen and (min-width: 1025px) {
