@@ -18,7 +18,7 @@
 	
 		$('.categories-carousel').owlCarousel({
 			loop:false,
-			margin:15,
+			margin:10,
 			nav:false,
 			items: 4,
 			stagePadding: 30,
@@ -52,38 +52,38 @@
 		var scrolledDownAlready = false;
 
 
-		$(window).scroll(function(event){
-		   var st = $(this).scrollTop();
+		// $(window).scroll(function(event){
+		//    var st = $(this).scrollTop();
 		   
 
 		   
-		   if (st > lastScrollTop && st >= (catSliderHeight - 15)){
+		//    if (st > lastScrollTop && st >= (catSliderHeight - 15)){
 				  
-			// This is a flag to make sure the script below wont run again unless user scrolled up
-				if(!scrolledDownAlready){
-					TweenMax.to('.categories-slider-container' , .5 , {y : -totalHt, ease: "ease.easeOut", onComplete: function(){
-						$(".categories-slider-container").hide();
-					}},)
-					scrolledDownAlready = true;
-					scrolledUpAlready = false;
-				}
+		// 	// This is a flag to make sure the script below wont run again unless user scrolled up
+		// 		if(!scrolledDownAlready){
+		// 			TweenMax.to('.categories-slider-container' , .5 , {y : -totalHt, ease: "ease.easeOut", onComplete: function(){
+		// 				$(".categories-slider-container").hide();
+		// 			}},)
+		// 			scrolledDownAlready = true;
+		// 			scrolledUpAlready = false;
+		// 		}
 
 
-		   } else {
+		//    } else {
 
-			// This is a flag to make sure the script below wont run again unless user scrolled down
-				if(!scrolledUpAlready){
-					TweenMax.to('.categories-slider-container' , .5 , {y : 0, ease: "ease.easeIn", onStart: function(){
-						$(".categories-slider-container").show();
-					}})
-					scrolledUpAlready = true;
-					scrolledDownAlready = false;
-				}
+		// 	// This is a flag to make sure the script below wont run again unless user scrolled down
+		// 		if(!scrolledUpAlready){
+		// 			TweenMax.to('.categories-slider-container' , .5 , {y : 0, ease: "ease.easeIn", onStart: function(){
+		// 				$(".categories-slider-container").show();
+		// 			}})
+		// 			scrolledUpAlready = true;
+		// 			scrolledDownAlready = false;
+		// 		}
 
 
-		   }
-		   lastScrollTop = st;
-		});	
+		//    }
+		//    lastScrollTop = st;
+		// });	
 		
 		
 
