@@ -135,13 +135,13 @@
                     list-style-type: none;
                     padding: em(10) 0;
                     border-top: 1px solid $grey;
-                    
+                    font-size: em(14);
                     a{
                         display: flex;
                         justify-content: space-between;
                         width: 100%;
                         align-items: center;
-                        font-size: em(14);
+                        font-size: 1em;
                         letter-spacing: -.3px;
                     }
                 }

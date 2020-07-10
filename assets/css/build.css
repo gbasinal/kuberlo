@@ -1014,7 +1014,7 @@ input:focus {
   padding: 0.9375em;
 }
 .slider-component-container .slider-component-wrapper .slider-carousel.double-slide-active.recommended-slide-active .item-slider .product-description h3 {
-  font-size: 1.36875em;
+  font-size: 1.26875em;
   margin-bottom: 0.3125em;
 }
 .slider-component-container .slider-component-wrapper .slider-carousel.double-slide-active.recommended-slide-active .item-slider .product-description p {
@@ -1248,6 +1248,7 @@ input:focus {
 }
 .available-offers-container .available-offers-wrapper .header-offer-wrapper h3 {
   font-weight: 600;
+  font-size: 0.875em;
 }
 .available-offers-container .available-offers-wrapper .header-offer-wrapper h3.total-amount {
   color: black;
@@ -1699,13 +1700,14 @@ input:focus {
   list-style-type: none;
   padding: 0.625em 0;
   border-top: 1px solid #c2c2c2;
+  font-size: 0.875em;
 }
 .generic-container .generic-wrapper .generic-text-wrapper ul li a {
   display: flex;
   justify-content: space-between;
   width: 100%;
   align-items: center;
-  font-size: 0.875em;
+  font-size: 1em;
   letter-spacing: -0.3px;
 }
 .generic-container .generic-wrapper .generic-text-wrapper .collapse-item {
