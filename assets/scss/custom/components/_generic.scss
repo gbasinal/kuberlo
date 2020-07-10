@@ -91,6 +91,11 @@
                 &:last-child {
                     margin-bottom: 0;
                 }
+                &.view-more {
+                    cursor: pointer;
+                    color: $purple;
+                    font-weight: 600;
+                }
                 
             }
             .input-pin-container {
@@ -125,6 +130,12 @@
                     }
                 }
             }
+            .collapse-item {
+                display: none;
+                &.active {
+                    display: block;
+                }
+            }
         }
         .three-col-wrapper {
             display: flex;
@@ -139,6 +150,7 @@
                 p {
                     font-size: em(12);
                 }
+
             }
         }
     }

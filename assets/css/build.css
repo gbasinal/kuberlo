@@ -21,7 +21,7 @@
 
 .btn {
   padding: 0.9375em 1.5625em;
-  border-radius: 5px;
+  border-radius: 3px;
   text-transform: uppercase;
   outline: none;
 }
@@ -1647,6 +1647,11 @@ input:focus {
 .generic-container .generic-wrapper .generic-text-wrapper p:last-child {
   margin-bottom: 0;
 }
+.generic-container .generic-wrapper .generic-text-wrapper p.view-more {
+  cursor: pointer;
+  color: #f1137a;
+  font-weight: 600;
+}
 .generic-container .generic-wrapper .generic-text-wrapper .input-pin-container {
   width: 100%;
   margin-bottom: 0.625em;
@@ -1677,6 +1682,12 @@ input:focus {
   align-items: center;
   font-size: 1.25em;
   letter-spacing: -0.3px;
+}
+.generic-container .generic-wrapper .generic-text-wrapper .collapse-item {
+  display: none;
+}
+.generic-container .generic-wrapper .generic-text-wrapper .collapse-item.active {
+  display: block;
 }
 .generic-container .generic-wrapper .three-col-wrapper {
   display: flex;
