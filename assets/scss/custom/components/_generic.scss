@@ -56,9 +56,9 @@
                 margin-bottom: em(10);
             }
         }
-        .product-details-wrapper {
+        .generic-text-wrapper {
             width: 100%;
-            margin-bottom: em(-15);
+            // margin-bottom: em(-15);
             margin-top: em(10);
             h3 {
                 font-size: em(16);
@@ -86,8 +86,8 @@
                 }
             }
             p{
-                font-weight: 600;
-                color: $green;
+                
+                
             }
         }
     }

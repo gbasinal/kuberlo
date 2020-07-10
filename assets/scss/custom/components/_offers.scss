@@ -40,6 +40,9 @@
                 height: 100%;
                 align-items: center;
                 margin-bottom: em(10);
+                &:last-child {
+                    margin-bottom: 0;
+                }
                 .coupon {
                     background-color: rgba(241, 19, 122, 0.2);
                     border: 1px dashed $purple;
