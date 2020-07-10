@@ -173,11 +173,11 @@
     Functions.prototype.unStickComponent = function() {
         $('.trigger-for-sticky').on('inview', function(event, isInView) {
 
-            if(isInView){
-               $(".sticky-v2").addClass("unstick")
-            }else {
-                $(".sticky-v2").removeClass("unstick")
-            }
+            // if(isInView){
+            //    $(".sticky-v2").addClass("unstick")
+            // }else {
+            //     $(".sticky-v2").removeClass("unstick")
+            // }
         });
     }
 
