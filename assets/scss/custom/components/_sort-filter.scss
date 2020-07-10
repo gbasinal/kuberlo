@@ -84,9 +84,6 @@
         }
     }
     &.sticky-v2 {
-        position: relative;
-        border-bottom: 0;
-        box-shadow: none;
         .bottom-sticky-wrapper {
             &.cart-page {
                 a {
@@ -98,4 +95,13 @@
             }
         }
     }
+    &.unstick {
+        position: relative;
+        border-bottom: 0;
+        box-shadow: none;
+    }
+}
+
+.trigger-for-sticky {
+    height: 0;
 }

@@ -12,6 +12,7 @@
         self.discountAppliedNotif();
         self.enableMiniCart();
         self.addTopMargin();
+        self.unStickComponent();
     };
     
 
@@ -167,6 +168,17 @@
         
             
         }
+    }
+
+    Functions.prototype.unStickComponent = function() {
+        $('.trigger-for-sticky').on('inview', function(event, isInView) {
+
+            if(isInView){
+               $(".sticky-v2").addClass("unstick")
+            }else {
+                $(".sticky-v2").removeClass("unstick")
+            }
+        });
     }
 
     app.Functions = Functions;
