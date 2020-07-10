@@ -1642,9 +1642,24 @@ input:focus {
 }
 .generic-container .generic-wrapper .generic-text-wrapper p {
   margin-bottom: 0.625em;
+  font-size: 0.875em;
 }
 .generic-container .generic-wrapper .generic-text-wrapper p:last-child {
   margin-bottom: 0;
+}
+.generic-container .generic-wrapper .generic-text-wrapper .input-pin-container {
+  width: 100%;
+  margin-bottom: 0.625em;
+}
+.generic-container .generic-wrapper .generic-text-wrapper .input-pin-container input {
+  width: 100%;
+  padding: 0.625em;
+  font-size: 0.8125em;
+  border-radius: 3px;
+  border: 1px solid #c2c2c2;
+}
+.generic-container .generic-wrapper .generic-text-wrapper .input-pin-container input::placeholder {
+  color: #f1137a;
 }
 
 * {
