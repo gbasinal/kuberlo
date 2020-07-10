@@ -161,7 +161,7 @@
         
         // This will work for all pages except homepage. 
         
-        if( $("main").length > 0 && $(".categories-slider-container").length === 0){
+        if( $("main").length > 0 && $(".categories-slider-container").length === 0 && $("main .single-slide-active").length >0){
         
             
             $("main section").eq(0).css("margin-top", headerHeight)

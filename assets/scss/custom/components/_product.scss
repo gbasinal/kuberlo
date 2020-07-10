@@ -47,7 +47,7 @@
                 }
             }
             .product-content-wrapper {
-                height: em(60);
+                height: em(70);
                 width: 100%;
                 padding: 0 10px;
                 display: flex;
@@ -70,7 +70,7 @@
                         font-weight: 600;
                         letter-spacing: -1.1px;
                         line-height: 12px;
-                        color: grey;
+                        color: $black;
                         
                     }
                     .product-icon-wrapper {
@@ -102,14 +102,14 @@
                         h3 {
                             font-family: $hind;
                             margin-right : 4px;
-                            font-size: em(12);
+                            font-size: em(14);
                             letter-spacing: -.5px;
                             @media only screen and (min-width: 768px){
                                 font-size: em(18);
                                 margin-right: em(10);
                             }
                             &.discount {
-                                color: $grey;
+                                color: $lightGrey;
                                 font-weight: 400;
                                 text-decoration: line-through;
                             }
@@ -117,7 +117,7 @@
                     }
                     .discount-detail {
                         font-family: $hind;
-                        font-size: em(10);
+                        font-size: em(14);
                         color: $green;
                         letter-spacing: 0;
                         @media only screen and (min-width: 768px){
@@ -152,7 +152,7 @@
                         position: relative;
                         margin-bottom: em(5);
                         h4 {
-                            font-size:em(18);
+                            font-size:em(14);
                         }
                         .product-icon-wrapper {
                             position: absolute;
@@ -179,7 +179,7 @@
                     .product-description-wrapper {
                         margin-bottom: em(5);
                         h5 {
-                            font-size: em(12);
+                            font-size: em(14);
                         }
                     }
                     .product-price-wrapper {
@@ -188,7 +188,7 @@
                             font-size: em(14);
                         }
                         p{
-                            font-size: em(12);
+                            font-size: em(14);
                         }
                     }
                 }

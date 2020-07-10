@@ -18,7 +18,7 @@
 	
 		$('.categories-carousel').owlCarousel({
 			loop:false,
-			margin:10,
+			margin:15,
 			nav:false,
 			items: 4,
 			stagePadding: 30,

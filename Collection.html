@@ -18,11 +18,21 @@
 <body>
 
   <!-- this component can be reusable for header that has the same design/structure. some js functionality has also been connected to this.  -->
+  <!-- this header has a wishlist button isntead of the normal cart, search and bookmark icons -->
   <header class="header-container animated">
     <div class="header-wrapper animated-child">
       <div class="header-left-wrapper">
-        <a href="#" class="btn-arrow-back"><img src="https://img.icons8.com/windows/64/000000/left.png"/></a>
-        <h3 class="page-title is-active">Jewelry</h3>
+        <div class="hamburger-wrapper">
+          <button class="hamburger hamburger--collapse" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+          
+        </div>
+        <div class="logo-container">
+          <img src="assets/img/logo.png" alt="">
+        </div>
         <div class="input-field-for-search-wrapper ">
           <input type="text" placeholder="Search for brands & products" class="search-field">
         </div>
@@ -30,7 +40,7 @@
       <div class="header-right-wrapper">
         <a href="#" class="search-wrapper"><img src="https://img.icons8.com/windows/64/000000/search.png"/></a>
         <a href="#"><img src="https://img.icons8.com/windows/64/000000/bookmark-ribbon.png"/></a>
-        <a href="#"><img src="https://img.icons8.com/windows/64/000000/shopping-cart.png"/></a>
+        <a href="#" class="cart-open"><img src="https://img.icons8.com/windows/64/000000/shopping-cart.png"/></a>
       </div>
     </div>
   </header>
