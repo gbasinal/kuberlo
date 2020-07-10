@@ -144,19 +144,19 @@
         var totalHt = catSliderHeight + headerHeight + 10;
     
         // This margin will only work in homepage, or if a page has a categories slider component
-        if($("main").length > 0 && $(".categories-slider-container").length > 0){
-            if($(window).outerWidth() > 767){
+        // if($("main").length > 0 && $(".categories-slider-container").length > 0){
+        //     if($(window).outerWidth() > 767){
                 
-                $("main").css("padding-top", (totalHt+ headerHeight));
-            }else {
-                $("main").css("padding-top", (totalHt));
-            }
+        //         $("main").css("padding-top", (totalHt+ headerHeight));
+        //     }else {
+        //         $("main").css("padding-top", (totalHt));
+        //     }
     
             
     
-            // This will add automatically a top margin for slider category component
-            $(".categories-slider-container").css("margin-top", (headerHeight));
-        }
+        //     // This will add automatically a top margin for slider category component
+        //     $(".categories-slider-container").css("margin-top", (headerHeight));
+        // }
         
         
         // This will work for all pages except homepage. 
@@ -195,6 +195,11 @@
         $(".view-more").on("click", function(){
             $(this).siblings(".collapse-item").addClass("active")
             $(this).hide();
+        })
+
+        $(".add-to-bag-btn").on("click", function(e){
+            e.preventDefault();
+            $(this).find(".bag-text").text("Go to Bag")
         })
     }
 

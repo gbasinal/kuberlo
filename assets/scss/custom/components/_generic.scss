@@ -67,7 +67,7 @@
 
                 }
                 .product-description {
-                    color: $grey;
+                    color: $darkGrey;
                     font-weight: 400;
                     
                 }
@@ -76,7 +76,7 @@
                 }
                 .product-discount{
                     font-weight: 400;
-                    color: $grey;
+                    color: $darkGrey;
                     text-decoration: line-through;
                     margin: 0 em(6);
                 }
@@ -101,6 +101,7 @@
             .input-pin-container {
                 width: 100%;
                 margin-bottom: em(10);
+                position: relative;
                 input {
                     width: 100%;
                     padding: em(10);
@@ -109,6 +110,21 @@
                     border: 1px solid $grey;
                     &::placeholder {
                         color: $purple;
+                    }
+                }
+                .check-pin-btn {
+                    position: absolute;
+                    right: 0;
+                    z-index: 9;
+                    height: 100%;
+                    background-color: transparent;
+                    border: 0;
+                    text-transform: uppercase;
+                    padding-right: em(15);
+                    color: $purple;
+                    outline: none;
+                    &:focus {
+                        outline: none;
                     }
                 }
             }
