@@ -20,7 +20,6 @@
 
     Menu.prototype.hamburgerAnimation = function(){
         $(".hamburger").on("click", function(){
-            console.log("alksjdlaksj")
             $(this).toggleClass("is-active");
         })
     }

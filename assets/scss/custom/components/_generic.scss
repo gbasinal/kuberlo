@@ -16,7 +16,7 @@
             margin-right: .5em;
         }
         p{
-            font-size: em(15);
+            font-size: em(14);
             letter-spacing: 0;
             .amount {
                 color: $purple;
@@ -28,7 +28,7 @@
             input {
                 border: 0;
                 border-bottom: 1px solid black;
-                font-size: em(13);
+                font-size: em(14);
                 padding: 0;
                 width: 100%;
                 &.empty {
@@ -53,7 +53,7 @@
             align-items: start;
 
             h3 {
-                margin-bottom: em(10);
+                margin-bottom: em(5);
             }
         }
         .generic-text-wrapper {
@@ -61,13 +61,13 @@
             // margin-bottom: em(-15);
             margin-top: em(10);
             h3 {
-                font-size: em(16);
-                margin-bottom: em(10);
+                font-size: em(14);
+                margin-bottom: em(5);
                 .product-name {
 
                 }
                 .product-description {
-                    color: $grey;
+                    color: $darkGrey;
                     font-weight: 400;
                     
                 }
@@ -76,7 +76,7 @@
                 }
                 .product-discount{
                     font-weight: 400;
-                    color: $grey;
+                    color: $darkGrey;
                     text-decoration: line-through;
                     margin: 0 em(6);
                 }
@@ -101,14 +101,30 @@
             .input-pin-container {
                 width: 100%;
                 margin-bottom: em(10);
+                position: relative;
                 input {
                     width: 100%;
                     padding: em(10);
-                    font-size: em(13);
+                    font-size: em(14);
                     border-radius: 3px;
                     border: 1px solid $grey;
                     &::placeholder {
                         color: $purple;
+                    }
+                }
+                .check-pin-btn {
+                    position: absolute;
+                    right: 0;
+                    z-index: 9;
+                    height: 100%;
+                    background-color: transparent;
+                    border: 0;
+                    text-transform: uppercase;
+                    padding-right: em(15);
+                    color: $purple;
+                    outline: none;
+                    &:focus {
+                        outline: none;
                     }
                 }
             }
@@ -119,13 +135,13 @@
                     list-style-type: none;
                     padding: em(10) 0;
                     border-top: 1px solid $grey;
-                    
+                    font-size: em(14);
                     a{
                         display: flex;
                         justify-content: space-between;
                         width: 100%;
                         align-items: center;
-                        font-size: em(20);
+                        font-size: 1em;
                         letter-spacing: -.3px;
                     }
                 }
@@ -148,7 +164,7 @@
                     margin-bottom: em(5);
                 }
                 p {
-                    font-size: em(12);
+                    font-size: em(14);
                 }
 
             }
