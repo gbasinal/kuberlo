@@ -18,7 +18,7 @@
         align-items: center;
         .wrapper {
             text-align: center;
-            width: 50%;
+            width: calc(50% - .5em);
             a {
                 font-size: em(12);
                 letter-spacing: 2px;
@@ -68,6 +68,9 @@
                         padding: em(17);
                         font-size: em(16);
                     }
+                    img {
+                        margin-right: em(5);
+                    }
                 }
             }
         }
@@ -78,6 +81,21 @@
         background-color: $grey;
         @media only screen and (min-width: 768px){
             height: em(35);
+        }
+    }
+    &.sticky-v2 {
+        position: relative;
+        border-bottom: 0;
+        box-shadow: none;
+        .bottom-sticky-wrapper {
+            &.cart-page {
+                a {
+                    &.btn--place-order {
+                        font-size: em(14);
+                    }
+                    
+                }
+            }
         }
     }
 }
