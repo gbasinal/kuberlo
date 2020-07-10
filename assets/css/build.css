@@ -81,7 +81,7 @@ h4 {
   font-size: 1.25em;
   letter-spacing: 0em;
   line-height: 1;
-  font-weight: 400;
+  font-weight: 600;
   font-family: "Hind", sans-serif;
 }
 @media only screen and (max-width: 767px) {
@@ -818,11 +818,11 @@ input:focus {
   text-align: center;
   width: calc(50% - .5em);
 }
-.bottom-sticky-container .bottom-sticky-wrapper .wrapper.filter-wrapper {
-  width: 12.375em;
+.bottom-sticky-container .bottom-sticky-wrapper .wrapper .filter-wrapper {
+  width: calc(60% - .5em);
 }
-.bottom-sticky-container .bottom-sticky-wrapper .wrapper.sort-wrapper {
-  width: 8.5625em;
+.bottom-sticky-container .bottom-sticky-wrapper .wrapper .sort-wrapper {
+  width: calc(40% - .5em);
 }
 .bottom-sticky-container .bottom-sticky-wrapper .wrapper a {
   font-size: 0.75em;
@@ -888,10 +888,10 @@ input:focus {
   }
 }
 .bottom-sticky-container.sticky-v2 .bottom-sticky-wrapper.cart-page .filter-wrapper {
-  width: 12.375em;
+  width: calc(60% - .5em);
 }
 .bottom-sticky-container.sticky-v2 .bottom-sticky-wrapper.cart-page .sort-wrapper {
-  width: 8.5625em;
+  width: calc(40% - .5em);
 }
 .bottom-sticky-container.unstick {
   position: relative;
@@ -900,7 +900,7 @@ input:focus {
 }
 
 .trigger-for-sticky {
-  height: 0s;
+  height: 0px;
 }
 
 .categories-slider-container {
@@ -1760,7 +1760,7 @@ main {
   padding-bottom: 0.9375em;
 }
 main section {
-  margin: 1.25em 0;
+  margin: 0.625em 0;
 }
 main section:last-child {
   margin-bottom: 2.5em;
