@@ -2,17 +2,15 @@
     width: 100%;
     height : em(100);
     background-color: white;
-    position: fixed;
     margin-top: em(50);
     text-align: center;
     z-index: 8;
-    top: 0;
     .categories-slider-wrapper {
         box-shadow: $botBoxShadow;
         background: white;
         @media only screen and (max-width: 767px){
             padding-top: em(5);
-            padding-bottom: em(15);
+            padding-bottom: em(17);
         }
         @media only screen and (min-width: 768px){
             padding-bottom: em(15);
@@ -23,10 +21,11 @@
                 a { 
                     text-transform: uppercase;
                     img {
-                        width: em(100);
-                        height: em(100);
+                        width: em(80);
+                        height: em(80);
                         border-radius: 50%;
-                        margin: em(5) auto;
+                        margin: em(5) auto 0;
+                        object-fit: cover;
                         @media only screen and (min-width: 768px){
                             width: em(120);
                             height: em(120);

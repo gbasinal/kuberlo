@@ -31,16 +31,16 @@ $base-height : 22.5;
 
 // Color Variables 
 
-$black : #000;
+$black : #282c3f;
 $purple : #f1137a;
 $grey : #c2c2c2;
 $lightPurple: #ffdaeb;
 $pink : #ff99c8;
 
-$whiteWash : #8d8d8d;
+$whiteWash : #d5d6d9;
 $green : #03a685;
 $lightGrey : rgba(194, 194, 194, .15);
-$darkGrey : rgba(246, 246, 246, 1);
+$darkGrey : #535665;
 
 
 .red {
@@ -62,4 +62,4 @@ $darkGrey : rgba(246, 246, 246, 1);
 
 // Custom Variables 
 
-$botBoxShadow : 0 2px 3px -2px rgba(0, 0, 0, 0.55);
+$botBoxShadow : 0 1px 2px 0 rgba(148,150,159,.3);
