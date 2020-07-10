@@ -126,5 +126,20 @@
                 }
             }
         }
+        .three-col-wrapper {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            .col-item {
+                width: calc(33.33% - .5em);
+                text-align: center;
+                img {
+                    margin-bottom: em(5);
+                }
+                p {
+                    font-size: em(12);
+                }
+            }
+        }
     }
 }

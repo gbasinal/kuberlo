@@ -1678,6 +1678,21 @@ input:focus {
   font-size: 1.25em;
   letter-spacing: -0.3px;
 }
+.generic-container .generic-wrapper .three-col-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.generic-container .generic-wrapper .three-col-wrapper .col-item {
+  width: calc(33.33% - .5em);
+  text-align: center;
+}
+.generic-container .generic-wrapper .three-col-wrapper .col-item img {
+  margin-bottom: 0.3125em;
+}
+.generic-container .generic-wrapper .three-col-wrapper .col-item p {
+  font-size: 0.75em;
+}
 
 * {
   margin: 0;
