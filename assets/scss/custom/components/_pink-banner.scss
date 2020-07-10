@@ -2,7 +2,7 @@
     width: 100%;
     height: em(75);
     background-color: $pink;
-    margin-top: em(70);
+    margin-top: em(56);
     
     @media only screen and (min-width: 768px){
         height: em(100);
@@ -22,9 +22,11 @@
             color: white;
             font-weight: 600;
             margin-bottom: 5px;
+            font-size: em(14);
         }
         p {
             color: white;
+            font-size: em(14);
         }
     }
 }

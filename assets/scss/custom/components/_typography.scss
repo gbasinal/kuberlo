@@ -16,7 +16,7 @@ h2 {
     @include textStyle($black ,24 , 0 , 24 , bold );
     font-family: $hind;
     @media only screen and (max-width: 767px){
-        font-size: em(16);
+        font-size: em(14);
         font-weight: 700;
     }
 }
@@ -25,24 +25,24 @@ h3 {
     @include textStyle($black ,22 , 0, 22 , bold );
     font-family: $hind;
     @media only screen and (max-width: 767px){
-        font-size: em(16);
+        font-size: em(14);
         font-weight: 600;
     }
 }
 
 h4 {
-    @include textStyle($black ,20, 0, 20 , 600 );
+    @include textStyle($black ,20, 0, 20 , 6s00 );
     font-family: $hind;
     @media only screen and (max-width: 767px){
-        font-size: em(13);
+        font-size: em(14);
     }
 }
 
 h5 {
-    @include textStyle($whiteWash ,16, 0 , 16 , 400 );
+    @include textStyle($darkGrey ,16, 0 , 16 , 400 );
     font-family: $hind;
     @media only screen and (max-width: 767px){
-        font-size: em(10);
+        font-size: em(14);
     }
 }
 
