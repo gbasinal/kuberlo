@@ -12,6 +12,8 @@
         self.discountAppliedNotif();
         self.enableMiniCart();
         self.addTopMargin();
+        self.unStickComponent();
+        self.collapseItem();
     };
     
 
@@ -167,6 +169,33 @@
         
             
         }
+    }
+
+    Functions.prototype.unStickComponent = function() {
+        var headerHeight = $(".header-container").outerHeight();
+
+        $(window).on("scroll", function(){
+            if( $(window).scrollTop() <= headerHeight){
+                $(".sticky-v2").removeClass("unstick")
+            }
+        })
+
+
+        $('.trigger-for-sticky').on('inview', function(event, isInView) {
+            if(isInView){
+               $(".sticky-v2").addClass("unstick")
+            }
+        });
+    }
+
+
+    Functions.prototype.collapseItem = function(){
+        
+
+        $(".view-more").on("click", function(){
+            $(this).siblings(".collapse-item").addClass("active")
+            $(this).hide();
+        })
     }
 
     app.Functions = Functions;

@@ -86,8 +86,71 @@
                 }
             }
             p{
+                margin-bottom: em(10);
+                font-size: em(14);
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                &.view-more {
+                    cursor: pointer;
+                    color: $purple;
+                    font-weight: 600;
+                }
                 
-                
+            }
+            .input-pin-container {
+                width: 100%;
+                margin-bottom: em(10);
+                input {
+                    width: 100%;
+                    padding: em(10);
+                    font-size: em(13);
+                    border-radius: 3px;
+                    border: 1px solid $grey;
+                    &::placeholder {
+                        color: $purple;
+                    }
+                }
+            }
+            ul {
+                padding: 0;
+                margin: 0;
+                li {
+                    list-style-type: none;
+                    padding: em(10) 0;
+                    border-top: 1px solid $grey;
+                    
+                    a{
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100%;
+                        align-items: center;
+                        font-size: em(20);
+                        letter-spacing: -.3px;
+                    }
+                }
+            }
+            .collapse-item {
+                display: none;
+                &.active {
+                    display: block;
+                }
+            }
+        }
+        .three-col-wrapper {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            .col-item {
+                width: calc(33.33% - .5em);
+                text-align: center;
+                img {
+                    margin-bottom: em(5);
+                }
+                p {
+                    font-size: em(12);
+                }
+
             }
         }
     }

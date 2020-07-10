@@ -8,7 +8,7 @@
 }
 
 .black {
-  color: #000;
+  color: #000 !important;
 }
 
 .grey {
@@ -21,7 +21,7 @@
 
 .btn {
   padding: 0.9375em 1.5625em;
-  border-radius: 5px;
+  border-radius: 3px;
   text-transform: uppercase;
   outline: none;
 }
@@ -104,7 +104,7 @@ h5 {
   }
 }
 
-p, a, input {
+p, a, input, li {
   color: #000;
   font-size: 1em;
   letter-spacing: 0.06875em;
@@ -113,7 +113,7 @@ p, a, input {
   font-family: "Hind", sans-serif;
 }
 @media only screen and (max-width: 767px) {
-  p, a, input {
+  p, a, input, li {
     font-size: 0.6875em;
   }
 }
@@ -816,7 +816,7 @@ input:focus {
 }
 .bottom-sticky-container .bottom-sticky-wrapper .wrapper {
   text-align: center;
-  width: 50%;
+  width: calc(50% - .5em);
 }
 .bottom-sticky-container .bottom-sticky-wrapper .wrapper a {
   font-size: 0.75em;
@@ -867,6 +867,9 @@ input:focus {
   padding: 1.0625em;
   font-size: 1em;
 }
+.bottom-sticky-container .bottom-sticky-wrapper.cart-page .wrapper a img {
+  margin-right: 0.3125em;
+}
 .bottom-sticky-container .divider {
   height: 1.5625em;
   width: 1px;
@@ -876,6 +879,18 @@ input:focus {
   .bottom-sticky-container .divider {
     height: 2.1875em;
   }
+}
+.bottom-sticky-container.sticky-v2 .bottom-sticky-wrapper.cart-page a.btn--place-order {
+  font-size: 0.875em;
+}
+.bottom-sticky-container.unstick {
+  position: relative;
+  border-bottom: 0;
+  box-shadow: none;
+}
+
+.trigger-for-sticky {
+  height: 0;
 }
 
 .categories-slider-container {
@@ -1625,6 +1640,71 @@ input:focus {
   font-weight: 400;
   color: #f1137a;
 }
+.generic-container .generic-wrapper .generic-text-wrapper p {
+  margin-bottom: 0.625em;
+  font-size: 0.875em;
+}
+.generic-container .generic-wrapper .generic-text-wrapper p:last-child {
+  margin-bottom: 0;
+}
+.generic-container .generic-wrapper .generic-text-wrapper p.view-more {
+  cursor: pointer;
+  color: #f1137a;
+  font-weight: 600;
+}
+.generic-container .generic-wrapper .generic-text-wrapper .input-pin-container {
+  width: 100%;
+  margin-bottom: 0.625em;
+}
+.generic-container .generic-wrapper .generic-text-wrapper .input-pin-container input {
+  width: 100%;
+  padding: 0.625em;
+  font-size: 0.8125em;
+  border-radius: 3px;
+  border: 1px solid #c2c2c2;
+}
+.generic-container .generic-wrapper .generic-text-wrapper .input-pin-container input::placeholder {
+  color: #f1137a;
+}
+.generic-container .generic-wrapper .generic-text-wrapper ul {
+  padding: 0;
+  margin: 0;
+}
+.generic-container .generic-wrapper .generic-text-wrapper ul li {
+  list-style-type: none;
+  padding: 0.625em 0;
+  border-top: 1px solid #c2c2c2;
+}
+.generic-container .generic-wrapper .generic-text-wrapper ul li a {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  font-size: 1.25em;
+  letter-spacing: -0.3px;
+}
+.generic-container .generic-wrapper .generic-text-wrapper .collapse-item {
+  display: none;
+}
+.generic-container .generic-wrapper .generic-text-wrapper .collapse-item.active {
+  display: block;
+}
+.generic-container .generic-wrapper .three-col-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.generic-container .generic-wrapper .three-col-wrapper .col-item {
+  width: calc(33.33% - .5em);
+  text-align: center;
+}
+.generic-container .generic-wrapper .three-col-wrapper .col-item img {
+  margin-bottom: 0.3125em;
+}
+.generic-container .generic-wrapper .three-col-wrapper .col-item p {
+  font-size: 0.75em;
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
