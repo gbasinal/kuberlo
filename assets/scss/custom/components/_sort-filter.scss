@@ -19,11 +19,11 @@
         .wrapper {
             text-align: center;
             width: calc(50% - .5em);
-            &.filter-wrapper {
-                width: em(198);
+            .filter-wrapper {
+                width: calc(60% - .5em);
             }
-            &.sort-wrapper {
-                width: em(137);
+            .sort-wrapper {
+                width: calc(40% - .5em);
             }
             a {
                 font-size: em(12);
@@ -95,10 +95,10 @@
         .bottom-sticky-wrapper {
             &.cart-page {
                 .filter-wrapper {
-                    width: em(198);
+                    width: calc(60% - .5em);
                 }
                 .sort-wrapper {
-                    width: em(137);
+                    width: calc(40% - .5em);
                 }
                 a {
                     &.btn--place-order {
@@ -117,5 +117,5 @@
 }
 
 .trigger-for-sticky {
-    height: 0s;
+    height: 0px;
 }
