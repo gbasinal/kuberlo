@@ -11,6 +11,9 @@
         self.viewDetailsWhenclicked();
         self.discountAppliedNotif();
         self.enableMiniCart();
+        self.addTopMargin();
+        self.unStickComponent();
+        self.collapseItem();
     };
     
 
@@ -132,6 +135,66 @@
             setTimeout(function(){
                 $(".mini-cart-wrapper").removeClass("active");
             },300)
+        })
+    }
+
+    Functions.prototype.addTopMargin = function(){
+        var headerHeight = $(".header-container").outerHeight();
+        var catSliderHeight = $(".categories-slider-container").outerHeight();
+        var totalHt = catSliderHeight + headerHeight + 10;
+    
+        // This margin will only work in homepage, or if a page has a categories slider component
+        if($("main").length > 0 && $(".categories-slider-container").length > 0){
+            if($(window).outerWidth() > 767){
+                
+                $("main").css("padding-top", (totalHt+ headerHeight));
+            }else {
+                $("main").css("padding-top", (totalHt));
+            }
+    
+            
+    
+            // This will add automatically a top margin for slider category component
+            $(".categories-slider-container").css("margin-top", (headerHeight));
+        }
+        
+        
+        // This will work for all pages except homepage. 
+        
+        if( $("main").length > 0 && $(".categories-slider-container").length === 0){
+        
+            
+            $("main section").eq(0).css("margin-top", headerHeight)
+            $("main section .slider-component-wrapper").eq(0).css("padding-top", 0)
+        
+            
+        }
+    }
+
+    Functions.prototype.unStickComponent = function() {
+        var headerHeight = $(".header-container").outerHeight();
+
+        $(window).on("scroll", function(){
+            if( $(window).scrollTop() <= headerHeight){
+                $(".sticky-v2").removeClass("unstick")
+            }
+        })
+
+
+        $('.trigger-for-sticky').on('inview', function(event, isInView) {
+            if(isInView){
+               $(".sticky-v2").addClass("unstick")
+            }
+        });
+    }
+
+
+    Functions.prototype.collapseItem = function(){
+        
+
+        $(".view-more").on("click", function(){
+            $(this).siblings(".collapse-item").addClass("active")
+            $(this).hide();
         })
     }
 
