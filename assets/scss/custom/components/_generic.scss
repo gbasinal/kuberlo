@@ -16,7 +16,7 @@
             margin-right: .5em;
         }
         p{
-            font-size: em(15);
+            font-size: em(14);
             letter-spacing: 0;
             .amount {
                 color: $purple;
@@ -28,7 +28,7 @@
             input {
                 border: 0;
                 border-bottom: 1px solid black;
-                font-size: em(13);
+                font-size: em(14);
                 padding: 0;
                 width: 100%;
                 &.empty {
@@ -53,7 +53,7 @@
             align-items: start;
 
             h3 {
-                margin-bottom: em(10);
+                margin-bottom: em(5);
             }
         }
         .generic-text-wrapper {
@@ -61,8 +61,8 @@
             // margin-bottom: em(-15);
             margin-top: em(10);
             h3 {
-                font-size: em(16);
-                margin-bottom: em(10);
+                font-size: em(14);
+                margin-bottom: em(5);
                 .product-name {
 
                 }
@@ -105,7 +105,7 @@
                 input {
                     width: 100%;
                     padding: em(10);
-                    font-size: em(13);
+                    font-size: em(14);
                     border-radius: 3px;
                     border: 1px solid $grey;
                     &::placeholder {
@@ -141,7 +141,7 @@
                         justify-content: space-between;
                         width: 100%;
                         align-items: center;
-                        font-size: em(20);
+                        font-size: em(14);
                         letter-spacing: -.3px;
                     }
                 }
@@ -164,7 +164,7 @@
                     margin-bottom: em(5);
                 }
                 p {
-                    font-size: em(12);
+                    font-size: em(14);
                 }
 
             }
