@@ -22,7 +22,7 @@ h2 {
 }
 
 h3 {
-    @include textStyle($black ,22 , 0, 22 , bold );
+    @include textStyle($black ,16 , 0, 22 , bold );
     font-family: $hind;
     @media only screen and (max-width: 767px){
         font-size: em(14);

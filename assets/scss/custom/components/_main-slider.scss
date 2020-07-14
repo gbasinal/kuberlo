@@ -16,8 +16,14 @@
                     // min-height: 24.3125em;
                     height: auto;
                     width: 100%;
+                    @media only screen and (max-width : 767px){
+                        max-height: em(767);
+                    }
+                    @media only screen and (max-width : 991px){
+                        max-height: em(991);
+                    }
                     @media only screen and (min-width: 1025px){
-                        max-height: em(700);
+                        max-height: em(1024);
                     }
                 }
             }
@@ -66,10 +72,16 @@
                             h3 {
                                 font-size: em(20.3);
                                 margin-bottom: em(5);
+                                @media only screen and (min-width: 1025px){
+                                    font-size: em(16);
+                                }
                             }
                             p{
                                 font-size: em(20);
                                 margin-bottom: em(5);
+                                @media only screen and (min-width: 1025px){
+                                    font-size: em(16);
+                                }
                             }
                         }
                         .btn-container {
@@ -78,6 +90,9 @@
                             button {
                                 color: $purple;
                                 font-weight: 600;
+                                @media only screen and (min-width: 1025px){
+                                    font-size: em(16);
+                                }
                             }
                         }
                     }

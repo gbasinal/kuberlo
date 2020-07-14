@@ -113,19 +113,23 @@
         $(".cart-open").on("click", function(e){
             e.preventDefault();
 
-            // $(".recommended-slide-active.slider-carousel .owl-item").css("width", $(".recommended-slide-active.slider-carousel ").outerWidth() )
+           
+        
 
             $(".mini-cart-container main").css("padding-top", 0);
             $(".mini-cart-wrapper").addClass("active");
+
             setTimeout(function(){
+                $(".recommended-slide-active.slider-carousel .owl-item").css("width", $(".recommended-slide-active.slider-carousel ").outerWidth()  )
                 $(".mini-cart-wrapper").css("opacity", 1);
                 
-				var miniCartItemW = $(".recommended-slide-active.slider-carousel .owl-item").outerWidth();
-				console.log(miniCartItemW)
-				$(".recommended-slide-active.slider-carousel .owl-item .item-imageStyle").css("height", 195 )
-		
-            },300)
-            
+                var miniCartItemW = $(".recommended-slide-active.slider-carousel").outerWidth();
+                console.log(miniCartItemW)
+				// $(".recommended-slide-active.slider-carousel .owl-item .item-imageStyle").css("height", miniCartItemW/1.9 )
+            },500)
+
+            $("body, html").css("overflow", "hidden");
+  
         })
 
         $(".btn-mini-cart-back").on("click", function(e){
@@ -135,6 +139,7 @@
             setTimeout(function(){
                 $(".mini-cart-wrapper").removeClass("active");
             },300)
+            $("body, html").css("overflow", "auto");
         })
     }
 
@@ -144,19 +149,19 @@
         var totalHt = catSliderHeight + headerHeight + 10;
     
         // This margin will only work in homepage, or if a page has a categories slider component
-        // if($("main").length > 0 && $(".categories-slider-container").length > 0){
-        //     if($(window).outerWidth() > 767){
+        if($("main").length > 0 && $(".categories-slider-container").length > 0){
+            if($(window).outerWidth() > 767){
                 
-        //         $("main").css("padding-top", (totalHt+ headerHeight));
-        //     }else {
-        //         $("main").css("padding-top", (totalHt));
-        //     }
+                $("main").css("margin-top", (headerHeight - 10));
+            }else {
+       
+            }
     
             
     
         //     // This will add automatically a top margin for slider category component
-        //     $(".categories-slider-container").css("margin-top", (headerHeight));
-        // }
+            $(".categories-slider-container").css("margin-top", (headerHeight));
+        }
         
         
         // This will work for all pages except homepage. 
@@ -164,7 +169,7 @@
         if( $("main").length > 0 && $(".categories-slider-container").length === 0 && $("main .single-slide-active").length >0){
         
             
-            $("main section").eq(0).css("margin-top", headerHeight)
+            $("main section").eq(0).css("margin-top", headerHeight+10)
             $("main section .slider-component-wrapper").eq(0).css("padding-top", 0)
         
             

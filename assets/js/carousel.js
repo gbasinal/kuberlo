@@ -121,7 +121,7 @@
 				items: slideritem,
 				stagePadding: 90,
 				fluidSpeed: true,
-	
+				
 			})	
 			
 			
@@ -131,8 +131,10 @@
 
 
 			
+			
 
 		}
+		
 	
 	}
 

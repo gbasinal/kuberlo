@@ -14,6 +14,9 @@
             h3 {
                 font-weight: 600;
                 font-size: em(14);
+                @media only screen and (min-width: 1025px){
+                    font-size: em(16);
+                }
                 &.total-amount {
                     color: black;
                     span {
@@ -31,6 +34,9 @@
                 line-height: 1.5;
                 letter-spacing: 0;
                 font-size: em(14);
+                @media only screen and (min-width: 1025px){
+                    font-size: em(16);
+                }
             }
         }
         .coupon-code-wrapper {

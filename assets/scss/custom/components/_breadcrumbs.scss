@@ -7,6 +7,9 @@
     align-items: center;
     background-color: white;
     padding: 0 em(15);
+    @media only screen and (min-width: 768px){
+        margin-top: em(70)
+    }
     .breadcrumbs-wrapper {
         display: flex;
         justify-content: space-between;
@@ -51,7 +54,7 @@
                 .line-wrapper {
                     .line-animate {
                         background-color: $green;
-                        width: 90%;
+                        width: 98%;
                         transition: .3s width;
                         position: absolute;
                     }

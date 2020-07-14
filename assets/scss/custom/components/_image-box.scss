@@ -43,7 +43,10 @@
                             .image-label-wrapper {
                                 text-align: center;
                                 padding: em(10) em(5);
-                                font-size: 14px;
+                                font-size: 1.273em;
+                                @media only screen and (min-width: 1025px){
+                                    font-size:  em(16);
+                                }
                             }
                         }
                     }
