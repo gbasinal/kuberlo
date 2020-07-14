@@ -612,6 +612,7 @@ input:focus {
   width: 100%;
   margin-bottom: 4.375em;
   background-color: white;
+  margin-top: 0;
 }
 @media only screen and (min-width: 768px) {
   .product-items-container {
@@ -725,7 +726,7 @@ input:focus {
 .product-items-container .product-wrapper .item-wrapper .product-content-wrapper .product-price-wrapper .price-wrapper h3 {
   font-family: "Hind", sans-serif;
   margin-right: 4px;
-  font-size: 0.75em;
+  font-size: 0.8125em;
   letter-spacing: -0.5px;
 }
 @media only screen and (min-width: 768px) {
@@ -746,7 +747,7 @@ input:focus {
 }
 .product-items-container .product-wrapper .item-wrapper .product-content-wrapper .product-price-wrapper .discount-detail {
   font-family: "Hind", sans-serif;
-  font-size: 0.875em;
+  font-size: 0.8125em;
   color: #03a685;
   letter-spacing: 0;
 }
