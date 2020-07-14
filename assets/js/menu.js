@@ -7,6 +7,7 @@
         var self = this;
         // self.expandSearchInputField();
         self.hamburgerAnimation();
+        self.menuItemSetActiveState();
     };
     
 
@@ -20,7 +21,27 @@
 
     Menu.prototype.hamburgerAnimation = function(){
         $(".hamburger").on("click", function(){
-            $(this).toggleClass("is-active");
+            // $(this).toggleClass("is-active");
+            $(".nav-menu-container").addClass("active")
+        })
+        $(".menu-close-button").on("click", function(){
+            $(".nav-menu-container").removeClass("active")
+        })
+    }
+
+    Menu.prototype.menuItemSetActiveState = function(){ 
+        $(".nav-item").on("click", function(e){
+            e.preventDefault();
+        })
+
+        $(".nav-item img").on("click", function(){
+            $(this).toggleClass("active");
+            $(this).parent().siblings(".sub-nav-container").toggleClass("active")
+        })
+
+        $(".menu-item-name").on("click", function(){
+            var url = $(this).data("url");
+            window.location.href = window.location.origin + url;
         })
     }
 
