@@ -64,7 +64,7 @@
                     img {
                         width: 1em;
                         height: 1em;
-                        
+                        z-index: 9;
                         display: none;
                         &.active {
                             transform: rotate(90deg);
