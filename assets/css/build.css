@@ -264,6 +264,7 @@ input:focus {
 .nav-menu-container .nav-menu-wrapper .nav-item-container .nav-item-wrapper .nav-item img {
   width: 1em;
   height: 1em;
+  z-index: 9;
   display: none;
 }
 .nav-menu-container .nav-menu-wrapper .nav-item-container .nav-item-wrapper .nav-item img.active {

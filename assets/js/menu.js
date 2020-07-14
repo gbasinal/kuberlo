@@ -48,6 +48,7 @@
         })
 
         $(".nav-item img").on("click", function(){
+            console.log("asda")
             $(this).toggleClass("active");
             $(this).parent().siblings(".sub-nav-container").toggleClass("active")
         })
