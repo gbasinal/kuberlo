@@ -205,6 +205,93 @@ input:focus {
   margin-right: 0;
 }
 
+.nav-menu-container {
+  width: 100%;
+  background-color: rgba(194, 194, 194, 0.5);
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: none;
+}
+.nav-menu-container.active {
+  display: block;
+}
+.nav-menu-container .nav-item-close-container {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: rgba(194, 194, 194, 0.08);
+  height: 3.5625em;
+  display: flex;
+  align-items: center;
+  padding-left: 0.9375em;
+  border-bottom: 1px solid rgba(194, 194, 194, 0.5);
+}
+.nav-menu-container .nav-item-close-container .menu-close-button {
+  display: flex;
+  align-items: center;
+}
+.nav-menu-container .nav-item-close-container .menu-close-button button {
+  margin-top: 0.4375em;
+}
+.nav-menu-container .nav-menu-wrapper {
+  padding: 3.5625em 0em;
+  height: 100vh;
+  width: 70%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: white;
+}
+.nav-menu-container .nav-menu-wrapper .nav-item-container .nav-item-wrapper {
+  padding: 0.625em 0.9375em;
+  border-bottom: 1px solid rgba(194, 194, 194, 0.5);
+}
+.nav-menu-container .nav-menu-wrapper .nav-item-container .nav-item-wrapper .nav-item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  font-size: 1em;
+}
+.nav-menu-container .nav-menu-wrapper .nav-item-container .nav-item-wrapper .nav-item img {
+  width: 1em;
+  height: 1em;
+}
+.nav-menu-container .nav-menu-wrapper .nav-item-container .nav-item-wrapper .nav-item img.active {
+  transform: rotate(180deg);
+}
+.nav-menu-container .nav-menu-wrapper .nav-item-container .nav-item-wrapper .sub-nav-container {
+  padding-left: 0.9375em;
+  padding-top: 1.5625em;
+}
+.nav-menu-container .nav-menu-wrapper .nav-item-container .nav-item-wrapper .sub-nav-container.level-2 {
+  display: none;
+}
+.nav-menu-container .nav-menu-wrapper .nav-item-container .nav-item-wrapper .sub-nav-container.level-2 .nav-item {
+  padding-bottom: 0.3125em;
+}
+.nav-menu-container .nav-menu-wrapper .nav-item-container .nav-item-wrapper .sub-nav-container.level-3 {
+  padding-top: 0;
+  display: none;
+}
+.nav-menu-container .nav-menu-wrapper .nav-item-container .nav-item-wrapper .sub-nav-container.level-3 .nav-item {
+  padding-bottom: 0.3125em;
+}
+.nav-menu-container .nav-menu-wrapper .nav-item-container .nav-item-wrapper .sub-nav-container.active {
+  display: block;
+}
+.nav-menu-container .nav-menu-wrapper .nav-item-container .nav-item-wrapper .sub-nav-container .sub-nav-wrapper {
+  padding-top: 0.625em;
+}
+
 /**
  * Owl Carousel v2.3.4
  * Copyright 2013-2018 David Deutsch
