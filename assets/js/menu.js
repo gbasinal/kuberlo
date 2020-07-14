@@ -23,9 +23,11 @@
         $(".hamburger").on("click", function(){
             // $(this).toggleClass("is-active");
             $(".nav-menu-container").addClass("active")
+            $("body").addClass("no-scroll");
         })
         $(".menu-close-button").on("click", function(){
             $(".nav-menu-container").removeClass("active")
+            $("body").removeClass("no-scroll");
         })
     }
 
