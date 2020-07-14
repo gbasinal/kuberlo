@@ -2,6 +2,7 @@
     width: 100%;
     margin-bottom: em(70);
     background-color: white;
+    margin-top: 0;
     @media only screen and (min-width: 768px){
         margin-bottom: em(80);
     }
@@ -105,7 +106,7 @@
                         h3 {
                             font-family: $hind;
                             margin-right : 4px;
-                            font-size: em(12);
+                            font-size: em(13);
                             letter-spacing: -.5px;
                             @media only screen and (min-width: 768px){
                                 font-size: em(18);
@@ -123,7 +124,7 @@
                     }
                     .discount-detail {
                         font-family: $hind;
-                        font-size: em(14);
+                        font-size: em(13);
                         color: $green;
                         letter-spacing: 0;
                         @media only screen and (min-width: 768px){
