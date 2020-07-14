@@ -63,9 +63,9 @@ h2 {
 
 h3 {
   color: #282c3f;
-  font-size: 1.375em;
+  font-size: 1em;
   letter-spacing: 0em;
-  line-height: 1;
+  line-height: 1.375;
   font-weight: bold;
   font-family: "Hind", sans-serif;
 }
@@ -800,13 +800,16 @@ input:focus {
   border-bottom: 1px solid #c2c2c2;
   position: fixed;
   bottom: 0;
+  right: 0;
+  left: 0;
   background-color: white;
   box-shadow: 0px -2px 1px -2px rgba(0, 0, 0, 0.55);
   z-index: 8;
+  margin: 0 auto;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .bottom-sticky-container {
-    height: 5em;
+    max-width: 64em;
   }
 }
 .bottom-sticky-container .bottom-sticky-wrapper {
@@ -834,13 +837,13 @@ input:focus {
   align-items: center;
   justify-content: center;
 }
+@media only screen and (min-width: 1025px) {
+  .bottom-sticky-container .bottom-sticky-wrapper .wrapper a {
+    font-size: 1em;
+  }
+}
 .bottom-sticky-container .bottom-sticky-wrapper .wrapper a .sort-span {
   position: relative;
-}
-@media only screen and (min-width: 768px) {
-  .bottom-sticky-container .bottom-sticky-wrapper .wrapper a {
-    font-size: 1.25em;
-  }
 }
 .bottom-sticky-container .bottom-sticky-wrapper .wrapper a img {
   margin-right: 1.25em;
@@ -909,9 +912,14 @@ input:focus {
   width: 100%;
   height: 6.25em;
   background-color: white;
-  margin-top: 3.5em;
+  margin-top: 4.375em;
   text-align: center;
   z-index: 8;
+}
+@media only screen and (min-width: 1025px) {
+  .categories-slider-container {
+    font-size: 12px;
+  }
 }
 .categories-slider-container .categories-slider-wrapper {
   box-shadow: 0 1px 2px 0 rgba(148, 150, 159, 0.3);
@@ -976,9 +984,19 @@ input:focus {
   height: auto;
   width: 100%;
 }
+@media only screen and (max-width: 767px) {
+  .slider-component-container .slider-component-wrapper .slider-carousel .item .item-imageStyle {
+    max-height: 47.9375em;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .slider-component-container .slider-component-wrapper .slider-carousel .item .item-imageStyle {
+    max-height: 61.9375em;
+  }
+}
 @media only screen and (min-width: 1025px) {
   .slider-component-container .slider-component-wrapper .slider-carousel .item .item-imageStyle {
-    max-height: 43.75em;
+    max-height: 64em;
   }
 }
 .slider-component-container .slider-component-wrapper .slider-carousel .owl-dots {
@@ -1019,9 +1037,19 @@ input:focus {
   font-size: 1.26875em;
   margin-bottom: 0.3125em;
 }
+@media only screen and (min-width: 1025px) {
+  .slider-component-container .slider-component-wrapper .slider-carousel.double-slide-active.recommended-slide-active .item-slider .product-description h3 {
+    font-size: 1em;
+  }
+}
 .slider-component-container .slider-component-wrapper .slider-carousel.double-slide-active.recommended-slide-active .item-slider .product-description p {
   font-size: 1.25em;
   margin-bottom: 0.3125em;
+}
+@media only screen and (min-width: 1025px) {
+  .slider-component-container .slider-component-wrapper .slider-carousel.double-slide-active.recommended-slide-active .item-slider .product-description p {
+    font-size: 1em;
+  }
 }
 .slider-component-container .slider-component-wrapper .slider-carousel.double-slide-active.recommended-slide-active .item-slider .btn-container {
   text-align: center;
@@ -1030,6 +1058,11 @@ input:focus {
 .slider-component-container .slider-component-wrapper .slider-carousel.double-slide-active.recommended-slide-active .item-slider .btn-container button {
   color: #f1137a;
   font-weight: 600;
+}
+@media only screen and (min-width: 1025px) {
+  .slider-component-container .slider-component-wrapper .slider-carousel.double-slide-active.recommended-slide-active .item-slider .btn-container button {
+    font-size: 1em;
+  }
 }
 
 .image-box-component-container .image-box-component-wrapper .image-box .box-title-wrapper h4 {
@@ -1069,7 +1102,12 @@ input:focus {
 .image-box-component-container .image-box-component-wrapper .image-box .image-container.image-box-two-grid .image-wrapper .image-item .image-label-wrapper {
   text-align: center;
   padding: 0.625em 0.3125em;
-  font-size: 14px;
+  font-size: 1.273em;
+}
+@media only screen and (min-width: 1025px) {
+  .image-box-component-container .image-box-component-wrapper .image-box .image-container.image-box-two-grid .image-wrapper .image-item .image-label-wrapper {
+    font-size: 1em;
+  }
 }
 .image-box-component-container .image-box-component-wrapper .image-box .image-container.image-box-three-grid {
   background-color: white;
@@ -1184,6 +1222,11 @@ input:focus {
   background-color: white;
   padding: 0 0.9375em;
 }
+@media only screen and (min-width: 768px) {
+  .breadcrumbs-container {
+    margin-top: 4.375em;
+  }
+}
 .breadcrumbs-container .breadcrumbs-wrapper {
   display: flex;
   justify-content: space-between;
@@ -1226,7 +1269,7 @@ input:focus {
 }
 .breadcrumbs-container .breadcrumbs-wrapper .item-breadcrumbs.is-active .line-wrapper .line-animate {
   background-color: #03a685;
-  width: 90%;
+  width: 98%;
   transition: 0.3s width;
   position: absolute;
 }
@@ -1256,6 +1299,11 @@ input:focus {
   font-weight: 600;
   font-size: 0.875em;
 }
+@media only screen and (min-width: 1025px) {
+  .available-offers-container .available-offers-wrapper .header-offer-wrapper h3 {
+    font-size: 1em;
+  }
+}
 .available-offers-container .available-offers-wrapper .header-offer-wrapper h3.total-amount {
   color: black;
 }
@@ -1270,6 +1318,11 @@ input:focus {
   line-height: 1.5;
   letter-spacing: 0;
   font-size: 0.875em;
+}
+@media only screen and (min-width: 1025px) {
+  .available-offers-container .available-offers-wrapper .offer-details-wrapper p {
+    font-size: 1em;
+  }
 }
 .available-offers-container .available-offers-wrapper .coupon-code-wrapper {
   margin-top: 0.625em;
@@ -1374,6 +1427,11 @@ input:focus {
   display: flex;
   flex-direction: column;
 }
+@media only screen and (min-width: 1025px) {
+  .cart-product-container .cart-product-wrapper .product-content-wrapper .product-description-wrapper a {
+    font-size: 1em;
+  }
+}
 .cart-product-container .cart-product-wrapper .product-content-wrapper .product-description-wrapper a span {
   margin-bottom: 0.3125em;
 }
@@ -1429,6 +1487,11 @@ input:focus {
   font-size: 0.875em;
   margin-bottom: 0.3125em;
 }
+@media only screen and (min-width: 1025px) {
+  .cart-product-container .cart-product-wrapper .product-content-wrapper .product-description-wrapper .product-price-wrapper h3 {
+    font-size: 1em;
+  }
+}
 .cart-product-container .cart-product-wrapper .product-content-wrapper .product-description-wrapper .product-price-wrapper h3 .old-amount {
   font-weight: 400;
   color: #c2c2c2;
@@ -1443,6 +1506,11 @@ input:focus {
   letter-spacing: 0;
   font-size: 0.875em;
 }
+@media only screen and (min-width: 1025px) {
+  .cart-product-container .cart-product-wrapper .product-content-wrapper .product-description-wrapper .product-price-wrapper p {
+    font-size: 1em;
+  }
+}
 .cart-product-container .cart-product-wrapper .btn-container {
   padding: 0.9375em 0.9375em 0;
   display: flex;
@@ -1450,10 +1518,15 @@ input:focus {
 .cart-product-container .cart-product-wrapper .btn-container button {
   text-transform: uppercase;
   color: black;
-  font-size: 12px;
+  font-size: 0.75em;
   border-radius: 0;
   padding: 0;
   letter-spacing: -0.5px;
+}
+@media only screen and (min-width: 1025px) {
+  .cart-product-container .cart-product-wrapper .btn-container button {
+    font-size: 1em;
+  }
 }
 .cart-product-container .cart-product-wrapper .btn-container button.btn-remove {
   border-right: 1px solid #c2c2c2;
@@ -1580,6 +1653,12 @@ input:focus {
 .mini-cart-container .mini-cart-wrapper .section .recommended-slide-active .owl-stage {
   justify-content: space-around !important;
 }
+@media only screen and (min-width: 1025px) {
+  .mini-cart-container .bottom-sticky-container {
+    left: -0.9375em;
+    justify-content: center;
+  }
+}
 
 .generic-container {
   width: 100%;
@@ -1600,6 +1679,11 @@ input:focus {
 .generic-container .generic-wrapper p {
   font-size: 0.875em;
   letter-spacing: 0;
+}
+@media only screen and (min-width: 1025px) {
+  .generic-container .generic-wrapper p {
+    font-size: 1em;
+  }
 }
 .generic-container .generic-wrapper p .amount {
   color: #f1137a;
@@ -1636,6 +1720,11 @@ input:focus {
   margin-bottom: 0.3125em;
   font-size: 0.875em;
 }
+@media only screen and (min-width: 1025px) {
+  .generic-container .generic-wrapper.price-details h3 {
+    font-size: 1em;
+  }
+}
 .generic-container .generic-wrapper .generic-text-wrapper {
   width: 100%;
   margin-top: 0.625em;
@@ -1643,6 +1732,11 @@ input:focus {
 .generic-container .generic-wrapper .generic-text-wrapper h3 {
   font-size: 0.875em;
   margin-bottom: 0.3125em;
+}
+@media only screen and (min-width: 1025px) {
+  .generic-container .generic-wrapper .generic-text-wrapper h3 {
+    font-size: 1em;
+  }
 }
 .generic-container .generic-wrapper .generic-text-wrapper h3 .product-description {
   color: #535665;
@@ -1661,6 +1755,11 @@ input:focus {
 .generic-container .generic-wrapper .generic-text-wrapper p {
   margin-bottom: 0.625em;
   font-size: 0.875em;
+}
+@media only screen and (min-width: 1025px) {
+  .generic-container .generic-wrapper .generic-text-wrapper p {
+    font-size: 1em;
+  }
 }
 .generic-container .generic-wrapper .generic-text-wrapper p:last-child {
   margin-bottom: 0;
@@ -1710,6 +1809,11 @@ input:focus {
   border-top: 1px solid #c2c2c2;
   font-size: 0.875em;
 }
+@media only screen and (min-width: 1025px) {
+  .generic-container .generic-wrapper .generic-text-wrapper ul li {
+    font-size: 1em;
+  }
+}
 .generic-container .generic-wrapper .generic-text-wrapper ul li a {
   display: flex;
   justify-content: space-between;
@@ -1739,6 +1843,11 @@ input:focus {
 .generic-container .generic-wrapper .three-col-wrapper .col-item p {
   font-size: 0.875em;
 }
+@media only screen and (min-width: 1025px) {
+  .generic-container .generic-wrapper .three-col-wrapper .col-item p {
+    font-size: 1em;
+  }
+}
 
 * {
   margin: 0;
@@ -1766,6 +1875,7 @@ main {
   background-color: rgba(194, 194, 194, 0.15);
   height: 100%;
   padding-bottom: 0.9375em;
+  width: 100%;
 }
 main section {
   margin: 0.625em 0;
