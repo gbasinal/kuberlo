@@ -22,21 +22,16 @@
     <div class="header-wrapper animated-child">
       <div class="header-left-wrapper">
         <div class="hamburger-wrapper">
-          <button class="hamburger hamburger--collapse" type="button">
-            <span class="hamburger-box">
-              <span class="hamburger-inner"></span>
-            </span>
+          <button class="hamburger" type="button">
+            <img src="https://img.icons8.com/windows/64/000000/menu.png"/>
           </button>
         </div>
         <div class="nav-menu-container">
           <div class="nav-menu-wrapper">
             <div class="nav-item-close-container">
               <div class="menu-close-button">
-                <!-- <a href="#"><span><img src="https://img.icons8.com/ios/64/000000/delete-sign.png"/></span> <span class="close-label">Close</span></a> -->
-                <button class="hamburger hamburger--collapse is-active" type="button">
-                  <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
-                  </span>
+                <button class="hamburger hamburger--collapse" type="button">
+                  <img src="https://img.icons8.com/ios/100/000000/multiply.png"/>
                 </button>
                 <div class="logo-container">
                   <img src="assets/img/logo.png" alt="">
@@ -45,16 +40,18 @@
             </div>
             <div class="nav-item-container">
               <!-- URL should be added in the data-url attribute since the value is being passed via js -->
+              <!-- Add "parent" class name if item is not clickable or if item is meant for parent -->
+              <!-- Dont add URL in the data-url attribute if that item is intended to be a parent item -->
               <div class="nav-item-wrapper  ">
-                <a href="#" class=" nav-item">
-                  <span class="menu-item-name" data-url="/kuberlo/cart.html">Level 1</span>
-                  <img src="https://img.icons8.com/ios/64/000000/collapse-arrow--v2.png"/>
+                <a href="#" class=" nav-item parent">
+                  <span class="menu-item-name" data-url="">Level 1</span>
+                  <img src="https://img.icons8.com/ios/100/000000/more-than.png"/>
                 </a>
                 <div class="sub-nav-container level-2 ">
                    <div class="sub-nav-wrapper">
-                      <a href="#r" class=" nav-item ">
-                        <span class="menu-item-name" data-url="/kuberlo/product.html">Level 2</span>
-                        <img src="https://img.icons8.com/ios/64/000000/collapse-arrow--v2.png"/>
+                      <a href="#r" class=" nav-item parent">
+                        <span class="menu-item-name" data-url="#">Level 2</span>
+                        <img src="https://img.icons8.com/ios/100/000000/more-than.png"/>
                       </a>
                       <div class="sub-nav-container level-3 ">
                         <div class="sub-nav-wrapper">
@@ -70,29 +67,28 @@
                       </div>                       
                    </div>
                    <div class="sub-nav-wrapper">
-                      <a href="#r" class=" nav-item ">
+                      <a href="#r" class=" nav-item">
                         <span class="menu-item-name" data-url="/kuberlo/product.html">Level 2</span>
-                        <img src="https://img.icons8.com/ios/64/000000/collapse-arrow--v2.png"/>
                       </a> 
                    </div>     
                 </div>                     
               </div>  
               <div class="nav-item-wrapper  ">
-                <a href="#" class=" nav-item">
-                  <span class="menu-item-name" data-url="/kuberlo/cart.html">Level 1</span>
-                  <img src="https://img.icons8.com/ios/64/000000/collapse-arrow--v2.png"/>
+                <a href="#" class=" nav-item parent">
+                  <span class="menu-item-name" data-url="">Level 1</span>
+                  <img src="https://img.icons8.com/ios/100/000000/more-than.png"/>
                 </a>
                 <div class="sub-nav-container level-2 ">
                    <div class="sub-nav-wrapper">
-                      <a href="#r" class=" nav-item ">
+                      <a href="#r" class=" nav-item">
                         <span class="menu-item-name" data-url="/kuberlo/product.html">Level 2</span>
-                        <img src="https://img.icons8.com/ios/64/000000/collapse-arrow--v2.png"/>
+                        <img src="https://img.icons8.com/ios/100/000000/more-than.png"/>
                       </a>
                    </div>
                    <div class="sub-nav-wrapper">
-                      <a href="#r" class=" nav-item ">
+                      <a href="#r" class=" nav-item parent">
                         <span class="menu-item-name" data-url="/kuberlo/product.html">Level 2</span>
-                        <img src="https://img.icons8.com/ios/64/000000/collapse-arrow--v2.png"/>
+                        <img src="https://img.icons8.com/ios/100/000000/more-than.png"/>
                       </a>
                       <div class="sub-nav-container level-3 ">
                         <div class="sub-nav-wrapper">
@@ -110,15 +106,15 @@
                 </div>                     
               </div>  
               <div class="nav-item-wrapper  ">
-                <a href="#" class=" nav-item">
+                <a href="#" class=" nav-item parent">
                   <span class="menu-item-name" data-url="/kuberlo/cart.html">Level 1</span>
-                  <img src="https://img.icons8.com/ios/64/000000/collapse-arrow--v2.png"/>
+                  <img src="https://img.icons8.com/ios/100/000000/more-than.png"/>
                 </a>
                 <div class="sub-nav-container level-2 ">
                    <div class="sub-nav-wrapper">
-                      <a href="#r" class=" nav-item ">
+                      <a href="#r" class=" nav-item parent">
                         <span class="menu-item-name" data-url="/kuberlo/product.html">Level 2</span>
-                        <img src="https://img.icons8.com/ios/64/000000/collapse-arrow--v2.png"/>
+                        <img src="https://img.icons8.com/ios/100/000000/more-than.png"/>
                       </a>
                       <div class="sub-nav-container level-3 ">
                         <div class="sub-nav-wrapper">
@@ -134,9 +130,9 @@
                       </div>                      
                    </div>
                    <div class="sub-nav-wrapper">
-                      <a href="#r" class=" nav-item ">
+                      <a href="#r" class=" nav-item parent">
                         <span class="menu-item-name" data-url="/kuberlo/product.html">Level 2</span>
-                        <img src="https://img.icons8.com/ios/64/000000/collapse-arrow--v2.png"/>
+                        <img src="https://img.icons8.com/ios/100/000000/more-than.png"/>
                       </a>
                       <div class="sub-nav-container level-3 ">
                         <div class="sub-nav-wrapper">
@@ -152,439 +148,7 @@
                       </div>  
                    </div>     
                 </div>                     
-              </div>                             
-              <div class="nav-item-wrapper  ">
-                <a href="#" class=" nav-item">
-                  <span class="menu-item-name" data-url="/kuberlo/cart.html">Level 1</span>
-                  <img src="https://img.icons8.com/ios/64/000000/collapse-arrow--v2.png"/>
-                </a>
-                <div class="sub-nav-container level-2 ">
-                   <div class="sub-nav-wrapper">
-                      <a href="#r" class=" nav-item ">
-                        <span class="menu-item-name" data-url="/kuberlo/product.html">Level 2</span>
-                        <img src="https://img.icons8.com/ios/64/000000/collapse-arrow--v2.png"/>
-                      </a>
-                      <div class="sub-nav-container level-3 ">
-                        <div class="sub-nav-wrapper">
-                          <a href="#r" class=" nav-item ">
-                            <span class="menu-item-name" data-url="/kuberlo/Collection.html">Level 3</span>
-                          </a>
-                        </div>
-                        <div class="sub-nav-wrapper">
-                          <a href="#r" class=" nav-item ">
-                            <span class="menu-item-name" data-url="/kuberlo/Collection.html">Level 3</span>
-                          </a>
-                        </div>
-                      </div>                       
-                   </div>
-                   <div class="sub-nav-wrapper">
-                      <a href="#r" class=" nav-item ">
-                        <span class="menu-item-name" data-url="/kuberlo/product.html">Level 2</span>
-                        <img src="https://img.icons8.com/ios/64/000000/collapse-arrow--v2.png"/>
-                      </a> 
-                   </div>     
-                </div>                     
-              </div>  
-              <div class="nav-item-wrapper  ">
-                <a href="#" class=" nav-item">
-                  <span class="menu-item-name" data-url="/kuberlo/cart.html">Level 1</span>
-                  <img src="https://img.icons8.com/ios/64/000000/collapse-arrow--v2.png"/>
-                </a>
-                <div class="sub-nav-container level-2 ">
-                   <div class="sub-nav-wrapper">
-                      <a href="#r" class=" nav-item ">
-                        <span class="menu-item-name" data-url="/kuberlo/product.html">Level 2</span>
-                        <img src="https://img.icons8.com/ios/64/000000/collapse-arrow--v2.png"/>
-                      </a>
-                   </div>
-                   <div class="sub-nav-wrapper">
-                      <a href="#r" class=" nav-item ">
-                        <span class="menu-item-name" data-url="/kuberlo/product.html">Level 2</span>
-                        <img src="https://img.icons8.com/ios/64/000000/collapse-arrow--v2.png"/>
-                      </a>
-                      <div class="sub-nav-container level-3 ">
-                        <div class="sub-nav-wrapper">
-                          <a href="#r" class=" nav-item ">
-                            <span class="menu-item-name" data-url="/kuberlo/Collection.html">Level 3</span>
-                          </a>
-                        </div>
-                        <div class="sub-nav-wrapper">
-                          <a href="#r" class=" nav-item ">
-                            <span class="menu-item-name" data-url="/kuberlo/Collection.html">Level 3</span>
-                          </a>
-                        </div>
-                      </div>  
-                   </div>     
-                </div>                     
-              </div>  
-              <div class="nav-item-wrapper  ">
-                <a href="#" class=" nav-item">
-                  <span class="menu-item-name" data-url="/kuberlo/cart.html">Level 1</span>
-                  <img src="https://img.icons8.com/ios/64/000000/collapse-arrow--v2.png"/>
-                </a>
-                <div class="sub-nav-container level-2 ">
-                   <div class="sub-nav-wrapper">
-                      <a href="#r" class=" nav-item ">
-                        <span class="menu-item-name" data-url="/kuberlo/product.html">Level 2</span>
-                        <img src="https://img.icons8.com/ios/64/000000/collapse-arrow--v2.png"/>
-                      </a>
-                      <div class="sub-nav-container level-3 ">
-                        <div class="sub-nav-wrapper">
-                          <a href="#r" class=" nav-item ">
-                            <span class="menu-item-name" data-url="/kuberlo/Collection.html">Level 3</span>
-                          </a>
-                        </div>
-                        <div class="sub-nav-wrapper">
-                          <a href="#r" class=" nav-item ">
-                            <span class="menu-item-name" data-url="/kuberlo/Collection.html">Level 3</span>
-                          </a>
-                        </div>
-                      </div>                      
-                   </div>
-                   <div class="sub-nav-wrapper">
-                      <a href="#r" class=" nav-item ">
-                        <span class="menu-item-name" data-url="/kuberlo/product.html">Level 2</span>
-                        <img src="https://img.icons8.com/ios/64/000000/collapse-arrow--v2.png"/>
-                      </a>
-                      <div class="sub-nav-container level-3 ">
-                        <div class="sub-nav-wrapper">
-                          <a href="#r" class=" nav-item ">
-                            <span class="menu-item-name" data-url="/kuberlo/Collection.html">Level 3</span>
-                          </a>
-                        </div>
-                        <div class="sub-nav-wrapper">
-                          <a href="#r" class=" nav-item ">
-                            <span class="menu-item-name" data-url="/kuberlo/Collection.html">Level 3</span>
-                          </a>
-                        </div>
-                      </div>  
-                   </div>     
-                </div>                     
-              </div>                             
-              <div class="nav-item-wrapper  ">
-                <a href="#" class=" nav-item">
-                  <span class="menu-item-name" data-url="/kuberlo/cart.html">Level 1</span>
-                  <img src="https://img.icons8.com/ios/64/000000/collapse-arrow--v2.png"/>
-                </a>
-                <div class="sub-nav-container level-2 ">
-                   <div class="sub-nav-wrapper">
-                      <a href="#r" class=" nav-item ">
-                        <span class="menu-item-name" data-url="/kuberlo/product.html">Level 2</span>
-                        <img src="https://img.icons8.com/ios/64/000000/collapse-arrow--v2.png"/>
-                      </a>
-                      <div class="sub-nav-container level-3 ">
-                        <div class="sub-nav-wrapper">
-                          <a href="#r" class=" nav-item ">
-                            <span class="menu-item-name" data-url="/kuberlo/Collection.html">Level 3</span>
-                          </a>
-                        </div>
-                        <div class="sub-nav-wrapper">
-                          <a href="#r" class=" nav-item ">
-                            <span class="menu-item-name" data-url="/kuberlo/Collection.html">Level 3</span>
-                          </a>
-                        </div>
-                      </div>                       
-                   </div>
-                   <div class="sub-nav-wrapper">
-                      <a href="#r" class=" nav-item ">
-                        <span class="menu-item-name" data-url="/kuberlo/product.html">Level 2</span>
-                        <img src="https://img.icons8.com/ios/64/000000/collapse-arrow--v2.png"/>
-                      </a> 
-                   </div>     
-                </div>                     
-              </div>  
-              <div class="nav-item-wrapper  ">
-                <a href="#" class=" nav-item">
-                  <span class="menu-item-name" data-url="/kuberlo/cart.html">Level 1</span>
-                  <img src="https://img.icons8.com/ios/64/000000/collapse-arrow--v2.png"/>
-                </a>
-                <div class="sub-nav-container level-2 ">
-                   <div class="sub-nav-wrapper">
-                      <a href="#r" class=" nav-item ">
-                        <span class="menu-item-name" data-url="/kuberlo/product.html">Level 2</span>
-                        <img src="https://img.icons8.com/ios/64/000000/collapse-arrow--v2.png"/>
-                      </a>
-                   </div>
-                   <div class="sub-nav-wrapper">
-                      <a href="#r" class=" nav-item ">
-                        <span class="menu-item-name" data-url="/kuberlo/product.html">Level 2</span>
-                        <img src="https://img.icons8.com/ios/64/000000/collapse-arrow--v2.png"/>
-                      </a>
-                      <div class="sub-nav-container level-3 ">
-                        <div class="sub-nav-wrapper">
-                          <a href="#r" class=" nav-item ">
-                            <span class="menu-item-name" data-url="/kuberlo/Collection.html">Level 3</span>
-                          </a>
-                        </div>
-                        <div class="sub-nav-wrapper">
-                          <a href="#r" class=" nav-item ">
-                            <span class="menu-item-name" data-url="/kuberlo/Collection.html">Level 3</span>
-                          </a>
-                        </div>
-                      </div>  
-                   </div>     
-                </div>                     
-              </div>  
-              <div class="nav-item-wrapper  ">
-                <a href="#" class=" nav-item">
-                  <span class="menu-item-name" data-url="/kuberlo/cart.html">Level 1</span>
-                  <img src="https://img.icons8.com/ios/64/000000/collapse-arrow--v2.png"/>
-                </a>
-                <div class="sub-nav-container level-2 ">
-                   <div class="sub-nav-wrapper">
-                      <a href="#r" class=" nav-item ">
-                        <span class="menu-item-name" data-url="/kuberlo/product.html">Level 2</span>
-                        <img src="https://img.icons8.com/ios/64/000000/collapse-arrow--v2.png"/>
-                      </a>
-                      <div class="sub-nav-container level-3 ">
-                        <div class="sub-nav-wrapper">
-                          <a href="#r" class=" nav-item ">
-                            <span class="menu-item-name" data-url="/kuberlo/Collection.html">Level 3</span>
-                          </a>
-                        </div>
-                        <div class="sub-nav-wrapper">
-                          <a href="#r" class=" nav-item ">
-                            <span class="menu-item-name" data-url="/kuberlo/Collection.html">Level 3</span>
-                          </a>
-                        </div>
-                      </div>                      
-                   </div>
-                   <div class="sub-nav-wrapper">
-                      <a href="#r" class=" nav-item ">
-                        <span class="menu-item-name" data-url="/kuberlo/product.html">Level 2</span>
-                        <img src="https://img.icons8.com/ios/64/000000/collapse-arrow--v2.png"/>
-                      </a>
-                      <div class="sub-nav-container level-3 ">
-                        <div class="sub-nav-wrapper">
-                          <a href="#r" class=" nav-item ">
-                            <span class="menu-item-name" data-url="/kuberlo/Collection.html">Level 3</span>
-                          </a>
-                        </div>
-                        <div class="sub-nav-wrapper">
-                          <a href="#r" class=" nav-item ">
-                            <span class="menu-item-name" data-url="/kuberlo/Collection.html">Level 3</span>
-                          </a>
-                        </div>
-                      </div>  
-                   </div>     
-                </div>                     
-              </div>                             
-              <div class="nav-item-wrapper  ">
-                <a href="#" class=" nav-item">
-                  <span class="menu-item-name" data-url="/kuberlo/cart.html">Level 1</span>
-                  <img src="https://img.icons8.com/ios/64/000000/collapse-arrow--v2.png"/>
-                </a>
-                <div class="sub-nav-container level-2 ">
-                   <div class="sub-nav-wrapper">
-                      <a href="#r" class=" nav-item ">
-                        <span class="menu-item-name" data-url="/kuberlo/product.html">Level 2</span>
-                        <img src="https://img.icons8.com/ios/64/000000/collapse-arrow--v2.png"/>
-                      </a>
-                      <div class="sub-nav-container level-3 ">
-                        <div class="sub-nav-wrapper">
-                          <a href="#r" class=" nav-item ">
-                            <span class="menu-item-name" data-url="/kuberlo/Collection.html">Level 3</span>
-                          </a>
-                        </div>
-                        <div class="sub-nav-wrapper">
-                          <a href="#r" class=" nav-item ">
-                            <span class="menu-item-name" data-url="/kuberlo/Collection.html">Level 3</span>
-                          </a>
-                        </div>
-                      </div>                       
-                   </div>
-                   <div class="sub-nav-wrapper">
-                      <a href="#r" class=" nav-item ">
-                        <span class="menu-item-name" data-url="/kuberlo/product.html">Level 2</span>
-                        <img src="https://img.icons8.com/ios/64/000000/collapse-arrow--v2.png"/>
-                      </a> 
-                   </div>     
-                </div>                     
-              </div>  
-              <div class="nav-item-wrapper  ">
-                <a href="#" class=" nav-item">
-                  <span class="menu-item-name" data-url="/kuberlo/cart.html">Level 1</span>
-                  <img src="https://img.icons8.com/ios/64/000000/collapse-arrow--v2.png"/>
-                </a>
-                <div class="sub-nav-container level-2 ">
-                   <div class="sub-nav-wrapper">
-                      <a href="#r" class=" nav-item ">
-                        <span class="menu-item-name" data-url="/kuberlo/product.html">Level 2</span>
-                        <img src="https://img.icons8.com/ios/64/000000/collapse-arrow--v2.png"/>
-                      </a>
-                   </div>
-                   <div class="sub-nav-wrapper">
-                      <a href="#r" class=" nav-item ">
-                        <span class="menu-item-name" data-url="/kuberlo/product.html">Level 2</span>
-                        <img src="https://img.icons8.com/ios/64/000000/collapse-arrow--v2.png"/>
-                      </a>
-                      <div class="sub-nav-container level-3 ">
-                        <div class="sub-nav-wrapper">
-                          <a href="#r" class=" nav-item ">
-                            <span class="menu-item-name" data-url="/kuberlo/Collection.html">Level 3</span>
-                          </a>
-                        </div>
-                        <div class="sub-nav-wrapper">
-                          <a href="#r" class=" nav-item ">
-                            <span class="menu-item-name" data-url="/kuberlo/Collection.html">Level 3</span>
-                          </a>
-                        </div>
-                      </div>  
-                   </div>     
-                </div>                     
-              </div>  
-              <div class="nav-item-wrapper  ">
-                <a href="#" class=" nav-item">
-                  <span class="menu-item-name" data-url="/kuberlo/cart.html">Level 1</span>
-                  <img src="https://img.icons8.com/ios/64/000000/collapse-arrow--v2.png"/>
-                </a>
-                <div class="sub-nav-container level-2 ">
-                   <div class="sub-nav-wrapper">
-                      <a href="#r" class=" nav-item ">
-                        <span class="menu-item-name" data-url="/kuberlo/product.html">Level 2</span>
-                        <img src="https://img.icons8.com/ios/64/000000/collapse-arrow--v2.png"/>
-                      </a>
-                      <div class="sub-nav-container level-3 ">
-                        <div class="sub-nav-wrapper">
-                          <a href="#r" class=" nav-item ">
-                            <span class="menu-item-name" data-url="/kuberlo/Collection.html">Level 3</span>
-                          </a>
-                        </div>
-                        <div class="sub-nav-wrapper">
-                          <a href="#r" class=" nav-item ">
-                            <span class="menu-item-name" data-url="/kuberlo/Collection.html">Level 3</span>
-                          </a>
-                        </div>
-                      </div>                      
-                   </div>
-                   <div class="sub-nav-wrapper">
-                      <a href="#r" class=" nav-item ">
-                        <span class="menu-item-name" data-url="/kuberlo/product.html">Level 2</span>
-                        <img src="https://img.icons8.com/ios/64/000000/collapse-arrow--v2.png"/>
-                      </a>
-                      <div class="sub-nav-container level-3 ">
-                        <div class="sub-nav-wrapper">
-                          <a href="#r" class=" nav-item ">
-                            <span class="menu-item-name" data-url="/kuberlo/Collection.html">Level 3</span>
-                          </a>
-                        </div>
-                        <div class="sub-nav-wrapper">
-                          <a href="#r" class=" nav-item ">
-                            <span class="menu-item-name" data-url="/kuberlo/Collection.html">Level 3</span>
-                          </a>
-                        </div>
-                      </div>  
-                   </div>     
-                </div>                     
-              </div>                             
-              <div class="nav-item-wrapper  ">
-                <a href="#" class=" nav-item">
-                  <span class="menu-item-name" data-url="/kuberlo/cart.html">Level 1</span>
-                  <img src="https://img.icons8.com/ios/64/000000/collapse-arrow--v2.png"/>
-                </a>
-                <div class="sub-nav-container level-2 ">
-                   <div class="sub-nav-wrapper">
-                      <a href="#r" class=" nav-item ">
-                        <span class="menu-item-name" data-url="/kuberlo/product.html">Level 2</span>
-                        <img src="https://img.icons8.com/ios/64/000000/collapse-arrow--v2.png"/>
-                      </a>
-                      <div class="sub-nav-container level-3 ">
-                        <div class="sub-nav-wrapper">
-                          <a href="#r" class=" nav-item ">
-                            <span class="menu-item-name" data-url="/kuberlo/Collection.html">Level 3</span>
-                          </a>
-                        </div>
-                        <div class="sub-nav-wrapper">
-                          <a href="#r" class=" nav-item ">
-                            <span class="menu-item-name" data-url="/kuberlo/Collection.html">Level 3</span>
-                          </a>
-                        </div>
-                      </div>                       
-                   </div>
-                   <div class="sub-nav-wrapper">
-                      <a href="#r" class=" nav-item ">
-                        <span class="menu-item-name" data-url="/kuberlo/product.html">Level 2</span>
-                        <img src="https://img.icons8.com/ios/64/000000/collapse-arrow--v2.png"/>
-                      </a> 
-                   </div>     
-                </div>                     
-              </div>  
-              <div class="nav-item-wrapper  ">
-                <a href="#" class=" nav-item">
-                  <span class="menu-item-name" data-url="/kuberlo/cart.html">Level 1</span>
-                  <img src="https://img.icons8.com/ios/64/000000/collapse-arrow--v2.png"/>
-                </a>
-                <div class="sub-nav-container level-2 ">
-                   <div class="sub-nav-wrapper">
-                      <a href="#r" class=" nav-item ">
-                        <span class="menu-item-name" data-url="/kuberlo/product.html">Level 2</span>
-                        <img src="https://img.icons8.com/ios/64/000000/collapse-arrow--v2.png"/>
-                      </a>
-                   </div>
-                   <div class="sub-nav-wrapper">
-                      <a href="#r" class=" nav-item ">
-                        <span class="menu-item-name" data-url="/kuberlo/product.html">Level 2</span>
-                        <img src="https://img.icons8.com/ios/64/000000/collapse-arrow--v2.png"/>
-                      </a>
-                      <div class="sub-nav-container level-3 ">
-                        <div class="sub-nav-wrapper">
-                          <a href="#r" class=" nav-item ">
-                            <span class="menu-item-name" data-url="/kuberlo/Collection.html">Level 3</span>
-                          </a>
-                        </div>
-                        <div class="sub-nav-wrapper">
-                          <a href="#r" class=" nav-item ">
-                            <span class="menu-item-name" data-url="/kuberlo/Collection.html">Level 3</span>
-                          </a>
-                        </div>
-                      </div>  
-                   </div>     
-                </div>                     
-              </div>  
-              <div class="nav-item-wrapper  ">
-                <a href="#" class=" nav-item">
-                  <span class="menu-item-name" data-url="/kuberlo/cart.html">Level 1</span>
-                  <img src="https://img.icons8.com/ios/64/000000/collapse-arrow--v2.png"/>
-                </a>
-                <div class="sub-nav-container level-2 ">
-                   <div class="sub-nav-wrapper">
-                      <a href="#r" class=" nav-item ">
-                        <span class="menu-item-name" data-url="/kuberlo/product.html">Level 2</span>
-                        <img src="https://img.icons8.com/ios/64/000000/collapse-arrow--v2.png"/>
-                      </a>
-                      <div class="sub-nav-container level-3 ">
-                        <div class="sub-nav-wrapper">
-                          <a href="#r" class=" nav-item ">
-                            <span class="menu-item-name" data-url="/kuberlo/Collection.html">Level 3</span>
-                          </a>
-                        </div>
-                        <div class="sub-nav-wrapper">
-                          <a href="#r" class=" nav-item ">
-                            <span class="menu-item-name" data-url="/kuberlo/Collection.html">Level 3</span>
-                          </a>
-                        </div>
-                      </div>                      
-                   </div>
-                   <div class="sub-nav-wrapper">
-                      <a href="#r" class=" nav-item ">
-                        <span class="menu-item-name" data-url="/kuberlo/product.html">Level 2</span>
-                        <img src="https://img.icons8.com/ios/64/000000/collapse-arrow--v2.png"/>
-                      </a>
-                      <div class="sub-nav-container level-3 ">
-                        <div class="sub-nav-wrapper">
-                          <a href="#r" class=" nav-item ">
-                            <span class="menu-item-name" data-url="/kuberlo/Collection.html">Level 3</span>
-                          </a>
-                        </div>
-                        <div class="sub-nav-wrapper">
-                          <a href="#r" class=" nav-item ">
-                            <span class="menu-item-name" data-url="/kuberlo/Collection.html">Level 3</span>
-                          </a>
-                        </div>
-                      </div>  
-                   </div>     
-                </div>                     
-              </div>                                                                                     
+              </div>                                                         
             </div>
           </div>
         </div>

@@ -27,9 +27,7 @@
         .menu-close-button {
             display: flex;
             align-items: center;
-            button {
-                margin-top: em(7)
-            }
+
 
         }
     }    
@@ -46,8 +44,8 @@
         overflow-y: scroll;
         .nav-item-container {
             .nav-item-wrapper {
-                padding: em(10) em(15);
-                border-bottom:  1px solid rgba(194, 194, 194, 0.5);
+                padding: em(20) em(15);
+                
                 .nav-item {
                     display: flex;
                     justify-content: space-between;
@@ -60,11 +58,20 @@
                     .menu-item-name {
 
                     }
+
+                    
                     img {
                         width: 1em;
                         height: 1em;
+                        
+                        display: none;
                         &.active {
-                            transform: rotate(180deg);
+                            transform: rotate(90deg);
+                        }
+                    }
+                    &.parent {
+                        img {
+                            display: block
                         }
                     }
                 }

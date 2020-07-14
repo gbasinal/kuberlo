@@ -237,9 +237,6 @@ input:focus {
   display: flex;
   align-items: center;
 }
-.nav-menu-container .nav-item-close-container .menu-close-button button {
-  margin-top: 0.4375em;
-}
 .nav-menu-container .nav-menu-wrapper {
   padding: 3.5625em 0em;
   min-height: 100vh;
@@ -253,8 +250,7 @@ input:focus {
   overflow-y: scroll;
 }
 .nav-menu-container .nav-menu-wrapper .nav-item-container .nav-item-wrapper {
-  padding: 0.625em 0.9375em;
-  border-bottom: 1px solid rgba(194, 194, 194, 0.5);
+  padding: 1.25em 0.9375em;
 }
 .nav-menu-container .nav-menu-wrapper .nav-item-container .nav-item-wrapper .nav-item {
   display: flex;
@@ -267,9 +263,13 @@ input:focus {
 .nav-menu-container .nav-menu-wrapper .nav-item-container .nav-item-wrapper .nav-item img {
   width: 1em;
   height: 1em;
+  display: none;
 }
 .nav-menu-container .nav-menu-wrapper .nav-item-container .nav-item-wrapper .nav-item img.active {
-  transform: rotate(180deg);
+  transform: rotate(90deg);
+}
+.nav-menu-container .nav-menu-wrapper .nav-item-container .nav-item-wrapper .nav-item.parent img {
+  display: block;
 }
 .nav-menu-container .nav-menu-wrapper .nav-item-container .nav-item-wrapper .sub-nav-container {
   padding-left: 0.9375em;
@@ -551,6 +551,10 @@ input:focus {
 }
 .hamburger:hover {
   opacity: 0.7;
+}
+.hamburger img {
+  width: 2.5em;
+  height: 2.5em;
 }
 
 .hamburger.is-active:hover {

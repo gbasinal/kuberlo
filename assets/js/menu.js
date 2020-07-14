@@ -34,6 +34,11 @@
     Menu.prototype.menuItemSetActiveState = function(){ 
         $(".nav-item").on("click", function(e){
             e.preventDefault();
+            if($(this).hasClass("parent")){
+                $(this).find("img").toggleClass("active");
+                $(this).siblings(".sub-nav-container").toggleClass("active")
+            }
+
         })
 
         $(".nav-item img").on("click", function(){
@@ -43,7 +48,17 @@
 
         $(".menu-item-name").on("click", function(){
             var url = $(this).data("url");
-            window.location.href = window.location.origin + url;
+            
+            if($(this).parent().hasClass("parent") === false){
+                if(url === "#" || url === " " || url === ""){
+                    $(this).siblings("img").trigger("click");
+                    
+                }else {
+                    window.location.href = window.location.origin + url;
+                }
+            }
+
+            
         })
     }
 
