@@ -674,6 +674,7 @@ input:focus {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 0.3125em;
 }
 @media only screen and (min-width: 768px) {
   .product-items-container .product-wrapper .item-wrapper .product-content-wrapper .product-title-wrapper {
