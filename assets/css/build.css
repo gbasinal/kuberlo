@@ -579,6 +579,14 @@ input:focus {
     padding: 0 1.25em;
   }
 }
+@media only screen and (min-width: 1025px) {
+  .pink-banner-container .pink-banner-wrapper {
+    justify-content: center;
+  }
+  .pink-banner-container .pink-banner-wrapper .banner-left-wrapper {
+    margin-right: 9.375em;
+  }
+}
 .pink-banner-container .pink-banner-wrapper h3 {
   color: white;
   font-weight: 600;
@@ -648,7 +656,7 @@ input:focus {
   border-right: 1px solid #c2c2c2;
 }
 .product-items-container .product-wrapper .item-wrapper .product-content-wrapper {
-  height: 4.375em;
+  height: 5em;
   width: 100%;
   padding: 0 10px;
   display: flex;
@@ -701,6 +709,11 @@ input:focus {
     margin-bottom: 0.625em;
   }
 }
+@media only screen and (max-width: 767px) {
+  .product-items-container .product-wrapper .item-wrapper .product-content-wrapper .product-description-wrapper h5 {
+    font-size: 0.75em;
+  }
+}
 .product-items-container .product-wrapper .item-wrapper .product-content-wrapper .product-price-wrapper {
   display: flex;
   align-items: center;
@@ -711,7 +724,7 @@ input:focus {
 .product-items-container .product-wrapper .item-wrapper .product-content-wrapper .product-price-wrapper .price-wrapper h3 {
   font-family: "Hind", sans-serif;
   margin-right: 4px;
-  font-size: 0.875em;
+  font-size: 0.75em;
   letter-spacing: -0.5px;
 }
 @media only screen and (min-width: 768px) {

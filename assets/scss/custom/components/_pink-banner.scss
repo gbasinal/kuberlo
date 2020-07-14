@@ -18,6 +18,12 @@
         @media only screen and (min-width: 768px){
             padding: 0 em(20);
         }
+        @media only screen and (min-width: 1025px){
+            justify-content: center;
+            .banner-left-wrapper {
+                margin-right: em(150);
+            }
+        }
         h3 {
             color: white;
             font-weight: 600;
