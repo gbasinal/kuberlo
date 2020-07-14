@@ -674,6 +674,7 @@ input:focus {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 0.3125em;
 }
 @media only screen and (min-width: 768px) {
   .product-items-container .product-wrapper .item-wrapper .product-content-wrapper .product-title-wrapper {
@@ -782,12 +783,7 @@ input:focus {
   margin-bottom: 0.3125em;
 }
 .product-items-container.variant-2 .product-wrapper .item-wrapper .product-content-wrapper .product-title-wrapper h4 {
-  font-size: 0.875em;
-}
-@media only screen and (min-width: 1025px) {
-  .product-items-container.variant-2 .product-wrapper .item-wrapper .product-content-wrapper .product-title-wrapper h4 {
-    font-size: 1em;
-  }
+  font-size: 1em;
 }
 .product-items-container.variant-2 .product-wrapper .item-wrapper .product-content-wrapper .product-title-wrapper .product-icon-wrapper {
   position: absolute;
@@ -801,8 +797,8 @@ input:focus {
   margin-right: 0.5sem;
 }
 .product-items-container.variant-2 .product-wrapper .item-wrapper .product-content-wrapper .product-title-wrapper .product-icon-wrapper a img {
-  width: 1.7em;
-  height: 2em;
+  width: 2.5em;
+  height: 2.5em;
 }
 @media only screen and (min-width: 768px) {
   .product-items-container.variant-2 .product-wrapper .item-wrapper .product-content-wrapper .product-title-wrapper .product-icon-wrapper a img {
@@ -814,31 +810,16 @@ input:focus {
   margin-bottom: 0.3125em;
 }
 .product-items-container.variant-2 .product-wrapper .item-wrapper .product-content-wrapper .product-description-wrapper h5 {
-  font-size: 0.875em;
-}
-@media only screen and (min-width: 1025px) {
-  .product-items-container.variant-2 .product-wrapper .item-wrapper .product-content-wrapper .product-description-wrapper h5 {
-    font-size: 1em;
-  }
+  font-size: 1em;
 }
 .product-items-container.variant-2 .product-wrapper .item-wrapper .product-content-wrapper .product-price-wrapper {
   justify-content: center;
 }
 .product-items-container.variant-2 .product-wrapper .item-wrapper .product-content-wrapper .product-price-wrapper h3 {
-  font-size: 0.875em;
-}
-@media only screen and (min-width: 1025px) {
-  .product-items-container.variant-2 .product-wrapper .item-wrapper .product-content-wrapper .product-price-wrapper h3 {
-    font-size: 1em;
-  }
+  font-size: 1em;
 }
 .product-items-container.variant-2 .product-wrapper .item-wrapper .product-content-wrapper .product-price-wrapper p {
-  font-size: 0.875em;
-}
-@media only screen and (min-width: 1025px) {
-  .product-items-container.variant-2 .product-wrapper .item-wrapper .product-content-wrapper .product-price-wrapper p {
-    font-size: 1em;
-  }
+  font-size: 1em;
 }
 
 .bottom-sticky-container {
