@@ -145,15 +145,13 @@
                     width: 50%;
                 }
                 .product-image-bgStyle {
-                    height: 375px;
+                    height: auto;
                     border-right: 1px solid $grey;
-                    @media only screen and (min-width: 768px){
-                        height: em(460);
-                    }
+
                 }
                 .product-content-wrapper {
                     text-align: center;
-                    height: em(75);
+                    height: em(90);
                     .product-title-wrapper {
                         justify-content: center;
                         position: relative;
