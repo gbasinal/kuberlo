@@ -31,7 +31,7 @@ h3 {
 }
 
 h4 {
-    @include textStyle($black ,20, 0, 20 , 6s00 );
+    @include textStyle($black ,20, 0, 20 , 400 );
     font-family: $hind;
     @media only screen and (max-width: 767px){
         font-size: em(14);

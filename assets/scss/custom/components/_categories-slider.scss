@@ -6,17 +6,21 @@
     text-align: center;
     z-index: 8;
     @media only screen and (min-width: 1025px){
-        font-size: 12px;
+
+        height: em(120);
     }
     .categories-slider-wrapper {
         box-shadow: $botBoxShadow;
         background: white;
+        display: flex;
+        align-items: center;
+        height: 100%;
         @media only screen and (max-width: 767px){
             padding-top: em(5);
-            padding-bottom: em(17);
+            padding-bottom: em(5);
         }
         @media only screen and (min-width: 768px){
-            padding-bottom: em(15);
+            padding: em(10) 0;
         }
         .categories-carousel {
             .item {
@@ -24,8 +28,8 @@
                 a { 
                     text-transform: uppercase;
                     img {
-                        width: em(80);
-                        height: em(80);
+                        width: em(100);
+                        height: em(100);
                         border-radius: 50%;
                         margin: em(5) auto 0;
                         object-fit: cover;
@@ -48,6 +52,7 @@
 
             .owl-stage {
                 padding-left: em(15) !important;
+                padding-right: 0 !important;
             }
         }
     }

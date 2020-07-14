@@ -81,7 +81,7 @@ h4 {
   font-size: 1.25em;
   letter-spacing: 0em;
   line-height: 1;
-  font-weight: 6s00;
+  font-weight: 400;
   font-family: "Hind", sans-serif;
 }
 @media only screen and (max-width: 767px) {
@@ -585,9 +585,19 @@ input:focus {
   margin-bottom: 5px;
   font-size: 0.875em;
 }
+@media only screen and (min-width: 1025px) {
+  .pink-banner-container .pink-banner-wrapper h3 {
+    font-size: 1em;
+  }
+}
 .pink-banner-container .pink-banner-wrapper p {
   color: white;
   font-size: 0.875em;
+}
+@media only screen and (min-width: 1025px) {
+  .pink-banner-container .pink-banner-wrapper p {
+    font-size: 1em;
+  }
 }
 
 .product-items-container {
@@ -630,18 +640,10 @@ input:focus {
   }
 }
 .product-items-container .product-wrapper .item-wrapper .product-image-bgStyle {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 187px;
+  object-fit: cover;
   width: 100%;
   cursor: pointer;
   border-right: 1px solid #c2c2c2;
-}
-@media only screen and (min-width: 768px) {
-  .product-items-container .product-wrapper .item-wrapper .product-image-bgStyle {
-    height: 22.5em;
-  }
 }
 .product-items-container .product-wrapper .item-wrapper .product-content-wrapper {
   height: 4.375em;
@@ -918,30 +920,33 @@ input:focus {
 }
 @media only screen and (min-width: 1025px) {
   .categories-slider-container {
-    font-size: 12px;
+    height: 7.5em;
   }
 }
 .categories-slider-container .categories-slider-wrapper {
   box-shadow: 0 1px 2px 0 rgba(148, 150, 159, 0.3);
   background: white;
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 @media only screen and (max-width: 767px) {
   .categories-slider-container .categories-slider-wrapper {
     padding-top: 0.3125em;
-    padding-bottom: 1.0625em;
+    padding-bottom: 0.3125em;
   }
 }
 @media only screen and (min-width: 768px) {
   .categories-slider-container .categories-slider-wrapper {
-    padding-bottom: 0.9375em;
+    padding: 0.625em 0;
   }
 }
 .categories-slider-container .categories-slider-wrapper .categories-carousel .item a {
   text-transform: uppercase;
 }
 .categories-slider-container .categories-slider-wrapper .categories-carousel .item a img {
-  width: 5em;
-  height: 5em;
+  width: 6.25em;
+  height: 6.25em;
   border-radius: 50%;
   margin: 0.3125em auto 0;
   object-fit: cover;
@@ -964,6 +969,7 @@ input:focus {
 }
 .categories-slider-container .categories-slider-wrapper .categories-carousel .owl-stage {
   padding-left: 0.9375em !important;
+  padding-right: 0 !important;
 }
 
 .slider-component-container {

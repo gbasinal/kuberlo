@@ -37,14 +37,12 @@
                 }
             }
             .product-image-bgStyle {
-                @include bgSettings(cover, no-repeat, center);
-                height: 187px;
+                object-fit: cover;
+                
                 width: 100%;
                 cursor: pointer;
                 border-right: 1px solid $grey;
-                @media only screen and (min-width: 768px){
-                    height: em(360);
-                }
+
             }
             .product-content-wrapper {
                 height: em(70);

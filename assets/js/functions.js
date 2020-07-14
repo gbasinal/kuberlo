@@ -152,7 +152,7 @@
         if($("main").length > 0 && $(".categories-slider-container").length > 0){
             if($(window).outerWidth() > 767){
                 
-                $("main").css("margin-top", (headerHeight - 10));
+                $("main").css("margin-top", (0));
             }else {
        
             }
